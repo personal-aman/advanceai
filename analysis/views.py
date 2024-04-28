@@ -125,7 +125,6 @@ class ClassificationView(APIView):
             if "```" in response:
                response = re.findall(r'```(.*?)```', response, re.DOTALL)
             statements = eval(response)
-            single_statement = True
             for key in statements.keys():
                 if 'opening' in key:
                     category = 'OPENING'
@@ -135,41 +134,27 @@ class ClassificationView(APIView):
                     category = 'PRESENTING'
                 elif 'closing_outcome_sentences' in key:
                     category = 'CLOSING_OUTCOME'
-                    single_statement = False
-                if single_statement:
-                    print("Creating objects for : ", category)
-                    for statement in statements[key]:
-                        classifcation_obj = Classification(
-                            category=category,
-                            transcription=transcript,
-                            statement=statement,
-                            level=0,
-                            model_llm=model_name,
-                            segment_number=index+1
-                        )
-                        classifcation_obj.save()
-                    print("Finished creating the Classification objects for the statement type: ", category)
-                else:
-                    print("Creating objects for : ", category)
-                    for statement in statements[key]:
-                        classifcation_obj = Classification(
-                            category=category,
-                            transcription=transcript,
-                            statement=str(statement),
-                            level=0,
-                            model_llm=model_name,
-                            segment_number=index+1
-                        )
-                        classifcation_obj.save()
-                    print("Finished creating the Classification objects for the statement type: ", category)
+
+                print("Creating objects for : ", category)
+                for statement in statements[key]:
+                    classifcation_obj = Classification(
+                        category=category,
+                        transcription=transcript,
+                        statement=str(statement),
+                        level=0,
+                        model_llm=model_name,
+                        segment_number=index+1
+                    )
+                    classifcation_obj.save()
+                print("Finished creating the Classification objects for the statement type: ", category)
         return Response({"message": "action is finished"}, status=status.HTTP_201_CREATED)
 
 class TranscriptionView(APIView):
 
     def post(self, request):
         # Desired segment length and overlap
-        segment_length = 1200  # Adjusted due to example length; use 1200 for your full text
-        overlap = 200
+        segment_length = 1100  # Adjusted due to example length; use 1200 for your full text
+        overlap = 100
         trans_obj = request.data
         # Create overlapping segments
         print(trans_obj)
