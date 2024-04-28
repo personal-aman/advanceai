@@ -1,6 +1,3 @@
-from langchain_community.vectorstores.weaviate import Weaviate
-from langchain_community.llms import OpenAI
-from langchain.chains import ChatVectorDBChain
 import weaviate
 from weaviate.util import generate_uuid5
 
@@ -54,7 +51,7 @@ def fetch_top_k_content(name, k_size=2, additional_props=[]):
     return res['data']['Get'][name]
 
 def fetch_top_k_nearest_content(name, content, k_size=2, additional_props=[]):
-    res = (client.query.get("OPENING_STATEMENT_EXAMPLE", ["content"])
+    res = (client.query.get(name, ["content"])
         .with_additional(additional_props) #["id", "distance"]
         .with_near_text({"concepts": content})
         .with_limit(k_size)
@@ -71,5 +68,5 @@ def fetch_top_k_nearest_content(name, content, k_size=2, additional_props=[]):
 # ]
 # storeData("OPENING_STATEMENT_EXAMPLE", opening_statement_example)
 
-print(fetch_top_k_content("OPENING_STATEMENT_EXAMPLE", 3, []))
-print(fetch_top_k_nearest_content("OPENING_STATEMENT_EXAMPLE",  "are you alright", 2,['distance']))
+# print(fetch_top_k_content("OPENING_STATEMENT_EXAMPLE", 3, []))
+# print(fetch_top_k_nearest_content("OPENING_STATEMENT_EXAMPLE",  "are you alright", 2,['distance']))

@@ -65,14 +65,16 @@ QUESTIONING_STATEMENT_LEVEL = {
   }
 
 PRESENTING_STATEMENT_DEFINITON = (
-    "The QUESTIONING phase involves the REP asking the HCP various questions related to the discussion topic."
-    " These questions are aimed at gathering information to better understand the HCP's experiences,"
-    " opinions, or practices regarding the subject matter. "
-    "The questioning helps the REP tailor the conversation in a way that"
-    " addresses the HCP's specific concerns or interests. "
-    "A series of inquiries made by the REP to gain insights into the HCP's current practices,"
-    " experiences, or opinions. These questions guide the flow of the conversation and "
-    "help identify the HCP's needs or concerns.")
+    "The PRESENTING phase is characterized by the REP sharing specific information, "
+    "data, or scientific findings with the HCP. This can include details about a product, "
+    "results from studies or trials, comparisons with other treatments, and guidelines."
+    " The presentation is designed to inform, emphasize benefits, and "
+    "address any efficacy or safety questions the HCP might have."
+    " The portion of the dialogue where the REP provides "
+    "detailed information about the product or treatment,"
+    " often including data from studies, clinical trials, or guidelines."
+    " This aims to inform and persuade based on evidence and scientific findings."
+)
 
 PRESENTING_STATEMENT_LEVEL = {
     "level_1": ["No scientific findings / information is presented"],
@@ -116,3 +118,31 @@ OUTCOME_STATEMENT_LEVEL = {
     "level_3": ["A “Yes” is given to a specific action based request to do something other than attend a meeting."],
     "level_4": ["The HCP volunteers to do something different as a result of the conversation; makes notes, describes a specific patient profile, calls a colleague, speaks to a colleague"]
   }
+
+
+ADDITIONAL_INFORMATION_FOR_CLASSIFICATION = (
+    "\n\nIMPORTANT NOTE:\n\n"
+     "Please classify statements from a conversation between a sales representative (REP)"
+    " and a healthcare professional (HCP). Assign statements to 'OPENING', "
+    "'QUESTIONING', 'PRESENTING', and 'CLOSING AND OUTCOME' categories based on these criteria:\n"
+    "'OPENING': Includes initial remarks by the REP that introduce the topic or purpose of the conversation,"
+    " often acknowledging the HCP’s time and setting the conversation's context. "
+    "This may include welcoming statements or questions seeking permission to proceed.\n"
+    "'QUESTIONING': Comprises the REP’s inquiries aimed at eliciting information, opinions,"
+    " or practices from the HCP regarding the topic under discussion."
+    " This category focuses on understanding the HCP’s current practices or experiences.\n "
+    "'PRESENTING': Consists strictly of REP’s statements where specific information, data, or "
+    "findings about treatments are shared, intending to inform or persuade the HCP based on "
+    "evidence and scientific findings. Exclude any statements made by the HCP in this category.\n"
+    "'CLOSING AND OUTCOME': Encompasses the REP’s efforts to wrap up the conversation, "
+    "seeking a commitment or agreement on next steps from the HCP. "
+    "This includes summaries of the discussion, reaffirming the benefits of discussed treatments,"
+    " and obtaining the HCP's responses regarding their agreement or planned actions post-conversation.\n\n"
+    "Please ensure to: - \nInclude only REP’s statements for the 'PRESENTING','OPENING' and 'QUESTION' category "
+    "and ignore anything said by the HCP.\n"
+    "Evaluate REP statements for inclusion in 'CLOSING AND OUTCOME' based on their content aiming to conclude "
+    "the interaction productively.\n"
+    "Maintain the original form of the REP's transcripts for authenticity."
+    "Focus on the accuracy and relevance of the assignment to each category. Provide clear examples"
+    "if necessary to illustrate the classification standards."
+     )
