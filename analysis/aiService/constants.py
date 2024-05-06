@@ -119,12 +119,11 @@ OUTCOME_STATEMENT_LEVEL = {
     "level_4": ["The HCP volunteers to do something different as a result of the conversation; makes notes, describes a specific patient profile, calls a colleague, speaks to a colleague"]
   }
 
-
 ADDITIONAL_INFORMATION_FOR_CLASSIFICATION = (
     "\n\nIMPORTANT NOTE:\n\n"
-     "Please classify statements from a conversation between a sales representative (REP)"
-    " and a healthcare professional (HCP). Assign statements to 'OPENING', "
-    "'QUESTIONING', 'PRESENTING', and 'CLOSING AND OUTCOME' categories based on these criteria:\n"
+    #  "Please classify statements from a conversation between a sales representative (REP)"
+    # " and a healthcare professional (HCP). Assign statements to 'OPENING', "
+    # "'QUESTIONING', 'PRESENTING', and 'CLOSING AND OUTCOME' categories based on these criteria:\n"
     "'OPENING': Includes initial remarks by the REP that introduce the topic or purpose of the conversation,"
     " often acknowledging the HCP’s time and setting the conversation's context. "
     "This may include welcoming statements or questions seeking permission to proceed.\n"
@@ -145,4 +144,80 @@ ADDITIONAL_INFORMATION_FOR_CLASSIFICATION = (
     "Maintain the original form of the REP's transcripts for authenticity."
     "Focus on the accuracy and relevance of the assignment to each category. Provide clear examples"
     "if necessary to illustrate the classification standards."
-     )
+)
+
+ADDITIONAL_INFORMATION_FOR_CLASSIFICATION_WITHOUT_OPENING_CLOSING = (
+"\n\nIMPORTANT NOTE:\n\n"
+    #  "Please classify statements from a conversation between a sales representative (REP)"
+    # " and a healthcare professional (HCP). You are in middle of the whole Transcipt. Assign statements to "
+    # "'QUESTIONING' and 'PRESENTING'categories based on these criteria:\n"
+    "'QUESTIONING': Comprises the REP’s inquiries aimed at eliciting information, opinions,"
+    " or practices from the HCP regarding the topic under discussion."
+    " This category focuses on understanding the HCP’s current practices or experiences.\n "
+    "'PRESENTING': Consists strictly of REP’s statements where specific information, data, or "
+    "findings about treatments are shared, intending to inform or persuade the HCP based on "
+    "evidence and scientific findings. Exclude any statements made by the HCP in this category.\n"
+    "Please ensure to: - \nInclude only REP’s statements for the 'PRESENTING' and 'QUESTION' category "
+    "and ignore anything said by the HCP.\n"
+    "Maintain the original form of the REP's transcripts for authenticity.\n"
+    "One dailogue can be a part of different statement category, simultaneously also.\n"
+    "Focus on the accuracy and relevance of the assignment to each category. Provide clear examples"
+    "if necessary to illustrate the classification standards.\n"
+)
+
+ADDITIONAL_INFORMATION_FOR_CLASSIFICATION_WITHOUT_OPENING = (
+    "\n\nIMPORTANT NOTE:\n\n"
+    #  "Please classify statements from a conversation between a sales representative (REP)"
+    # " and a healthcare professional (HCP). Assign statements to "
+    # "'QUESTIONING', 'PRESENTING', and 'CLOSING AND OUTCOME' categories based on these criteria:\n"
+    "'QUESTIONING': Comprises the REP’s inquiries aimed at eliciting information, opinions,"
+    " or practices from the HCP regarding the topic under discussion."
+    " This category focuses on understanding the HCP’s current practices or experiences.\n "
+    "'PRESENTING': Consists strictly of REP’s statements where specific information, data, or "
+    "findings about treatments are shared, intending to inform or persuade the HCP based on "
+    "evidence and scientific findings. Exclude any statements made by the HCP in this category.\n"
+    "'CLOSING AND OUTCOME': Encompasses the REP’s efforts to wrap up the conversation, "
+    "seeking a commitment or agreement on next steps from the HCP. "
+    "This includes summaries of the discussion, reaffirming the benefits of discussed treatments,"
+    " and obtaining the HCP's responses regarding their agreement or planned actions post-conversation.\n\n"
+    "Please ensure to: - \nInclude only REP’s statements for the 'PRESENTING' and 'QUESTION' category "
+    "and ignore anything said by the HCP.\n"
+    "Evaluate REP statements for inclusion in 'CLOSING AND OUTCOME' based on their content aiming to conclude "
+    "the interaction productively.\n"
+    "Maintain the original form of the REP's transcripts for authenticity.\n"
+    "One dailogue can be a part of different statement category, simultaneously also.\n"
+    "Focus on the accuracy and relevance of the assignment to each category. Provide clear examples"
+    "if necessary to illustrate the classification standards.\n"
+)
+
+ADDITIONAL_INFORMATION_FOR_CLASSIFICATION_WITHOUT_CLOSING = (
+    "\n\nIMPORTANT NOTE:\n\n"
+    #  "Please classify statements from a conversation between a sales representative (REP)"
+    # " and a healthcare professional (HCP). Assign statements to 'OPENING', "
+    # "'QUESTIONING', and 'PRESENTING' categories based on these criteria:\n"
+    "'OPENING': Includes initial remarks by the REP that introduce the topic or purpose of the conversation,"
+    " often acknowledging the HCP’s time and setting the conversation's context. "
+    "This may include welcoming statements or questions seeking permission to proceed.\n"
+    "'QUESTIONING': Comprises the REP’s inquiries aimed at eliciting information, opinions,"
+    " or practices from the HCP regarding the topic under discussion."
+    " This category focuses on understanding the HCP’s current practices or experiences.\n "
+    "'PRESENTING': Consists strictly of REP’s statements where specific information, data, or "
+    "findings about treatments are shared, intending to inform or persuade the HCP based on "
+    "evidence and scientific findings. Exclude any statements made by the HCP in this category.\n"
+    "Please ensure to: - \nInclude only REP’s statements for the 'PRESENTING','OPENING' and 'QUESTION' category "
+    "and ignore anything said by the HCP.\n"
+    "Maintain the original form of the REP's transcripts for authenticity.\n"
+    "One dailogue can be a part of different statement category, simultaneously also.\n"
+    "Focus on the accuracy and relevance of the assignment to each category. Provide clear examples"
+    "if necessary to illustrate the classification standards.\n"
+)
+
+
+def get_additional_info(not_included_statements=""):
+    if 'OPENING' in  not_included_statements:
+        return ADDITIONAL_INFORMATION_FOR_CLASSIFICATION_WITHOUT_OPENING
+    elif 'CLOSING' in not_included_statements:
+        return ADDITIONAL_INFORMATION_FOR_CLASSIFICATION_WITHOUT_CLOSING
+    elif 'EXTREME_END' in not_included_statements:
+        return ADDITIONAL_INFORMATION_FOR_CLASSIFICATION_WITHOUT_OPENING_CLOSING
+    return ADDITIONAL_INFORMATION_FOR_CLASSIFICATION

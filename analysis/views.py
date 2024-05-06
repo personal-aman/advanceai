@@ -7,7 +7,7 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from analysis.aiService.constants import ADDITIONAL_INFORMATION_FOR_CLASSIFICATION
+from analysis.aiService.constants import ADDITIONAL_INFORMATION_FOR_CLASSIFICATION, get_additional_info
 from analysis.aiService.weaviateDb import fetch_top_k_content, storeData
 from analysis.serializers import TranscriptionSerializer
 from analysis.models import Transcription, Classification, StatementType, llmModel
@@ -31,68 +31,108 @@ class StatementParser(BaseModel):
     closing_outcome_sentences: List[Dict[str, str]] = Field(
         description="list of dictionaries containing closing and outcome statements")
 
+class StatementParserWithoutOpening(BaseModel):
+    questioning_statements: List[str] = Field(description="list of different Questioning statements")
+    presenting_statements: List[str] = Field(description="list of different Presenting statements")
+    closing_outcome_sentences: List[Dict[str, str]] = Field(
+        description="list of dictionaries containing closing and outcome statements")
+
+class StatementParserWithoutClosing(BaseModel):
+    opening_statements: List[str] = Field(description="list of different Opening statements")
+    questioning_statements: List[str] = Field(description="list of different Questioning statements")
+    presenting_statements: List[str] = Field(description="list of different Presenting statements")
+
+class StatementParserWithoutOpeningAndClosing(BaseModel):
+    questioning_statements: List[str] = Field(description="list of different Questioning statements")
+    presenting_statements: List[str] = Field(description="list of different Presenting statements")
+
+
 def get_statements_data(part, total_parts):
     statement_types = StatementType.objects.filter(active=True)
     prompt_template = (" category: {category} , where "
               "the definition of the {category} category: ###{definition}### \n"
-              # "the following are CORRECT sample statements of {category} : \n"
-              # "###{valid_example}###\n\n"
-              #  "the following are INCORRECT sample statements of {category} : \n"
-              #  "###{invalid_example}###\n\n"
-               "the instruction to do: ###{instruction}.### \n"
+              # "the instruction to do: ###{instruction}.### \n"
               )
     prompt = PromptTemplate(
         input_variables=[
             'category',
             'definition',
-            'instruction',
+            # 'instruction',
             # 'valid_example',
             # 'invalid_example'
         ],
         template=prompt_template,
     )
-    final_prompt  = ""
+    final_prompt = ""
     for statement_type in statement_types:
-        if(total_parts > 3 and (((part+1) * 1.0) / total_parts > .3)) and (statement_type.category == "OPENING"):
+        if (total_parts == 2):
+            if(part == 2) and (statement_type.category == "OPENING"):
+                continue
+            if (part == 1) and (statement_type.category == "CLOSING_OUTCOME"):
+                continue
+        if(total_parts >= 3 and (((part) * 1.0) / total_parts > .3)) and (statement_type.category == "OPENING"):
             continue
-        if(total_parts > 3 and (((part+1) * 1.0) / total_parts < .7)) and (statement_type.category == "CLOSING_OUTCOME"):
+        if(total_parts >= 3 and (((part) * 1.0) / total_parts < .7)) and (statement_type.category == "CLOSING_OUTCOME"):
             continue
 
         print(statement_type.category)
-        final_prompt += "\n\n\n-----------for category "+statement_type.category+"statements -----------\n\n"
-        # valid_example_db = fetch_top_k_content(str(statement_type.category) + '_CORRECT_EXAMPLE', k_size=15)
-        # valid_example = [item['content'] for item in valid_example_db]
-        # invalid_example_db = fetch_top_k_content(str(statement_type.category) + '_INCORRECT_EXAMPLE', k_size=15)
-        # invalid_example = [item['content'] for item in invalid_example_db]
+        final_prompt += "\n-----------for category "+statement_type.category+" statements -----------\n"
         prompt_value = prompt.format_prompt(
             category=statement_type.category,
             definition=statement_type.definition,
             instruction=statement_type.instruction,
-            # valid_example='.\n'.join(valid_example),
-            # invalid_example='.\n'.join(invalid_example)
         )
         final_prompt += str(prompt_value)
 
     return final_prompt
 
+def get_additional_info_and_parser(segment, total_segments):
+
+    additional_info = get_additional_info(not_included_statements="")
+    parser = PydanticOutputParser(pydantic_object=StatementParser)
+
+    if total_segments == 2:
+        if segment == 1:
+            additional_info = get_additional_info(not_included_statements="CLOSING")
+            parser = PydanticOutputParser(pydantic_object=StatementParserWithoutClosing)
+        else:
+            additional_info = get_additional_info(not_included_statements="OPENING")
+            parser = PydanticOutputParser(pydantic_object=StatementParserWithoutOpening)
+
+    if (total_segments >= 3 and (((segment) * 1.0) / total_segments < .3)):
+        additional_info = get_additional_info(not_included_statements="CLOSING")
+        parser = PydanticOutputParser(pydantic_object=StatementParserWithoutClosing)
+    elif (total_segments >= 3 and (((segment) * 1.0) / total_segments > .3)):
+        additional_info = get_additional_info(not_included_statements="OPENING")
+        parser = PydanticOutputParser(pydantic_object=StatementParserWithoutOpening)
+
+    return additional_info, parser
 class ClassificationView(APIView):
     def post(self, request):
         transcript_id = request.data['transcript_id']
         print(transcript_id)
         transcript = Transcription.objects.get(id=transcript_id)
-        parser = PydanticOutputParser(pydantic_object=StatementParser)
 
         total_segments = len(transcript.segments)
 
         for index, segment in enumerate(transcript.segments):
+
+            # INITIAL_PROCESSING
+            # Get all the statement category types
+            additional_info, parser = get_additional_info_and_parser(index+1, total_segments)
             prompt_template = (
-                "READ THE " + str(index + 1) + " PART OF THE TRANSCRIPT (WHOLE TRANSCRIPT HAS TOTAL " + str(total_segments)
+                "READ THE " + str(index+1) + " PART OF THE TRANSCRIPT (WHOLE TRANSCRIPT HAS TOTAL " + str(total_segments)
                 +" PARTS, with overlaps of 200 words in each parts). \n"
                   "The conversation is between a representative (REP) and a healthcare professional (HCP). "
                 "\nRead the transcript's part line  by line: \n###\n{transcript}\n### \n\n"
-                "While classification of statement, Keep in mind the following things: \n"
-                "\n " + str(ADDITIONAL_INFORMATION_FOR_CLASSIFICATION) + "\n\n"
-                "{different_statement_data}\n\n Instruction for your output format:\n"
+                "Detailed Definition of each statement category: "
+                 "\n{different_statement_data}\n\n"
+                "TASK: '''Go through dialogues in the transcript and try to understand the intention of the speaker. "
+                 "Then classify dailouges in the statement category according based on their detailed definition.\n"
+                 "Some of the dailouges can belong to different statement category at the same time.'''.\n"
+                 "While classification of dailogues, Keep in mind the following things: \n"
+                "\n '''" + str(additional_info) + "'''\n\n"
+                "Instruction for your output format:\n"
                  "\n{format_instructions}\n\n"
                  "Output: "
             )
@@ -108,12 +148,12 @@ class ClassificationView(APIView):
             # llm = AzureOpenAI(azure_deployment='test', temperature=0, max_tokens=4000)
             # model_name = 'test'
 
-            llm = AzureChatOpenAI(azure_deployment='test2', temperature=0, max_tokens=4000)
-            model_name = 'test2'
+            llm = AzureChatOpenAI(azure_deployment='test3', temperature=0.2, max_tokens=4000)
+            model_name = 'test3'
 
             classification_chain = LLMChain(llm=llm, prompt=prompt, verbose=True)
 
-            different_statement_data = get_statements_data(index, total_segments)
+            different_statement_data = get_statements_data(index+1, total_segments)
 
             response = classification_chain.run(
                 transcript=segment,
@@ -153,7 +193,7 @@ class TranscriptionView(APIView):
 
     def post(self, request):
         # Desired segment length and overlap
-        segment_length = 1100  # Adjusted due to example length; use 1200 for your full text
+        segment_length = 6000  # Adjusted due to example length; use 1200 for your full text
         overlap = 100
         trans_obj = request.data
         # Create overlapping segments
