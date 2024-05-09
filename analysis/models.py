@@ -25,9 +25,13 @@ class Classification(models.Model):
     segment_number = models.IntegerField(default=-1, blank=True, null=True)
     category = models.CharField(max_length=20, choices=CATEGORY_CHOICES)
     level = models.IntegerField(blank=True, null=True)
+    confidence_score = models.TextField(blank=True, null=True)
+    reason_for_level = models.TextField(blank=True, null=True)
     statement = models.TextField()
     model_llm = models.TextField()
-
+    # leveling: int = Field(description="this field is the assigned level (1-4)")
+    #     confidence_score: int = Field(description="this field is your confidence score, indicating how certain you are about your evaluation.")
+    #     reason: int = Field(description="reason for you evaluation in max 1 line")
     def transcription_id(self):
         return self.transcription.id
 
@@ -37,8 +41,17 @@ class Classification(models.Model):
 class StatementType(models.Model):
     category = models.CharField(max_length=20, choices=CATEGORY_CHOICES, unique=True)
     definition = models.TextField()
-    prompt = models.TextField()
+    examples = models.TextField()
+    active = models.BooleanField(default=True)
+
+class StatementLevel(models.Model):
+    category = models.CharField(max_length=20, choices=CATEGORY_CHOICES, unique=True)
+    objective = models.TextField()
+    evaluation_criteria = models.TextField()
+    score_assignment_criteria = models.TextField()
     instruction = models.TextField()
+    examples = models.TextField()
+    notes = models.TextField()
     active = models.BooleanField(default=True)
 
 class llmModel(models.Model):

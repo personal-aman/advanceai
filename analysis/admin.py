@@ -1,7 +1,9 @@
 from django.contrib import admin
 
 from .aiService.weaviateDb import storeData
-from .models import Transcription, Classification, StatementType, llmModel
+from .models import Transcription, Classification, StatementType, llmModel, StatementLevel
+
+
 # Register your models here.
 
 
@@ -35,7 +37,9 @@ class TranscriptionAdmin(admin.ModelAdmin):
 
 @admin.register(Classification)
 class ClassificationAdmin(admin.ModelAdmin):
-    list_display = ('id', 'transcription_id', 'segment_number', 'category', 'statement', 'model_llm', 'level')
+    # confidence_score = models.TextField(blank=True, null=True)
+    #     reason_for_level = models.TextField(blank=True, null=True)
+    list_display = ('id', 'transcription_id', 'segment_number', 'category', 'statement', 'level', 'reason_for_level', 'confidence_score')
     list_filter = ('category', 'model_llm', 'segment_number')
     search_fields = ('category', 'transcription__id')
     actions = [push_to_right_classification, push_to_wrong_classification]
@@ -43,9 +47,14 @@ class ClassificationAdmin(admin.ModelAdmin):
 
 @admin.register(StatementType)
 class StatementTypeAdmin(admin.ModelAdmin):
-    list_display = ('id', 'category', 'definition', 'instruction', 'prompt', 'active')
+    list_display = ('id', 'category', 'definition', 'active')
     search_fields = ('id', 'category')
 
+
+@admin.register(StatementLevel)
+class StatementTypeAdmin(admin.ModelAdmin):
+    list_display = ('id', 'category', 'objective', 'evaluation_criteria', 'instruction', 'active')
+    search_fields = ('id', 'category')
 
 @admin.register(llmModel)
 class llmModelAdmin(admin.ModelAdmin):

@@ -7,10 +7,10 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from analysis.aiService.constants import ADDITIONAL_INFORMATION_FOR_CLASSIFICATION, get_additional_info
+from analysis.aiService.constants import ADDITIONAL_INFORMATION_FOR_CLASSIFICATION, get_important_note
 from analysis.aiService.weaviateDb import fetch_top_k_content, storeData
 from analysis.serializers import TranscriptionSerializer
-from analysis.models import Transcription, Classification, StatementType, llmModel
+from analysis.models import Transcription, Classification, StatementType, llmModel, StatementLevel
 from analysis.utils import create_overlapping_segments
 
 from langchain_openai import AzureChatOpenAI
@@ -29,13 +29,13 @@ class StatementParser(BaseModel):
     questioning_statements: List[str] = Field(description="list of different Questioning statements")
     presenting_statements: List[str] = Field(description="list of different Presenting statements")
     closing_outcome_sentences: List[Dict[str, str]] = Field(
-        description="list of dictionaries containing closing and outcome statements")
+        description="list of dictionaries containing closing statement of REP ('closing_statement') and outcome statements OF HCP ('outcome_statement')")
 
 class StatementParserWithoutOpening(BaseModel):
     questioning_statements: List[str] = Field(description="list of different Questioning statements")
     presenting_statements: List[str] = Field(description="list of different Presenting statements")
     closing_outcome_sentences: List[Dict[str, str]] = Field(
-        description="list of dictionaries containing closing and outcome statements")
+        description="list of dictionaries containing closing and outcome statements. Example: {'closing_statement': closing_dailouge (REP), 'outcome_statement': outcome_dailouge(HCP)}")
 
 class StatementParserWithoutClosing(BaseModel):
     opening_statements: List[str] = Field(description="list of different Opening statements")
@@ -46,23 +46,29 @@ class StatementParserWithoutOpeningAndClosing(BaseModel):
     questioning_statements: List[str] = Field(description="list of different Questioning statements")
     presenting_statements: List[str] = Field(description="list of different Presenting statements")
 
+class StatementLevelModel(BaseModel):
+    id: int = Field(description="this field is the ID of the statement")
+    level: int = Field(description="this field is the assigned level (1-4)")
+    confidence_score: int = Field(description="this field is your confidence score, indicating how certain you are about your evaluation.")
+    reason: int = Field(description="reason for you evaluation in max 1 line")
+
+class EvaluationResult(BaseModel):
+    statements: List[StatementLevelModel] = Field(..., description="A list of statement level Model")
 
 def get_statements_data(part, total_parts):
     statement_types = StatementType.objects.filter(active=True)
     prompt_template = (" category: {category} , where "
               "the definition of the {category} category: ###{definition}### \n"
-              # "the instruction to do: ###{instruction}.### \n"
               )
     prompt = PromptTemplate(
         input_variables=[
             'category',
             'definition',
-            # 'instruction',
-            # 'valid_example',
-            # 'invalid_example'
+            'examples'
         ],
         template=prompt_template,
     )
+    total_types = []
     final_prompt = ""
     for statement_type in statement_types:
         if (total_parts == 2):
@@ -76,37 +82,36 @@ def get_statements_data(part, total_parts):
             continue
 
         print(statement_type.category)
-        final_prompt += "\n-----------for category "+statement_type.category+" statements -----------\n"
+        total_types.append(statement_type.category)
+        final_prompt += "\n-----------for "+statement_type.category+" statements -----------\n"
         prompt_value = prompt.format_prompt(
             category=statement_type.category,
             definition=statement_type.definition,
-            instruction=statement_type.instruction,
+            examples=statement_type.examples
         )
-        final_prompt += str(prompt_value)
+        final_prompt += "'''" + str(prompt_value) + "'''"
 
-    return final_prompt
+    return total_types, final_prompt
 
-def get_additional_info_and_parser(segment, total_segments):
+def get_important_note_and_parser(total_type_considered, segment, total_segments):
 
-    additional_info = get_additional_info(not_included_statements="")
+    important_note = get_important_note(not_included_statements="")
     parser = PydanticOutputParser(pydantic_object=StatementParser)
 
-    if total_segments == 2:
-        if segment == 1:
-            additional_info = get_additional_info(not_included_statements="CLOSING")
-            parser = PydanticOutputParser(pydantic_object=StatementParserWithoutClosing)
-        else:
-            additional_info = get_additional_info(not_included_statements="OPENING")
-            parser = PydanticOutputParser(pydantic_object=StatementParserWithoutOpening)
-
-    if (total_segments >= 3 and (((segment) * 1.0) / total_segments < .3)):
-        additional_info = get_additional_info(not_included_statements="CLOSING")
-        parser = PydanticOutputParser(pydantic_object=StatementParserWithoutClosing)
-    elif (total_segments >= 3 and (((segment) * 1.0) / total_segments > .3)):
-        additional_info = get_additional_info(not_included_statements="OPENING")
+    if "OPENING" not in total_type_considered:
         parser = PydanticOutputParser(pydantic_object=StatementParserWithoutOpening)
+        important_note = get_important_note(not_included_statements="OPENING")
 
-    return additional_info, parser
+    if "CLOSING_OUTCOME" not in total_type_considered:
+        parser = PydanticOutputParser(pydantic_object=StatementParserWithoutClosing)
+        important_note = get_important_note(not_included_statements="CLOSING")
+
+    if "OPENING" not in total_type_considered and "CLOSING_OUTCOME" not in total_type_considered:
+        parser = PydanticOutputParser(pydantic_object=StatementParserWithoutOpeningAndClosing)
+        important_note = get_important_note(not_included_statements="EXTREME_END")
+
+    return important_note, parser
+
 class ClassificationView(APIView):
     def post(self, request):
         transcript_id = request.data['transcript_id']
@@ -119,20 +124,30 @@ class ClassificationView(APIView):
 
             # INITIAL_PROCESSING
             # Get all the statement category types
-            additional_info, parser = get_additional_info_and_parser(index+1, total_segments)
+            statement_type_considered, different_statement_definition = get_statements_data(index+1, total_segments)
+            important_note, parser = get_important_note_and_parser(statement_type_considered, index + 1, total_segments)
+
             prompt_template = (
                 "READ THE " + str(index+1) + " PART OF THE TRANSCRIPT (WHOLE TRANSCRIPT HAS TOTAL " + str(total_segments)
                 +" PARTS, with overlaps of 200 words in each parts). \n"
-                  "The conversation is between a representative (REP) and a healthcare professional (HCP). "
+                "The conversation is between a representative (REP) and a healthcare professional (HCP). "
                 "\nRead the transcript's part line  by line: \n###\n{transcript}\n### \n\n"
-                "Detailed Definition of each statement category: "
-                 "\n{different_statement_data}\n\n"
-                "TASK: '''Go through dialogues in the transcript and try to understand the intention of the speaker. "
-                 "Then classify dailouges in the statement category according based on their detailed definition.\n"
-                 "Some of the dailouges can belong to different statement category at the same time.'''.\n"
-                 "While classification of dailogues, Keep in mind the following things: \n"
-                "\n '''" + str(additional_info) + "'''\n\n"
-                "Instruction for your output format:\n"
+                "Objective: Review and classify dialogue snippets from interactions between pharmaceutical sales representatives (REPs) and healthcare professionals (HCPs)."
+                 " Each dialogue snippet may align with more than one of the following categories based on its content and intention:\n"
+                 + ", ".join(statement_type_considered) + "\n"
+                 " This requires discerning the REP's strategic approach towards initiating the conversation,"
+                 " engaging in inquiry, presenting information, and steering towards a productive conclusion."
+                 "\n\nDetailed Criteria for Classification::\n"
+                 "\n{different_statement_definition}\n\n"
+                 "Important Notes:\n"
+                 "{important_note}\n\n"
+                 "Maintain the original transcript form for authenticity, "
+                 "focusing on the accuracy and relevance of each classification.\n\n"
+                 "Assignment Execution: Thoroughly proceed through the dialogue transcripts,"
+                 " identifying and classifying each REP statement according to the refined categories "
+                 "and guidelines provided. Utilize a nuanced approach to determine the strategic intent "
+                 "and outcome of the dialogue segments within the structured interaction framework."
+                 "Instruction for your output format:\n"
                  "\n{format_instructions}\n\n"
                  "Output: "
             )
@@ -140,7 +155,9 @@ class ClassificationView(APIView):
             prompt = PromptTemplate(
                 input_variables=[
                     'transcript',
-                    'different_statement_data'],
+                    'different_statement_definition',
+                    'important_note'
+                ],
                 template=prompt_template,
                 partial_variables={"format_instructions": parser.get_format_instructions()},
             )
@@ -153,11 +170,10 @@ class ClassificationView(APIView):
 
             classification_chain = LLMChain(llm=llm, prompt=prompt, verbose=True)
 
-            different_statement_data = get_statements_data(index+1, total_segments)
-
             response = classification_chain.run(
                 transcript=segment,
-                different_statement_data=different_statement_data
+                different_statement_definition=different_statement_definition,
+                important_note=important_note
             )
             print("response before")
             print(response)
@@ -193,7 +209,7 @@ class TranscriptionView(APIView):
 
     def post(self, request):
         # Desired segment length and overlap
-        segment_length = 6000  # Adjusted due to example length; use 1200 for your full text
+        segment_length = 4000  # Adjusted due to example length; use 1200 for your full text
         overlap = 100
         trans_obj = request.data
         # Create overlapping segments
@@ -222,3 +238,78 @@ class VectorDataView(APIView):
             {"message": "data has been stored in {collection_name}".format(collection_name=collection_name)},
             status=status.HTTP_201_CREATED
         )
+
+class LevellingDataView(APIView):
+
+    def post(self, request):
+        transcript_id = request.data['transcript_id']
+        print(transcript_id)
+        transcript = Transcription.objects.get(id=transcript_id)
+        sentences = transcript.classification_set.all()
+
+        for category in ['OPENING', 'QUESTIONING', 'PRESENTING', 'CLOSING_OUTCOME']:
+            statements = sentences.filter(category=category).filter(level=0).values('id', 'statement')
+            # print(statements)
+            if len(statements) == 0:
+                continue
+            statement_level_obj = StatementLevel.objects.get(category=category)
+            prompt_template = (
+                category + " statements: \n{statements}\n\n"
+                "Objective: {objective}\n\n"
+                "Evaluation Criteria:\n {evaluation_criteria}\n\n"
+                "Score assignment criteria:\n {score_assignment_criteria}\n\n"
+                "Instruction:\n {instruction}\n\n"
+                "Examples:\n {examples}\n\n"
+                "notes:\n {notes}\n\n"
+                "Instruction for your output format:\n"
+                 "\n{format_instructions}\n\n"
+                 "Output: "
+            )
+            parser = PydanticOutputParser(pydantic_object=EvaluationResult)
+            prompt = PromptTemplate(
+                input_variables=[
+                    'statements',
+                    'objective',
+                    'evaluation_criteria',
+                    'score_assignment_criteria',
+                    'instruction',
+                    'examples',
+                    'notes'
+                ],
+                template=prompt_template,
+                partial_variables={"format_instructions": parser.get_format_instructions()},
+            )
+
+            # llm = AzureOpenAI(azure_deployment='test', temperature=0, max_tokens=4000)
+            # model_name = 'test'
+
+            llm = AzureChatOpenAI(azure_deployment='test3', temperature=0.2, max_tokens=4000)
+            model_name = 'test3'
+            rating_chain = LLMChain(llm=llm, prompt=prompt, verbose=True)
+            response = rating_chain.run(
+                statements=statements,
+                objective=statement_level_obj.objective,
+                evaluation_criteria=statement_level_obj.evaluation_criteria,
+                score_assignment_criteria=statement_level_obj.score_assignment_criteria,
+                instruction=statement_level_obj.instruction,
+                examples=statement_level_obj.examples,
+                notes=statement_level_obj.notes
+            )
+            print(response)
+            print("response next")
+            if "```" in response:
+                response = re.findall(r'```(.*?)```', response, re.DOTALL)
+            scored_statements = eval(response)
+            for scored_statement in scored_statements["statements"]:
+                print(scored_statement)
+                statement_obj = Classification.objects.get(id=scored_statement['id'])
+                statement_obj.level=scored_statement['level']
+                statement_obj.confidence_score=scored_statement['confidence_score']
+                statement_obj.reason_for_level=scored_statement['reason']
+                statement_obj.save()
+
+        return Response(
+            {"message": "done" },
+            status=status.HTTP_200_OK
+        )
+
