@@ -1,0 +1,1073 @@
+[
+{
+  "model": "analysis.transcription",
+  "pk": 1,
+  "fields": {
+    "text": "MSLHello Dr Lewis, can you see me, ok? (WAVES) DrHello, yes I can. (WAVES BACK) MSLCan I just check who else we have in the meeting please? DRYes, of course, does everyone want to introduce   themselves? JDrHi, I’m Julie one of the junior doctors working alongside Dr Lewis at the moment. MSLGreat to meet you Julie, can I ask what stage you’re at in your training? JDrSure, I’m an F2 so still pretty early on. MSLWell it’s great to meet you, thanks for joining the meeting. NSHi, I’m Sally the Lung Specialist Nurse. MSLBrilliant, lovely to meet you Sally. Thanks for introducing yourselves, are we expecting anyone else? DRI don’t think so. MSLGreat, thank you. Let me introduce myself, I’m Laurence from Pharmapro and  I am here in response to a medical request you made through my colleague Louise.  I would like to take you through the data regarding Avant which is licensed in combination with docetaxel in patients with advanced or locally advanced Non Small Cell Lung Cancer that have progressed following first line treatment with platinum chemotherapy. Is that what you were expecting this meeting to be about? DRYes, that’s what I was hoping for! MSLExcellent, my aim is that by the end of the presentation I will have provided you with the information you need to support your treatment decisions for your patients. I am keen to answer any questions you may have so do please ask questions as we go through the data. DrGreat, thanks MSLDid any of you get the opportunity to attend the virtual ASCO meeting last month? DrYes, I did, it was a really great meeting MSLFantastic, I got to attend several of the sessions myself and was really impressed with the data and advancements in patient care that I saw. DrYes, I really enjoy ASCO as there is always so much great content. MSLWhat presentation stood out for you? DrSo many of them to be honest but the ones I found most interesting were the ones with the new biomarkers, it’s incredible how much we are discovering now in terms of targets for treatment and indicators for disease. MSLI know, it’s incredible and so promising for patients and clinicians alike.  Did you attend any of the presentations about Avant or ELC testing? DrYes, you couldn’t really miss it, there seemed to be a lot of studies being presented on both the drug and the testing. MSLYeah, there’s a significant level of interest in exploring what both the treatment and the test can offer lung cancer patients who have advanced disease, as you know, these patients can be very challenging to manage.  Can I ask what you remember from the presentations you observed? DrOf course, I know that your phase 3 study showed an improvement in progression free survival as well as overall survival and I understand that the particular protein the drug targets … sorry I can’t remember the name of the protein, but the protein is present in over 50% of patients – is that correct? MSLFantastic, it sounds like you have a good handle on the key elements, can I just ask your colleagues how much they know about Avant?  Julie?  Sally? JDrI have to admit I know very little about this treatment, so I am looking forward to learning from you. NSI have heard bits and bobs and I know as a team we are looking to start testing so it would be helpful to know a bit more. MSLOk, great, well if this works for you, I propose that I take you through the data and the testing set up and then we can leave some time for any questions you may have, should take about 15 minutes, does that sound ok? DrPerfect, thank you. MSLCan I ask what discussions you have had to date with the other consultants about it? DrWell after ASCO, I brought it up at a recent MDT meeting we had. MSLWas that in relation to a specific patient you were discussing? DrNo, not really MSLOk, just a general conversation about treatment options? Dr (NODS) Yeah, pretty much. MSLIn terms of the testing element, what information are you looking for specifically? Dr(SCRATCHES HEAD/THINKS) Best method of testing for the protein and the sensitivity of the test are both important to know. ******************************** MSL(NODS) Ok, I have a few slides on that here. As you may be aware, it’s a simple immunohistochemistry test you just need access to the antibody. Dr(SITS FORWARD) Where do we get the antibody from? MSLYou can order it direct from the company. DrDo we need a special testing kit? MSLYou can purchase an ELC ready-to-use assay, I have a leaflet I can leave on that showing the details. Dr Will the pathologists understand all of this? MSLYes, they should be very familiar with these types of tests. Dr Ok, so what are the tissue requirements to be able to perform the test? MSLThat’s a good question.  As you know tissue is difficult to get in lung cancer cases and the requirements in terms of size of sample is not that high, it is more important that the sample contains as many cancer cells as possible. DrSo any sample is better than nothing in terms of size? MSLI think in the discovery phase, as you build your experience, it would make sense to test as many samples as possible.  It might be worth speaking to your pathologists to check, but I would imagine their expectations in terms of tissue sample would be similar across the board. DrWell I suppose so, I guess we always try to get a good sample. MSLIn terms of the cut offs, they looked at whether a sample contained 25, 50 or 75% positive tumour cells and it was deemed that the ELC expression was high if the sample contained greater than 50% of cells expressing the protein.  Which means that if 50% or more of the cancer cells in the sample expresses the protein then the drug should work. DrDoes that mean, we would only use Avant in those patients who have 50% or greater expression? MSLYes, that’s correct. DrWhat percentage of patients would you expect to have 50% ELC expression in their tumours? MSLThe current data, which I am showing on the screen, which was published in the New England Journal of Medicine by Professor Sykes in 2018, suggests up to 65% of advanced or locally advanced non-small cell tumours may have some expression of ELC, the level of expression within the individuals is not yet known which is why everyone who could be eligible for treatment should be tested. DrOk, I see.  Do you need to re-biopsy when they progress? MSLThe data supports use of either material from the initial biopsy or from a second biopsy following progression, as it’s difficult to get tissue for the initial diagnosis, I imagine it must be even harder the second time round.  Do you re-biopsy many patients at progression? Dr We do if we can, just in case the cancer has mutated, but it’s not always possible. MSLYes, we hear from a lot of clinicians that getting access to good tissue samples is particularly challenging. Dr It can be, we do a lot of EBUS at this hospital, are cytology samples ok to use? MSL If they can be formalin fixed into a block and sliced then yes DrOk, I think that’s what they do with them, maybe another one for me to check with the pathologists. (MAKES A NOTE) MSLIf you would like me to support with any of the information you want to discuss with the pathologists then please let me know. DrYes, I might need some support, will see how I get on first. MSLOk, so that’s it in terms of the test, is there any other information you would like to know on that matter? DrI don’t think so, sounds like I need to speak to the pathologists first. MSLNo problem, and as I said I can support with any information if you need me to. NSWe have a meeting with Dr Williamson (the pathologist) at the end of the week, would you like me to add it to the agenda? DrYes please Sally, that would be great. DrAre you able to send me those slides you have? MSLThese ones on the detail around the testing requirements? DrYes, then I could forward them on to Dr Williamson MSLYes, that’s no problem at all, I can do that. DrThanks. MSLWhen you have introduced a new diagnostic test previously, what process did you follow to ensure it was integrated with minimal disruption to the turn around times of results? DrTo be honest, the pathologists do most of that, we just let them know which patients need testing when we have the MDT meeting. MSLOk, I see, whilst I understand that the pathologists take the lead on it, is there anything that you would improve about the process you currently have for identifying which patients require which diagnostic test? DrTo be honest, it works pretty well, I do think we should be quicker at adopting new tests though. MSLIs there anything specific you think that could be done? (LEANS FORWARD) DrProbably not, a lot of it comes down to funding within the trust and getting things through approval. MSLThat is similar in every trust to be honest. DrYes, I think it is a standard issue. (NODS IN AGREEMENT) MSLShall we have a look at the data now? Dr Yes please MSLIs there anything particular any of you would like me to focus on? DrAn overview of the phase 3 trial would be useful for me. NSI’d be keen to understand what side effects we are likely to see and how to manage them please. MSLOf course, we can certainly cover that. Can everyone see the title slide with the study name on it? Dr/JDr/NS Yes (all together) MSLThe phase 3 study was a randomized, double-blind, placebo-controlled, multinational, and multicenter study to evaluate the efficacy of Avant in combination with Docetaxel as second line therapy in patients with advanced or locally advanced NSCLC following first line treatment with platinum-based chemotherapy. The primary outcomes measured were progression free survival and overall survival and the secondary outcome measured was change in patient reported outcomes. Can you tell me what the title of the slide is that you can see on the screen? DrInclusion/Exclusion Criteria MSLGreat, well as you can see, these were in the inclusion and exclusion criteria, as you can see patients in the study had all progressed after 6 cycles of platinum-based chemotherapy. There were 602 patients in the study randomised to one of two arms. Any patients who had received any other systemic treatment for their cancer other than the platinum-based chemo were excluded from the study. The results are now showing on the screen and were as follows: Objective response rate = 45% vs 21%, progression free survival = 6.3 months vs 2.1 months and overall survival of 12.1 months vs 9.6 months. You can see on the graph here, the separation of the curves and a hazard ratio of 0.7 In terms of the patient recorded outcomes when looking at cough, chest pain, fatigue, and loss of appetite.  Participants reported on average a 25% improvement in symptom scores across all measures. What stands out for you in that data? DrIt’s certainly encouraging outcomes NSI’m pleased to see the improvement in symptom scores, for these patients, quality of life is so important. MSLAbsolutely, it’s important that we look at the impact on patients’ lives as well as the efficacy of the treatment. DrCould you just remind of the dosing again? MSLCertainly, let me just pull the dosing slide up for you, can you see that?  The dose, is weight dependent and is an infusion, but the treatment schedule is as follows: Avant + Docetaxel every 3 weeks or Placebo + Docetaxel every 3 weeks Dr So you say its weight based, what’s the calculation? MSLIts 0.2mg/kg DrAnd how often is that given? MSLIt’s given on Day 1 of each 3-weekly cycle alongside Docetaxel. DrSally, can you make a note of that for the nurses on the chemo suite? NSYes, no problem at all. Do you have the Adverse Events information you can show? MSLYes, of course, let me just pull the slide up…. Can you see the slide entitled Treatment Emergent Adverse Events? NSYes, we can see that. MSLPerfect, antibody drug conjugates tend to be well tolerated because they deliver the cytotoxic payload into the tumour cell meaning that very little goes into the healthy tissue, however like any treatment there are side effects.  What this slide shows you is the incidence of each of the reported adverse events, is there anything particular that stands out for you? NSEmmmm….  It actually looks like it’s generally well tolerated…  I’m quite surprised.  Are there any particular things we need to consider to mitigate the risks? MSLNot particularly, just the usual supportive treatments you would use for patients with this stage cancer. NSOk, great, thank you. MSLIs there anything else you would like me to show you in terms of the data? DrNo, I think we have enough there to be going on with. MSLGreat, so in terms of next steps, how do you plan to take this forward as a team? DrI think we will discuss it again at the MDT, I also need to catch up with Dr Williamson to discuss the pathology set up. MSLWhat additional information or support do you need from me? DrI think it would be good if you could send me the slides you have shown us today so I can reference them when discussing with ym colleagues. MSLOf course, would you be interested in signing up to our Clinical Paper Portal which would give you access to all the clinical studies for Avant? DrThat sounds helpful, what would I need to do? MSLIf you’re happy for me to pass your email address on to my colleague in our Medical Information department they will create you an account and send you the link. DrYes, that would be great, thank you. MSLI also note from the registrations that you have signed up to our upcoming webinar “The Evolution of Treatments for Advanced Lung Cancer”.  Sally, Julie – would you like me to send you the information on the webinar? JDrYes please, that would be interesting. NSSure, I’ll take a look. MSLDr Lewis – the webinar will focus on some case studies that are developing, is this something you might be interested in being involved in? DrI might be, I’d need to know a bit more. MSLWould it be ok to reach out to you after the webinar to discuss in more depth? DrYes, that would be fine. MSLOk, well I’m conscious of time, I will send out the webinar information and get Dr Lewis set up on the clinical paper portal.  I know you have plans to speak to your pathologist and the wider team, please do let me know if you need any support with that. DrWill do, many thanks MSLYour welcome, look forward to speaking with you all again. ALLBye, thanks, bye etc…",
+    "segments": "[\"MSLHello Dr Lewis, can you see me, ok? (WAVES) DrHello, yes I can. (WAVES BACK) MSLCan I just check who else we have in the meeting please? DRYes, of course, does everyone want to introduce themselves? JDrHi, I\\u2019m Julie one of the junior doctors working alongside Dr Lewis at the moment. MSLGreat to meet you Julie, can I ask what stage you\\u2019re at in your training? JDrSure, I\\u2019m an F2 so still pretty early on. MSLWell it\\u2019s great to meet you, thanks for joining the meeting. NSHi, I\\u2019m Sally the Lung Specialist Nurse. MSLBrilliant, lovely to meet you Sally. Thanks for introducing yourselves, are we expecting anyone else? DRI don\\u2019t think so. MSLGreat, thank you. Let me introduce myself, I\\u2019m Laurence from Pharmapro and I am here in response to a medical request you made through my colleague Louise. I would like to take you through the data regarding Avant which is licensed in combination with docetaxel in patients with advanced or locally advanced Non Small Cell Lung Cancer that have progressed following first line treatment with platinum chemotherapy. Is that what you were expecting this meeting to be about? DRYes, that\\u2019s what I was hoping for! MSLExcellent, my aim is that by the end of the presentation I will have provided you with the information you need to support your treatment decisions for your patients. I am keen to answer any questions you may have so do please ask questions as we go through the data. DrGreat, thanks MSLDid any of you get the opportunity to attend the virtual ASCO meeting last month? DrYes, I did, it was a really great meeting MSLFantastic, I got to attend several of the sessions myself and was really impressed with the data and advancements in patient care that I saw. DrYes, I really enjoy ASCO as there is always so much great content. MSLWhat presentation stood out for you? DrSo many of them to be honest but the ones I found most interesting were the ones with the new biomarkers, it\\u2019s incredible how much we are discovering now in terms of targets for treatment and indicators for disease. MSLI know, it\\u2019s incredible and so promising for patients and clinicians alike. Did you attend any of the presentations about Avant or ELC testing? DrYes, you couldn\\u2019t really miss it, there seemed to be a lot of studies being presented on both the drug and the testing. MSLYeah, there\\u2019s a significant level of interest in exploring what both the treatment and the test can offer lung cancer patients who have advanced disease, as you know, these patients can be very challenging to manage. Can I ask what you remember from the presentations you observed? DrOf course, I know that your phase 3 study showed an improvement in progression free survival as well as overall survival and I understand that the particular protein the drug targets \\u2026 sorry I can\\u2019t remember the name of the protein, but the protein is present in over 50% of patients \\u2013 is that correct? MSLFantastic, it sounds like you have a good handle on the key elements, can I just ask your colleagues how much they know about Avant? Julie? Sally? JDrI have to admit I know very little about this treatment, so I am looking forward to learning from you. NSI have heard bits and bobs and I know as a team we are looking to start testing so it would be helpful to know a bit more. MSLOk, great, well if this works for you, I propose that I take you through the data and the testing set up and then we can leave some time for any questions you may have, should take about 15 minutes, does that sound ok? DrPerfect, thank you. MSLCan I ask what discussions you have had to date with the other consultants about it? DrWell after ASCO, I brought it up at a recent MDT meeting we had. MSLWas that in relation to a specific patient you were discussing? DrNo, not really MSLOk, just a general conversation about treatment options? Dr (NODS) Yeah, pretty much. MSLIn terms of the testing element, what information are you looking for specifically? Dr(SCRATCHES HEAD/THINKS) Best method of testing for the protein and the sensitivity of the test are both important to know. ******************************** MSL(NODS) Ok, I have a few slides on that here. As you may be aware, it\\u2019s a simple immunohistochemistry test you just need access to the antibody. Dr(SITS FORWARD) Where do we get the antibody from? MSLYou can order it direct from the company. DrDo we need a special testing kit? MSLYou can purchase an ELC ready-to-use assay, I have a leaflet I can leave on that showing the details. Dr Will the pathologists understand all of this? MSLYes, they should be very familiar with these types of tests. Dr Ok, so what are the tissue requirements to be able to perform the test? MSLThat\\u2019s a good question. As you know tissue is difficult to get in lung cancer cases and the requirements in terms of size of sample is not that high, it is more important that the sample contains as many cancer cells as possible. DrSo any sample is better than nothing in terms of size? MSLI think in the discovery phase, as you build your experience, it would make sense to test as many samples as possible. It might be worth speaking to your pathologists to check, but I would imagine their expectations in terms of tissue sample would be similar across the board. DrWell I suppose so, I guess we always try to get a good sample. MSLIn terms of the cut offs, they looked at whether a sample contained 25, 50 or 75% positive tumour cells and it was deemed that the ELC expression was high if the sample contained greater than 50% of cells expressing the protein. Which means that if 50% or more of the cancer cells in the sample expresses the protein then the drug should work. DrDoes that mean, we would only use Avant in those patients who have 50% or greater expression? MSLYes, that\\u2019s correct. DrWhat percentage of patients would you expect to have 50% ELC expression in their tumours? MSLThe current data, which I am showing on the screen, which was published in the New England Journal of Medicine by Professor Sykes in 2018, suggests up to 65% of advanced or locally advanced non-small cell tumours may have some expression of ELC, the level of expression within the individuals is not yet known which is why everyone who could be eligible for treatment should be tested. DrOk, I see. Do you need to re-biopsy when they progress? MSLThe data supports use of either material from the initial biopsy or from a second biopsy following progression, as it\\u2019s difficult to get tissue for the initial diagnosis, I imagine it must be even harder the second time round. Do you re-biopsy many patients at progression? Dr We do if we can, just in case the cancer has mutated, but it\\u2019s not always possible. MSLYes, we hear from a lot of clinicians that getting access to good tissue samples is particularly challenging. Dr It can be, we do a lot of EBUS at this hospital, are cytology samples ok to use? MSL If they can be formalin fixed into a block and sliced then yes DrOk, I think that\\u2019s what they do with them, maybe another one for me to check with the pathologists. (MAKES A NOTE) MSLIf you would like me to support with any of the information you want to discuss with the pathologists then please let me know. DrYes, I might need some support, will see how I get on first. MSLOk, so that\\u2019s it in terms of the test, is there any other information you would like to know on that matter? DrI don\\u2019t think so, sounds like I need to speak to the pathologists first. MSLNo problem, and as I said I can support with any information if you need me to. NSWe have a meeting with Dr Williamson (the pathologist) at the end of the week, would you like me to add it to the agenda? DrYes please Sally, that would be great. DrAre you able to send me those slides you have? MSLThese ones on the detail around the testing requirements? DrYes, then I could forward them on to Dr Williamson MSLYes, that\\u2019s no problem at all, I can do that. DrThanks. MSLWhen you have introduced a new diagnostic test previously, what process did you follow to ensure it was integrated with minimal disruption to the turn around times of results? DrTo be honest, the pathologists do most of that, we just let them know which patients need testing when we have the MDT meeting. MSLOk, I see, whilst I understand that the pathologists take the lead on it, is there anything that you would improve about the process you currently have for identifying which patients require which diagnostic test? DrTo be honest, it works pretty well, I do think we should be quicker at adopting new tests though. MSLIs there anything specific you think that could be done? (LEANS FORWARD) DrProbably not, a lot of it comes down to funding within the trust and getting things through approval. MSLThat is similar in every trust to be honest. DrYes, I think it is a standard issue. (NODS IN AGREEMENT) MSLShall we have a look at the data now? Dr Yes please MSLIs there anything particular any of you would like me to focus on? DrAn overview of the phase 3 trial would be useful for me. NSI\\u2019d be keen to understand what side effects we are likely to see and how to manage them please. MSLOf course, we can certainly cover that. Can everyone see the title slide with the study name on it? Dr/JDr/NS Yes (all together) MSLThe phase 3 study was a randomized, double-blind, placebo-controlled, multinational, and multicenter study to evaluate the efficacy of Avant in combination with Docetaxel as second line therapy in patients with advanced or locally advanced NSCLC following first line treatment with platinum-based chemotherapy. The primary outcomes measured were progression free survival and overall survival and the secondary outcome measured was change in patient reported outcomes. Can you tell me what the title of the slide is that you can see on the screen? DrInclusion/Exclusion Criteria MSLGreat, well as you can see, these were in the inclusion and exclusion criteria, as you can see patients in the study had all progressed after 6 cycles of platinum-based chemotherapy. There were 602 patients in the study randomised to one of two arms. Any patients who had received any other systemic treatment for their cancer other than the platinum-based chemo were excluded from the study. The results are now showing on the screen and were as follows: Objective response rate = 45% vs 21%, progression free survival = 6.3 months vs 2.1 months and overall survival of 12.1 months vs 9.6 months. You can see on the graph here, the separation of the curves and a hazard ratio of 0.7 In terms of the patient recorded outcomes when looking at cough, chest pain, fatigue, and loss of appetite. Participants reported on average a 25% improvement in symptom scores across all measures. What stands out for you in that data? DrIt\\u2019s certainly encouraging outcomes NSI\\u2019m pleased to see the improvement in symptom scores, for these patients, quality of life is so important. MSLAbsolutely, it\\u2019s important that we look at the impact on patients\\u2019 lives as well as the efficacy of the treatment. DrCould you just remind of the dosing again? MSLCertainly, let me just pull the dosing slide up for you, can you see that? The dose, is weight dependent and is an infusion, but the treatment schedule is as follows: Avant + Docetaxel every 3 weeks or Placebo + Docetaxel every 3 weeks Dr So you say its weight based, what\\u2019s the calculation? MSLIts 0.2mg/kg DrAnd how often is that given? MSLIt\\u2019s given on Day 1 of each 3-weekly cycle alongside Docetaxel. DrSally, can you make a note of that for the nurses on the chemo suite? NSYes, no problem at all. Do you have the Adverse Events information you can show? MSLYes, of course, let me just pull the slide up\\u2026. Can you see the slide entitled Treatment Emergent Adverse Events? NSYes, we can see that. MSLPerfect, antibody drug conjugates tend to be well tolerated because they deliver the cytotoxic payload into the tumour cell meaning that very little goes into the healthy tissue, however like any treatment there are side effects. What this slide shows you is the incidence of each of the reported adverse events, is there anything particular that stands out for you? NSEmmmm\\u2026. It actually looks like it\\u2019s generally well tolerated\\u2026 I\\u2019m quite surprised. Are there any particular things we need to consider to mitigate the risks? MSLNot particularly, just the usual supportive treatments you would use for patients with this stage cancer. NSOk, great, thank you. MSLIs there anything else you would like me to show you in terms of the data? DrNo, I think we have enough there to be going on with. MSLGreat, so in terms of next steps, how do you plan to take this forward as a team? DrI think we will discuss it again at the MDT, I also need to catch up with Dr Williamson to discuss the pathology set up. MSLWhat additional information or support do you need from me? DrI think it would be good if you could send me the slides you have shown us today so I can reference them when discussing with ym colleagues. MSLOf course, would you be interested in signing up to our Clinical Paper Portal which would give you access to all the clinical studies for Avant? DrThat sounds helpful, what would I need to do? MSLIf you\\u2019re happy for me to pass your email address on to my colleague in our Medical Information department they will create you an account and send you the link. DrYes, that would be great, thank you. MSLI also note from the registrations that you have signed up to our upcoming webinar \\u201cThe Evolution of Treatments for Advanced Lung Cancer\\u201d. Sally, Julie \\u2013 would you like me to send you the information on the webinar? JDrYes please, that would be interesting. NSSure, I\\u2019ll take a look. MSLDr Lewis \\u2013 the webinar will focus on some case studies that are developing, is this something you might be interested in being involved in? DrI might be, I\\u2019d need to know a bit more. MSLWould it be ok to reach out to you after the webinar to discuss in more depth? DrYes, that would be fine. MSLOk, well I\\u2019m conscious of time, I will send out the webinar information and get Dr Lewis set up on the clinical paper portal. I know you have plans to speak to your pathologist and the wider team, please do let me know if you need any support with that. DrWill do, many thanks MSLYour welcome, look forward to speaking with you all again. ALLBye, thanks, bye etc\\u2026\"]",
+    "created_at": "2024-05-06T21:56:25.104Z"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 233,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "OPENING",
+    "level": 1,
+    "confidence_score": "90",
+    "reason_for_level": "The statement is a greeting and does not communicate a clear purpose or ask for permission.",
+    "statement": "Hello Dr Lewis, can you see me, ok? (WAVES)",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 234,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "OPENING",
+    "level": 1,
+    "confidence_score": "95",
+    "reason_for_level": "The statement is a request for information and does not communicate a clear purpose or ask for permission.",
+    "statement": "Can I just check who else we have in the meeting please?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 235,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "OPENING",
+    "level": 1,
+    "confidence_score": "90",
+    "reason_for_level": "The statement is a question about the HCP's training and does not communicate a clear purpose or ask for permission.",
+    "statement": "Great to meet you Julie, can I ask what stage you’re at in your training?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 236,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "OPENING",
+    "level": 1,
+    "confidence_score": "90",
+    "reason_for_level": "The statement is a greeting and does not communicate a clear purpose or ask for permission.",
+    "statement": "Well it’s great to meet you, thanks for joining the meeting.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 237,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "OPENING",
+    "level": 1,
+    "confidence_score": "95",
+    "reason_for_level": "The statement is a greeting and a question about the meeting attendees, but does not communicate a clear purpose or ask for permission.",
+    "statement": "Brilliant, lovely to meet you Sally. Thanks for introducing yourselves, are we expecting anyone else?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 238,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "OPENING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "The statement communicates the REP's role and the reason for the meeting, but does not specify a clear action or ask for permission.",
+    "statement": "Great, thank you. Let me introduce myself, I’m Laurence from Pharmapro and I am here in response to a medical request you made through my colleague Louise.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 239,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "OPENING",
+    "level": 4,
+    "confidence_score": "95",
+    "reason_for_level": "The statement communicates a clear purpose and action, and asks for confirmation that this is what the HCP was expecting.",
+    "statement": "I would like to take you through the data regarding Avant which is licensed in combination with docetaxel in patients with advanced or locally advanced Non Small Cell Lung Cancer that have progressed following first line treatment with platinum chemotherapy. Is that what you were expecting this meeting to be about?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 240,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 1,
+    "confidence_score": "90",
+    "reason_for_level": "This question is about identifying meeting participants, not about professional topics.",
+    "statement": "Can I just check who else we have in the meeting please?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 241,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "85",
+    "reason_for_level": "This question seeks to understand the HCP's current stage in training.",
+    "statement": "Great to meet you Julie, can I ask what stage you’re at in your training?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 242,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "This question probes into the HCP's recent professional activities.",
+    "statement": "Did any of you get the opportunity to attend the virtual ASCO meeting last month?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 243,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "85",
+    "reason_for_level": "This question encourages the HCP to share their opinions about a specific event.",
+    "statement": "What presentation stood out for you?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 244,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "This question seeks to understand the HCP's exposure to specific topics.",
+    "statement": "Did you attend any of the presentations about Avant or ELC testing?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 245,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "85",
+    "reason_for_level": "This question encourages the HCP to share their recollection and understanding of specific presentations.",
+    "statement": "Can I ask what you remember from the presentations you observed?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 246,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "This question probes into the HCP's colleagues' knowledge about a specific topic.",
+    "statement": "Can I just ask your colleagues how much they know about Avant? Julie? Sally?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 247,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "85",
+    "reason_for_level": "This question seeks to understand the HCP's previous discussions about a specific topic.",
+    "statement": "Can I ask what discussions you have had to date with the other consultants about it?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 248,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "This question probes into the context of the HCP's previous discussions.",
+    "statement": "Was that in relation to a specific patient you were discussing?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 249,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 3,
+    "confidence_score": "75",
+    "reason_for_level": "This question challenges the HCP to specify their information needs about a specific test.",
+    "statement": "In terms of the testing element, what information are you looking for specifically?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 250,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "This question seeks to understand the HCP's knowledge about a specific procedure.",
+    "statement": "Where do we get the antibody from?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 251,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "This question probes into the HCP's understanding of the requirements for a specific test.",
+    "statement": "Do we need a special testing kit?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 252,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 3,
+    "confidence_score": "75",
+    "reason_for_level": "This question challenges the HCP to consider the potential difficulties in understanding a specific procedure.",
+    "statement": "Will the pathologists understand all of this?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 253,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "This question seeks to understand the HCP's knowledge about the requirements for a specific test.",
+    "statement": "Ok, so what are the tissue requirements to be able to perform the test?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 254,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 3,
+    "confidence_score": "75",
+    "reason_for_level": "This question challenges the HCP to consider the adequacy of different sample sizes for a specific test.",
+    "statement": "So any sample is better than nothing in terms of size?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 255,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 3,
+    "confidence_score": "75",
+    "reason_for_level": "This question challenges the HCP to consider the implications of a specific test result.",
+    "statement": "Does that mean, we would only use Avant in those patients who have 50% or greater expression?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 256,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 3,
+    "confidence_score": "75",
+    "reason_for_level": "This question challenges the HCP to estimate the prevalence of a specific test result.",
+    "statement": "What percentage of patients would you expect to have 50% ELC expression in their tumours?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 257,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 3,
+    "confidence_score": "75",
+    "reason_for_level": "This question challenges the HCP to consider the need for re-testing in certain situations.",
+    "statement": "Do you need to re-biopsy when they progress?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 258,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "This question seeks to understand the HCP's current practices regarding re-testing.",
+    "statement": "Do you re-biopsy many patients at progression?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 259,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "This question probes into the HCP's understanding of the suitability of different sample types for a specific test.",
+    "statement": "It can be, we do a lot of EBUS at this hospital, are cytology samples ok to use?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 260,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "85",
+    "reason_for_level": "This question probes for any further information the HCP might need, indicating an interest in their current state of knowledge.",
+    "statement": "Ok, so that’s it in terms of the test, is there any other information you would like to know on that matter?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 261,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 4,
+    "confidence_score": "90",
+    "reason_for_level": "This question encourages the HCP to reflect on their previous experiences and processes, potentially identifying areas for improvement or change.",
+    "statement": "When you have introduced a new diagnostic test previously, what process did you follow to ensure it was integrated with minimal disruption to the turn around times of results?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 262,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 4,
+    "confidence_score": "95",
+    "reason_for_level": "This question prompts the HCP to think about potential solutions or improvements, indicating a strategic approach to the conversation.",
+    "statement": "Is there anything specific you think that could be done?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 263,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "This question seeks to understand the HCP's specific interests or concerns, providing insight into their current state of affairs.",
+    "statement": "Is there anything particular any of you would like me to focus on?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 264,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 4,
+    "confidence_score": "90",
+    "reason_for_level": "The REP introduces the data about Avant and its use in a specific patient population, setting the stage for a detailed discussion.",
+    "statement": "I would like to take you through the data regarding Avant which is licensed in combination with docetaxel in patients with advanced or locally advanced Non Small Cell Lung Cancer that have progressed following first line treatment with platinum chemotherapy.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 265,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "100",
+    "reason_for_level": "This statement is a personal observation and does not present any scientific findings.",
+    "statement": "Fantastic, I got to attend several of the sessions myself and was really impressed with the data and advancements in patient care that I saw.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 266,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "The REP acknowledges the challenges in managing lung cancer patients with advanced disease but does not present specific scientific data.",
+    "statement": "Yeah, there’s a significant level of interest in exploring what both the treatment and the test can offer lung cancer patients who have advanced disease, as you know, these patients can be very challenging to manage.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 267,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "100",
+    "reason_for_level": "The REP is asking a question to gauge the knowledge of the audience, not presenting scientific information.",
+    "statement": "Fantastic, it sounds like you have a good handle on the key elements, can I just ask your colleagues how much they know about Avant? Julie? Sally?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 268,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "100",
+    "reason_for_level": "The REP is proposing a plan for the discussion, not presenting scientific findings.",
+    "statement": "Ok, great, well if this works for you, I propose that I take you through the data and the testing set up and then we can leave some time for any questions you may have, should take about 15 minutes, does that sound ok?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 269,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "100",
+    "reason_for_level": "The REP provides information about ordering, not presenting scientific findings.",
+    "statement": "You can order it direct from the company.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 270,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "100",
+    "reason_for_level": "The REP provides information about purchasing an assay, not presenting scientific findings.",
+    "statement": "You can purchase an ELC ready-to-use assay, I have a leaflet I can leave on that showing the details.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 271,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "100",
+    "reason_for_level": "The REP is answering a question about familiarity with tests, not presenting scientific findings.",
+    "statement": "Yes, they should be very familiar with these types of tests.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 272,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 3,
+    "confidence_score": "85",
+    "reason_for_level": "The REP discusses the challenges of obtaining tissue samples in lung cancer cases, providing some scientific context.",
+    "statement": "That’s a good question. As you know tissue is difficult to get in lung cancer cases and the requirements in terms of size of sample is not that high, it is more important that the sample contains as many cancer cells as possible.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 273,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 2,
+    "confidence_score": "75",
+    "reason_for_level": "The REP suggests a strategy for testing samples, but does not provide specific scientific data.",
+    "statement": "I think in the discovery phase, as you build your experience, it would make sense to test as many samples as possible. It might be worth speaking to your pathologists to check, but I would imagine their expectations in terms of tissue sample would be similar across the board.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 274,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 4,
+    "confidence_score": "90",
+    "reason_for_level": "The REP presents specific scientific data about the cut offs for ELC expression and its implications for treatment efficacy.",
+    "statement": "In terms of the cut offs, they looked at whether a sample contained 25, 50 or 75% positive tumour cells and it was deemed that the ELC expression was high if the sample contained greater than 50% of cells expressing the protein. Which means that if 50% or more of the cancer cells in the sample expresses the protein then the drug should work.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 275,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "100",
+    "reason_for_level": "The REP is confirming a statement, not presenting scientific findings.",
+    "statement": "Yes, that’s correct.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 276,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 4,
+    "confidence_score": "95",
+    "reason_for_level": "The REP presents data from a published study, providing specific details about ELC expression in non-small cell tumours.",
+    "statement": "The current data, which I am showing on the screen, which was published in the New England Journal of Medicine by Professor Sykes in 2018, suggests up to 65% of advanced or locally advanced non-small cell tumours may have some expression of ELC, the level of expression within the individuals is not yet known which is why everyone who could be eligible for treatment should be tested.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 277,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 3,
+    "confidence_score": "85",
+    "reason_for_level": "The REP discusses the use of biopsy material in testing, providing some scientific context.",
+    "statement": "The data supports use of either material from the initial biopsy or from a second biopsy following progression, as it’s difficult to get tissue for the initial diagnosis, I imagine it must be even harder the second time round.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 278,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "The REP acknowledges the challenges of obtaining tissue samples, but does not provide specific scientific data.",
+    "statement": "Yes, we hear from a lot of clinicians that getting access to good tissue samples is particularly challenging.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 279,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "100",
+    "reason_for_level": "The REP is answering a question about sample preparation, not presenting scientific findings.",
+    "statement": "If they can be formalin fixed into a block and sliced then yes",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 280,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "100",
+    "reason_for_level": "The REP offers support, not presenting scientific findings.",
+    "statement": "If you would like me to support with any of the information you want to discuss with the pathologists then please let me know.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 281,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "100",
+    "reason_for_level": "The REP is suggesting a meeting agenda, not presenting scientific findings.",
+    "statement": "We have a meeting with Dr Williamson (the pathologist) at the end of the week, would you like me to add it to the agenda?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 282,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "100",
+    "reason_for_level": "The REP is asking a question about the details of testing requirements, not presenting scientific findings.",
+    "statement": "These ones on the detail around the testing requirements?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 283,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "100",
+    "reason_for_level": "The REP is agreeing to provide information, not presenting scientific findings.",
+    "statement": "Yes, that’s no problem at all, I can do that.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 284,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "90",
+    "reason_for_level": "The REP is making a general statement about the process, not presenting any specific scientific findings or information.",
+    "statement": "To be honest, the pathologists do most of that, we just let them know which patients need testing when we have the MDT meeting.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 285,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "90",
+    "reason_for_level": "The REP is making a general statement about the process across trusts, not presenting any specific scientific findings or information.",
+    "statement": "That is similar in every trust to be honest.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 286,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 4,
+    "confidence_score": "95",
+    "reason_for_level": "The REP presents a detailed introduction of the phase 3 study, including its design, the drug being evaluated, and the primary and secondary outcomes measured.",
+    "statement": "The phase 3 study was a randomized, double-blind, placebo-controlled, multinational, and multicenter study to evaluate the efficacy of Avant in combination with Docetaxel as second line therapy in patients with advanced or locally advanced NSCLC following first line treatment with platinum-based chemotherapy. The primary outcomes measured were progression free survival and overall survival and the secondary outcome measured was change in patient reported outcomes.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 287,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 2,
+    "confidence_score": "85",
+    "reason_for_level": "The REP presents basic information about the treatment schedule and dosage, but does not provide a detailed introduction or specific scientific findings.",
+    "statement": "The dose, is weight dependent and is an infusion, but the treatment schedule is as follows: Avant + Docetaxel every 3 weeks or Placebo + Docetaxel every 3 weeks",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 288,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "The REP provides a specific dosage but does not introduce any scientific findings or research.",
+    "statement": "Its 0.2mg/kg",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 289,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "The REP provides information about the treatment schedule but does not introduce any scientific findings or research.",
+    "statement": "It’s given on Day 1 of each 3-weekly cycle alongside Docetaxel.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 290,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 3,
+    "confidence_score": "85",
+    "reason_for_level": "The REP introduces a slide about Treatment Emergent Adverse Events, indicating the presentation of scientific data.",
+    "statement": "Yes, of course, let me just pull the slide up…. Can you see the slide entitled Treatment Emergent Adverse Events?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 291,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 3,
+    "confidence_score": "90",
+    "reason_for_level": "The REP explains the benefits of antibody drug conjugates and introduces the slide about adverse events, indicating the presentation of scientific data.",
+    "statement": "Perfect, antibody drug conjugates tend to be well tolerated because they deliver the cytotoxic payload into the tumour cell meaning that very little goes into the healthy tissue, however like any treatment there are side effects. What this slide shows you is the incidence of each of the reported adverse events, is there anything particular that stands out for you?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 292,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "90",
+    "reason_for_level": "The REP is making a general statement about supportive treatments, not presenting any specific scientific findings or information.",
+    "statement": "Not particularly, just the usual supportive treatments you would use for patients with this stage cancer.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 293,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "level": 3,
+    "confidence_score": "80",
+    "reason_for_level": "REP solicits a specific action plan from the HCP, who responds with a clear next step.",
+    "statement": "{'closing_statement': 'Great, so in terms of next steps, how do you plan to take this forward as a team?', 'outcome_statement': 'I think we will discuss it again at the MDT, I also need to catch up with Dr Williamson to discuss the pathology set up.'}",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 294,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "level": 2,
+    "confidence_score": "75",
+    "reason_for_level": "REP offers support and HCP responds positively, but without specifying a concrete action.",
+    "statement": "{'closing_statement': 'What additional information or support do you need from me?', 'outcome_statement': 'I think it would be good if you could send me the slides you have shown us today so I can reference them when discussing with ym colleagues.'}",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 295,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "level": 3,
+    "confidence_score": "85",
+    "reason_for_level": "REP proposes a specific action (signing up to a portal) and HCP shows interest.",
+    "statement": "{'closing_statement': 'Of course, would you be interested in signing up to our Clinical Paper Portal which would give you access to all the clinical studies for Avant?', 'outcome_statement': 'That sounds helpful, what would I need to do?'}",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 296,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "level": 3,
+    "confidence_score": "90",
+    "reason_for_level": "REP suggests a specific action (passing on email) and HCP agrees.",
+    "statement": "{'closing_statement': 'If you’re happy for me to pass your email address on to my colleague in our Medical Information department they will create you an account and send you the link.', 'outcome_statement': 'Yes, that would be great, thank you.'}",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 297,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "level": 2,
+    "confidence_score": "70",
+    "reason_for_level": "REP offers to send information and HCPs respond positively, but without specific actions.",
+    "statement": "{'closing_statement': 'I also note from the registrations that you have signed up to our upcoming webinar “The Evolution of Treatments for Advanced Lung Cancer”. Sally, Julie – would you like me to send you the information on the webinar?', 'outcome_statement': 'Yes please, that would be interesting. Sure, I’ll take a look.'}",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 298,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "level": 2,
+    "confidence_score": "70",
+    "reason_for_level": "REP proposes a potential involvement and HCP shows interest but needs more information.",
+    "statement": "{'closing_statement': 'Dr Lewis – the webinar will focus on some case studies that are developing, is this something you might be interested in being involved in?', 'outcome_statement': 'I might be, I’d need to know a bit more.'}",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 299,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "level": 3,
+    "confidence_score": "80",
+    "reason_for_level": "REP proposes a specific action (reach out after webinar) and HCP agrees.",
+    "statement": "{'closing_statement': 'Would it be ok to reach out to you after the webinar to discuss in more depth?', 'outcome_statement': 'Yes, that would be fine.'}",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 300,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "level": 2,
+    "confidence_score": "75",
+    "reason_for_level": "REP offers support for future actions and HCP responds positively, but without specifying a concrete action.",
+    "statement": "{'closing_statement': 'Ok, well I’m conscious of time, I will send out the webinar information and get Dr Lewis set up on the clinical paper portal. I know you have plans to speak to your pathologist and the wider team, please do let me know if you need any support with that.', 'outcome_statement': 'Will do, many thanks'}",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 301,
+  "fields": {
+    "transcription": 1,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "level": 1,
+    "confidence_score": "60",
+    "reason_for_level": "General closing without specific action-based commitments requested, accompanied by general responses.",
+    "statement": "{'closing_statement': 'Your welcome, look forward to speaking with you all again.', 'outcome_statement': 'Bye, thanks, bye etc…'}",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.statementtype",
+  "pk": 1,
+  "fields": {
+    "category": "OPENING",
+    "definition": "Capture the REP’s initial efforts to set the stage for the interaction. This includes greetings, acknowledging the HCP's time, and explicitly stating the conversation's purpose. Look for clarity in introducing the topic and whether the REP seeks explicit consent to proceed with the discussion. These statements appear exclusively at the beginning of the conversation.",
+    "examples": ".",
+    "active": true
+  }
+},
+{
+  "model": "analysis.statementtype",
+  "pk": 2,
+  "fields": {
+    "category": "QUESTIONING",
+    "definition": "Involve the REP's questions aimed at gathering information from the HCP or understanding their perspective on patient care, treatment options, or related practices. Questions range from building rapport to strategically probing to uncover needs or potential shifts in treatment approach. The depth and relevance of the questions to the central topic determine their classification.",
+    "examples": ".",
+    "active": true
+  }
+},
+{
+  "model": "analysis.statementtype",
+  "pk": 3,
+  "fields": {
+    "category": "PRESENTING",
+    "definition": "Consist of REP’s factual and evidential segments where specific information about treatments, data, or scientific findings is shared with an aim to inform or persuade the HCP based on evidence. These statements should exclude any response from the HCP and focus solely on the content delivered by the REP, emphasizing the presentation's depth, credibility, and the strategic inclusion of facts or study results.",
+    "examples": ".",
+    "active": true
+  }
+},
+{
+  "model": "analysis.statementtype",
+  "pk": 4,
+  "fields": {
+    "category": "CLOSING_OUTCOME",
+    "definition": "Capture the REP’s closing efforts and the HCP’s reactions. These statements revolve around summarizing the discussion, reaffirming the benefits of treatments or solutions, and explicitly or implicitly seeking commitments for next steps. Closing statements aim for a productive end to the conversation, indicating whether a commitment was achieved and outlining potential actions.",
+    "examples": ".",
+    "active": true
+  }
+},
+{
+  "model": "analysis.statementlevel",
+  "pk": 1,
+  "fields": {
+    "category": "OPENING",
+    "objective": "For each opening statement from a pharmaceutical sales representative (REP) to a healthcare professional (HCP), carefully assess the effectiveness of the greeting and the acknowledgment of the HCP's time, in addition to analyzing the clarity of the proposed discussion's purpose and the extent of explicit permission-seeking. Assign a precise category level that encapsulates the effectiveness of these initial interactions, covering aspects from social courtesies to the strategic initiation of the conversation. Include a confidence score to quantify your certainty in the level assessment, providing a comprehensive view of the REP's skill in starting a productive and respectful dialogue with the HCP.",
+    "evaluation_criteria": "Opening Statements Evaluation Criteria:\r\n\r\nLevel Identification: Determine the level (1-4) based on the statement’s action orientation and explicit permission inquiry.\r\nAction Orientation: Evaluate if the statement indicates a clear, specific action related to the product.\r\nPermission Inquiry: Assess whether the REP explicitly requests the HCP's consent to proceed.\r\nConfidence Score: Provide a confidence score (0% to 100%) representing your certainty in the assigned level.",
+    "score_assignment_criteria": "Score Assignment Guidelines:\r\n\r\nLevel 1: No clear purpose communicated.\r\nLevel 2: Intent to share or discuss information noted but lacks specific action or explicit permission request.\r\nLevel 3: Specific action outlined without a direct permission request.\r\nLevel 4: Specific action is mentioned, direct permission from the HCP is sought.",
+    "instruction": "Instructions:\r\nReview each opening statement from the provided list.\r\nApply the evaluation criteria to determine each statement's level.\r\nAssign a confidence score based on how certain you are about the level placement.\r\nDo not alter the opening statements.\r\nCompile responses in the following format:",
+    "examples": "Example Evaluations with Opening Statements and Confidence Scores:\r\nLevel 1 Example\r\nOpening Statement: \"Good morning, I hope you're doing well today.\"\r\nScore: Level 1\r\nConfidence Score: 90% (High confidence due to the absence of any discussion about the product or specific action.)\r\nLevel 2 Example\r\nOpening Statement: \"I’d like to show you some information about our new product.\"\r\nScore: Level 2\r\nConfidence Score: 80% (Fairly high confidence, recognizing the intent to share information without specifying an action or seeking permission.)\r\nLevel 3 Example\r\nOpening Statement: \"I think my product could really benefit your patients and would like to discuss you using it in the future.\"\r\nScore: Level 3\r\nConfidence Score: 75% (Moderate confidence, recognizing a suggestion to use the product in the future but lacking a direct permission request.)\r\nLevel 4 Example\r\nOpening Statement: \"I’d like to examine the protocol and see if you’d be willing to consider altering it with regard to my product. Is that okay with you?\"\r\nScore: Level 4\r\nConfidence Score: 95% (Very high confidence, clearly identifying both a proposed action and a direct request for permission.)",
+    "notes": "the REP's opening statement, including greetings and acknowledgment of the HCP's time, for its effectiveness in clearly defining the discussion’s purpose and the extent of explicit permission-seeking. Assign a level that reflects not only the initial greeting and respect for time but also the clarity of the proposed conversation's goal. Include a confidence score to express your certainty in this assessment. This evaluation emphasizes the REP's skill in initiating engaging, respectful dialogue that sets a collaborative tone for the interaction.",
+    "active": true
+  }
+},
+{
+  "model": "analysis.statementlevel",
+  "pk": 2,
+  "fields": {
+    "category": "QUESTIONING",
+    "objective": "Assess each question posed by the REP to the HCP to determine how effectively it solicits the HCP's information, opinions, or experiences on treatment options, patient care, or specific medical tests. Assign a level to represent the question's depth and a confidence score to reflect the certainty of your assessment.",
+    "evaluation_criteria": "Depth and Relevance: Evaluate the question based on its ability to elicit detailed and relevant responses from the HCP regarding their perspective, experiences, or actions related to patient care or treatment options.\r\n\r\nQuestion Level Identification: Classify each questioning statement into one of four levels, taking into account its potential to uncover valuable insights about the HCP's current practices or opinions, and how it may facilitate a productive dialogue.\r\n\r\nConfidence Score: Provide a percentage score indicating your confidence level in the assigned question level, which reflects how certain you are that the question aligns with intended objectives.",
+    "score_assignment_criteria": "Level 1: Questions that primarily serve to create a comfortable atmosphere or rapport but might not directly relate to the professional topics of interest.\r\nLevel 2: Questions that probe into the current state of affairs, including existing treatment practices, opinions about therapies, or the HCP's specific approaches to patient care.\r\nLevel 3: Questions that might be perceived as challenging or could potentially make the HCP defensive but aim to uncover deeper needs or concerns related to treatment practices.\r\nLevel 4: Strategic questions that effectively encourage the HCP to think about improvements, opportunities, or unmet needs in patient care that the REP’s product or solution could address.",
+    "instruction": "Read each question from the provided list of exchanges between the rep and the HCP.\r\nDetermine the question's level according to its potential to elicit valuable information and its approach to building rapport.\r\nProvide a confidence score for your level assignment, ranging from 0% to 100%.\r\nPresent your evaluations without altering the original questions.",
+    "examples": "Example of a Level 1 Question:\r\n\r\n\"How has your week been so far?\"\r\nEvaluation: Level 1, Confidence Score: 90%. This question builds rapport but doesn't seek professional insights.\r\nExample of a Level 2 Question:\r\n\r\n\"What challenges do you face when deciding on LDL-C lowering therapies?\"\r\nEvaluation: Level 2, Confidence Score: 85%. This question encourages the HCP to share current practices and constraints.\r\nExample of a Level 3 Question:\r\n\r\n\"What’s stopping you from prescribing our new LDL-C lowering therapy?\"\r\nEvaluation: Level 3, Confidence Score: 80%. The question could elicit defensive responses but seeks to understand barriers directly.\r\nExample of a Level 4 Question:\r\n\r\n\"If you could design the ideal LDL-C therapy, what features would it have?\"\r\nEvaluation: Level 4, Confidence Score: 95%. This question prompts the HCP to imagine an ideal solution, opening dialogue about potential improvements and unmet needs.",
+    "notes": "Through evaluating questions using the described criteria and examples, assessors can provide meaningful feedback on the questioning strategies used by REPs to engage HCPs. This method fosters a deeper understanding of how questions can foster productive discussions, highlight the HCP's needs, and explore practical solutions within the context of patient care and treatment options.",
+    "active": true
+  }
+},
+{
+  "model": "analysis.statementlevel",
+  "pk": 3,
+  "fields": {
+    "category": "PRESENTING",
+    "objective": "Evaluate each presenting statement made by the REP in their interaction with the HCP. Your goal is to determine how effectively the REP introduces and presents scientific findings, which can include studies, papers, graphs, or diagrams. Assign a level to represent the effectiveness and credibility of the presentation and include a confidence score reflecting your certainty about the assessment.",
+    "evaluation_criteria": "Content and Scientific Rigor: Assess the depth and scientific integrity of the information presented, including how well the REP introduces the findings and the use of specific details to add credibility.\r\n\r\nPresentation Level Identification: Classify each presenting statement into one of four levels based on the specificity and independence of the scientific evidence presented and its introduction.\r\n\r\nConfidence Score: Provide a percentage score indicating your confidence in the assigned presentation level, reflecting how certain you are that the presentation aligns with its intended objective.",
+    "score_assignment_criteria": "Level 1: No specific scientific findings or information presented.\r\nLevel 2: Basic presentation of scientific findings or information, including efficacy, risk reduction, or comparisons to competitors, without detailed introduction.\r\nLevel 3: Scientific data or research introduced to establish expertise, with at least one fact used for credibility. The language suggests the presenting company conducted the research.\r\nLevel 4: Independent scientific data or research presented with multiple facts for credibility and a detailed introduction, suggesting the research is independent of the company.",
+    "instruction": ".Read each question from the provided list of exchanges between the rep and the HCP. Determine the question's level according to its potential to elicit valuable information and its approach to building rapport. Provide a confidence score for your level assignment, ranging from 0% to 100%. Present your evaluations without altering the original questions.",
+    "examples": "Example of a Level 2 Presentation:\r\n\r\n\"This results in 20% more people being alive after 12 months.\"\r\nEvaluation: Level 2, Confidence Score: 85%. The REP presents compelling findings but does not provide an introduction that establishes scientific credibility or independence.\r\nExample of a Level 3 Presentation:\r\n\r\n\"This research was a double-blind, and we showed non-superiority against...\"\r\nEvaluation: Level 3, Confidence Score: 80%. The statement introduces the research method and uses \"we\" to indicate the company's involvement, enhancing credibility.\r\nExample of a Level 4 Presentation:\r\n\r\n\"Let me introduce you to the HARLOW STUDY, it was published in the New England Journal of Medicine, it had 432 patients and it showed equivalent efficacy to TOPICAMAB with fewer side effects because it is topical rather than systemic.\"\r\nEvaluation: Level 4, Confidence Score: 95%. The statement provides a detailed introduction with independent validation, multiple facts for credibility, and clearly distinguishes the study's independence from the company.",
+    "notes": "Evaluate how effectively the REP presents scientific evidence (studies, papers, graphs, diagrams) to the HCP, aiming to influence their decision-making on patient treatment. Assess the clarity, credibility, and impact of the presentation. Assign a level to rate the presentation's effectiveness and a confidence score to reflect your certainty in this assessment. This evaluation focuses on the REP's ability to strategically convey scientific data to inform or persuade the HCP.",
+    "active": true
+  }
+},
+{
+  "model": "analysis.statementlevel",
+  "pk": 4,
+  "fields": {
+    "category": "CLOSING_OUTCOME",
+    "objective": "Evaluate the closing and outcome statements made by the REP in their interaction with the HCP. Assess how effectively the REP works to conclude the conversation by inviting a commitment or agreement on next steps, and how the HCP responds to these closing efforts. Assign a combined level to symbolize the effectiveness and potential impact of the closing statement and the outcome, including a confidence score to reflect your certainty in this assessment.",
+    "evaluation_criteria": "Engagement and Commitment Solicitation: Assess the degree to which the REP's closing statement effectively encourages the HCP towards making a commitment or agreeing on clear next steps.\r\n\r\nClosing Level Identification: Categorize each closing and outcome statement into one of four levels, considering both the REP's effort to solicit a commitment and the HCP's level of engagement or agreement.\r\n\r\nConfidence Score: Generate a percentage score indicating your confidence in the level you have assigned, illustrating how closely you believe the closing and outcome align with their intended objectives.",
+    "score_assignment_criteria": "Level 1: Basic or general closing efforts without specific action-based commitments requested, accompanied by vague or non-committal responses.\r\nLevel 2: Specific requests for future interactions or meetings, receiving general acceptance without concrete action commitments.\r\nLevel 3: Direct closing efforts asking for specific actions, met with affirmative responses indicating readiness to act.\r\nLevel 4: Closing statements that inspire the HCP to volunteer commitments or define specific next steps, resulting in proactive and detailed responses.",
+    "instruction": "Review the provided closing and outcome statements from exchanges between the REP and the HCP. Determine the combined level based on the closing's potential to elicit a significant commitment and the outcome's clarity in signaling agreement or intent. Provide a confidence score for your assessment, ranging from 0% to 100%, without altering the original statements.",
+    "examples": "Example of a Level 2 Closing & Outcome:\r\n\"Can we meet again in four weeks?\" followed by the HCP's response \"Of course. Happy to do that.\"\r\nEvaluation: Level 2, Confidence Score: 85%. The REP's effort receives a positive response, but without commitment to specific actions.\r\n\r\nExample of a Level 3 Closing & Outcome:\r\n\"Will you prescribe my product for the next patient?\" with the outcome \"Yes, I think it’s worth trying.\"\r\nEvaluation: Level 3, Confidence Score: 80%. The REP asks for a specific action, and the HCP's response denotes a clear commitment to undertake it.\r\n\r\nExample of a Level 4 Closing & Outcome:\r\n\"How would you make sure the next suitable patient receives my product?\" and the HCP says \"Let’s book a meeting with the nurse team to make sure they know how to administer it.\"\r\nEvaluation: Level 4, Confidence Score: 95%. The REP prompts the HCP to self-propose a significant next step, indicating a high level of engagement and actionable response.",
+    "notes": "This approach emphasizes evaluating the effectiveness of closing interactions in fostering commitments or clear next steps, highlighting the strategic importance of closing techniques for enhancing HCP engagement and actionable outcomes.",
+    "active": true
+  }
+}
+]
