@@ -9,6 +9,15 @@
   }
 },
 {
+  "model": "analysis.transcription",
+  "pk": 2,
+  "fields": {
+    "text": "RE:Hi, Tracey. Nice to see you again. HCP:Hi. RE:How are you? HCP:Yes, really good, thanks, Rachael. How are you? Nice to see you. RE:I’m very well, thank you. Thank you for meeting with me today. RE:Remind me, Tracey, I understand from Partridge Health that you’re looking to repatriate your CCPs, so I was hoping today if we could just chat about that a little bit and just ask you a few questions about that, if that’d be okay? HCP:Yes, of course. Yes. RE:Great. So before I go into that, I just wanted to do a little bit more of a background to the lab. So with your instrument set-up at the moment, what instruments do you have in immunology at the moment? HCP:In immunology, obviously we’ve got the Optimed 360, just the one of those. RE:So with the CCPs, Tracey, what’s your workload at the moment? How many are you doing a day, roughly? HCP:A day? Gosh, I think current workload is about 250 a month that we’re sending away. RE:And so you’re sending them away to Partridge at the moment, and what analyser do they run them on? HCP:They’re using the Biovance automated system, so they just pop them on and they’re tracked and the turnaround times are really rapid, which is fantastic. RE:So in terms of bringing them back in house then, in a perfect world, how would you like to see the service set-up for  your CCPs here? How would you like to run them, do you think? HCP:I think the main plan is, because we also have automation downstairs, there is the Biovance tracking system, and therefore it’s a good crossover, it minimises the comparison we need to do as we’re using that test already, we’re kind of used to the results, and, in-house, all we have to do is a minor validation of the methods to see that we’re producing similar results. RE:I see, so turnaround times are key really for you? HCP:Yes, seven days for CCPs. RE:Seven days, currently, okay. So with the Optimed 360 at the moment, are you running that every day? HCP:Yes, most days. RE:And how often do you run the EliA IgG method? HCP:That’s pretty much every day, for a variety of tests. RE:So what would you say, then, if we could look at, say, for example, running your CCPs three times a day? Because am I right in thinking that CCP testing, it’s not classed as urgent, per se? HCP:No, that’s why it’s got quite a generous turnaround time compared to MPA, PR3s and things like that. RE:With it being continuous loading, we could have the EliA IgG method set up every day, and maybe you could prioritise three days but know that you’ve got the leeway, and then you can feed the samples through every day, and you would still be comfortably within your seven-day turnaround. HCP:Sure. One thing though, what’s the first time to result for those? RE:I want to say it’s about an hour and a half, but I’m not entirely sure. Funny you say that, actually, I’ve got a brochure that talks about the process time and shows a schematic, but I don’t actually have any with me, so sorry about that, but I could maybe get one to you. But that shows quite nicely the time to first result. So still comfortably within your working day, and working during the three days per week for CCPs, you would be within your turnaround time. HCP:Okay, yes. If you could forward that on, that’d be really handy, please. RE:Yes. So does that sounds like something that would work in terms of doing CCP three times a day, do you think that would fit? HCP:Yes, I think, at this stage, depending on costs, etc., it’s worth thinking about, definitely. RE:And then, what would be involved in that, Tracey, in terms of if you wanted to consider looking at them on the Optimed 360? HCP:Well, obviously you know we’ve never got enough staff and there’s never enough time, is there any way you could give us some support with an evaluation? Because if we were going to do a Biovance evaluation, it would be minimal, whereas if we were considering the 360, it would be a substantially larger study. So… RE:Yes, I’m sure we could sort something out for you, that’s no problem. Leave that with me. HCP:Okay, thank you. RE:So that’s really great. I’ve got a good understanding of what you’re looking to achieve. So perhaps maybe the next step would be we could arrange another meeting and we can talk about it again in a little bit more detail. Does that sound okay? HCP:Yes, absolutely. ******************************** RE:We can always come back. HCP:Yes. RE:Yes, that’d be really helpful, but thank you for today, that’s really useful to know where you are and what you’re looking to achieve, and yes, we can come back and talk about it again. HCP:Okay, super. RE:So thank you. HCP:Yes, lovely to see you. RE:And you. HCP:Bye. RE:Bye-bye. CO:Bye.",
+    "segments": "[\"RE:Hi, Tracey. Nice to see you again. HCP:Hi. RE:How are you? HCP:Yes, really good, thanks, Rachael. How are you? Nice to see you. RE:I\\u2019m very well, thank you. Thank you for meeting with me today. RE:Remind me, Tracey, I understand from Partridge Health that you\\u2019re looking to repatriate your CCPs, so I was hoping today if we could just chat about that a little bit and just ask you a few questions about that, if that\\u2019d be okay? HCP:Yes, of course. Yes. RE:Great. So before I go into that, I just wanted to do a little bit more of a background to the lab. So with your instrument set-up at the moment, what instruments do you have in immunology at the moment? HCP:In immunology, obviously we\\u2019ve got the Optimed 360, just the one of those. RE:So with the CCPs, Tracey, what\\u2019s your workload at the moment? How many are you doing a day, roughly? HCP:A day? Gosh, I think current workload is about 250 a month that we\\u2019re sending away. RE:And so you\\u2019re sending them away to Partridge at the moment, and what analyser do they run them on? HCP:They\\u2019re using the Biovance automated system, so they just pop them on and they\\u2019re tracked and the turnaround times are really rapid, which is fantastic. RE:So in terms of bringing them back in house then, in a perfect world, how would you like to see the service set-up for your CCPs here? How would you like to run them, do you think? HCP:I think the main plan is, because we also have automation downstairs, there is the Biovance tracking system, and therefore it\\u2019s a good crossover, it minimises the comparison we need to do as we\\u2019re using that test already, we\\u2019re kind of used to the results, and, in-house, all we have to do is a minor validation of the methods to see that we\\u2019re producing similar results. RE:I see, so turnaround times are key really for you? HCP:Yes, seven days for CCPs. RE:Seven days, currently, okay. So with the Optimed 360 at the moment, are you running that every day? HCP:Yes, most days. RE:And how often do you run the EliA IgG method? HCP:That\\u2019s pretty much every day, for a variety of tests. RE:So what would you say, then, if we could look at, say, for example, running your CCPs three times a day? Because am I right in thinking that CCP testing, it\\u2019s not classed as urgent, per se? HCP:No, that\\u2019s why it\\u2019s got quite a generous turnaround time compared to MPA, PR3s and things like that. RE:With it being continuous loading, we could have the EliA IgG method set up every day, and maybe you could prioritise three days but know that you\\u2019ve got the leeway, and then you can feed the samples through every day, and you would still be comfortably within your seven-day turnaround. HCP:Sure. One thing though, what\\u2019s the first time to result for those? RE:I want to say it\\u2019s about an hour and a half, but I\\u2019m not entirely sure. Funny you say that, actually, I\\u2019ve got a brochure that talks about the process time and shows a schematic, but I don\\u2019t actually have any with me, so sorry about that, but I could maybe get one to you. But that shows quite nicely the time to first result. So still comfortably within your working day, and working during the three days per week for CCPs, you would be within your turnaround time. HCP:Okay, yes. If you could forward that on, that\\u2019d be really handy, please. RE:Yes. So does that sounds like something that would work in terms of doing CCP three times a day, do you think that would fit? HCP:Yes, I think, at this stage, depending on costs, etc., it\\u2019s worth thinking about, definitely. RE:And then, what would be involved in that, Tracey, in terms of if you wanted to consider looking at them on the Optimed 360? HCP:Well, obviously you know we\\u2019ve never got enough staff and there\\u2019s never enough time, is there any way you could give us some support with an evaluation? Because if we were going to do a Biovance evaluation, it would be minimal, whereas if we were considering the 360, it would be a substantially larger study. So\\u2026 RE:Yes, I\\u2019m sure we could sort something out for you, that\\u2019s no problem. Leave that with me. HCP:Okay, thank you. RE:So that\\u2019s really great. I\\u2019ve got a good understanding of what you\\u2019re looking to achieve. So perhaps maybe the next step would be we could arrange another meeting and we can talk about it again in a little bit more detail. Does that sound okay? HCP:Yes, absolutely. ******************************** RE:We can always come back. HCP:Yes. RE:Yes, that\\u2019d be really helpful, but thank you for today, that\\u2019s really useful to know where you are and what you\\u2019re looking to achieve, and yes, we can come back and talk about it again. HCP:Okay, super. RE:So thank you. HCP:Yes, lovely to see you. RE:And you. HCP:Bye. RE:Bye-bye. CO:Bye.\"]",
+    "created_at": "2024-05-09T07:46:35.571Z"
+  }
+},
+{
   "model": "analysis.classification",
   "pk": 233,
   "fields": {
@@ -971,6 +980,328 @@
     "confidence_score": "60",
     "reason_for_level": "General closing without specific action-based commitments requested, accompanied by general responses.",
     "statement": "{'closing_statement': 'Your welcome, look forward to speaking with you all again.', 'outcome_statement': 'Bye, thanks, bye etc…'}",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 302,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "OPENING",
+    "level": 1,
+    "confidence_score": "90",
+    "reason_for_level": "The statement is a simple greeting without any specific action or permission request.",
+    "statement": "Hi, Tracey. Nice to see you again.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 303,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "OPENING",
+    "level": 1,
+    "confidence_score": "95",
+    "reason_for_level": "The statement is a general inquiry about the HCP's well-being without any specific action or permission request.",
+    "statement": "How are you?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 304,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "OPENING",
+    "level": 1,
+    "confidence_score": "90",
+    "reason_for_level": "The statement is a response to a greeting, without any specific action or permission request.",
+    "statement": "I’m very well, thank you. Thank you for meeting with me today.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 305,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "OPENING",
+    "level": 4,
+    "confidence_score": "85",
+    "reason_for_level": "The statement outlines a specific action (discussion about CCP repatriation) and seeks explicit permission to proceed with the discussion.",
+    "statement": "Remind me, Tracey, I understand from Partridge Health that you’re looking to repatriate your CCPs, so I was hoping today if we could just chat about that a little bit and just ask you a few questions about that, if that’d be okay?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 306,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "90",
+    "reason_for_level": "The question seeks information about the HCP's current instrument setup.",
+    "statement": "So with your instrument set-up at the moment, what instruments do you have in immunology at the moment?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 307,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "85",
+    "reason_for_level": "The question probes into the HCP's current workload.",
+    "statement": "So with the CCPs, Tracey, what’s your workload at the moment? How many are you doing a day, roughly?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 308,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "85",
+    "reason_for_level": "The question asks about the HCP's current practices in sending samples for analysis.",
+    "statement": "And so you’re sending them away to Partridge at the moment, and what analyser do they run them on?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 309,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 4,
+    "confidence_score": "90",
+    "reason_for_level": "The question encourages the HCP to envision an ideal setup for their service.",
+    "statement": "So in terms of bringing them back in house then, in a perfect world, how would you like to see the service set-up for your CCPs here? How would you like to run them, do you think?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 310,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "The question seeks to confirm the importance of turnaround times for the HCP.",
+    "statement": "I see, so turnaround times are key really for you?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 311,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "85",
+    "reason_for_level": "The question asks about the HCP's usage frequency of a specific instrument.",
+    "statement": "So with the Optimed 360 at the moment, are you running that every day?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 312,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "85",
+    "reason_for_level": "The question probes into the HCP's current practices with a specific method.",
+    "statement": "And how often do you run the EliA IgG method?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 313,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 3,
+    "confidence_score": "80",
+    "reason_for_level": "The question challenges the HCP's current practices and suggests a potential change.",
+    "statement": "So what would you say, then, if we could look at, say, for example, running your CCPs three times a day? Because am I right in thinking that CCP testing, it’s not classed as urgent, per se?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 314,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "85",
+    "reason_for_level": "The question seeks specific information about the HCP's current practices.",
+    "statement": "One thing though, what’s the first time to result for those?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 315,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 3,
+    "confidence_score": "80",
+    "reason_for_level": "The question challenges the HCP to consider a change in their current practices.",
+    "statement": "So does that sounds like something that would work in terms of doing CCP three times a day, do you think that would fit?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 316,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "QUESTIONING",
+    "level": 4,
+    "confidence_score": "90",
+    "reason_for_level": "The question encourages the HCP to consider potential improvements in their current practices.",
+    "statement": "And then, what would be involved in that, Tracey, in terms of if you wanted to consider looking at them on the Optimed 360?",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 317,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "90",
+    "reason_for_level": "The REP is providing background information but no specific scientific findings or information is presented.",
+    "statement": "Great. So before I go into that, I just wanted to do a little bit more of a background to the lab.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 318,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 2,
+    "confidence_score": "75",
+    "reason_for_level": "The REP discusses the process of the EliA IgG method but does not provide detailed introduction or specific scientific findings.",
+    "statement": "With it being continuous loading, we could have the EliA IgG method set up every day, and maybe you could prioritise three days but know that you’ve got the leeway, and then you can feed the samples through every day, and you would still be comfortably within your seven-day turnaround.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 319,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "The REP mentions the process time and a schematic, but does not provide the schematic or any detailed introduction of scientific findings.",
+    "statement": "I want to say it’s about an hour and a half, but I’m not entirely sure. Funny you say that, actually, I’ve got a brochure that talks about the process time and shows a schematic, but I don’t actually have any with me, so sorry about that, but I could maybe get one to you. But that shows quite nicely the time to first result. So still comfortably within your working day, and working during the three days per week for CCPs, you would be within your turnaround time.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 320,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "PRESENTING",
+    "level": 1,
+    "confidence_score": "95",
+    "reason_for_level": "The REP is responding to a request but does not present any scientific findings or information.",
+    "statement": "Yes, I’m sure we could sort something out for you, that’s no problem. Leave that with me.",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 321,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "REP suggests another meeting for more detailed discussion, HCP agrees without specifying a date or time.",
+    "statement": "{'closing_statement': 'So that’s really great. I’ve got a good understanding of what you’re looking to achieve. So perhaps maybe the next step would be we could arrange another meeting and we can talk about it again in a little bit more detail. Does that sound okay?', 'outcome_statement': 'Yes, absolutely.'}",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 322,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "level": 1,
+    "confidence_score": "70",
+    "reason_for_level": "REP makes a general statement about returning to the topic, HCP agrees without any specific commitment.",
+    "statement": "{'closing_statement': 'We can always come back.', 'outcome_statement': 'Yes.'}",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 323,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "level": 2,
+    "confidence_score": "85",
+    "reason_for_level": "REP appreciates the current meeting and suggests another one, HCP agrees without specifying any action.",
+    "statement": "{'closing_statement': 'Yes, that’d be really helpful, but thank you for today, that’s really useful to know where you are and what you’re looking to achieve, and yes, we can come back and talk about it again.', 'outcome_statement': 'Okay, super.'}",
+    "model_llm": "test3"
+  }
+},
+{
+  "model": "analysis.classification",
+  "pk": 324,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "level": 1,
+    "confidence_score": "60",
+    "reason_for_level": "REP simply thanks the HCP, who responds positively but without any commitment or next steps.",
+    "statement": "{'closing_statement': 'So thank you.', 'outcome_statement': 'Yes, lovely to see you.'}",
     "model_llm": "test3"
   }
 },
