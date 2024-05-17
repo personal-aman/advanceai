@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from .aiService.weaviateDb import storeData
-from .models import Transcription, Classification, StatementType, llmModel, StatementLevel
+from .models import Transcription, StatementClassification, StatementClassificationTypePrompt, llmModel, StatementLevelPrompt, FinalStatementWithLevel
 
 
 # Register your models here.
@@ -35,27 +35,32 @@ class TranscriptionAdmin(admin.ModelAdmin):
     list_display = ('id', 'text', 'created_at')
     search_fields = ('id', 'text')
 
-@admin.register(Classification)
+@admin.register(StatementClassification)
 class ClassificationAdmin(admin.ModelAdmin):
-    # confidence_score = models.TextField(blank=True, null=True)
-    #     reason_for_level = models.TextField(blank=True, null=True)
-    list_display = ('id', 'transcription_id', 'segment_number', 'category', 'statement', 'level', 'reason_for_level', 'confidence_score')
-    list_filter = ('category', 'model_llm', 'segment_number')
+    list_display = ('id', 'transcription_id', 'segment_number', 'category', 'statement')
+    list_filter = ('category', 'segment_number')
     search_fields = ('category', 'transcription__id')
     actions = [push_to_right_classification, push_to_wrong_classification]
 
 
-@admin.register(StatementType)
+@admin.register(StatementClassificationTypePrompt)
 class StatementTypeAdmin(admin.ModelAdmin):
     list_display = ('id', 'category', 'definition', 'active')
     search_fields = ('id', 'category')
 
 
-@admin.register(StatementLevel)
+@admin.register(FinalStatementWithLevel)
+class StatementTypeAdmin(admin.ModelAdmin):
+    list_display = ('id', 'category', 'transcription_id', 'statement', 'level', 'reason_for_level', 'confidence_score')
+    search_fields = ('transcription_id', 'category')
+    list_filter = ('category',)
+
+
+@admin.register(StatementLevelPrompt)
 class StatementTypeAdmin(admin.ModelAdmin):
     list_display = ('id', 'category', 'objective', 'evaluation_criteria', 'instruction', 'active')
     search_fields = ('id', 'category')
 
-@admin.register(llmModel)
-class llmModelAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'ibm_name', 'active')
+# @admin.register(llmModel)
+# class llmModelAdmin(admin.ModelAdmin):
+#     list_display = ('id', 'name', 'ibm_name', 'active')

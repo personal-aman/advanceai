@@ -1,7 +1,8 @@
 import weaviate
 from weaviate.util import generate_uuid5
 
-client = weaviate.Client("http://0.0.0.0:8999")
+# client = weaviate.Client("http://host.docker.internal:8999")
+# client = weaviate.Client("http://0.0.0.0:8999")
 
 def get_schema(name):
     class_obj = {

@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +25,16 @@ SECRET_KEY = 'django-insecure-%!j!1s357wggs7tu3_c5b^+8sc86@but)p)&atomk@eu*zv44k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'ivi-isb.esmagico.net',
+    'localhost',
+    '0.0.0.0',
+    '127.0.0.1',
+    '98.70.79.57',
+    'ivi-isb-backend.esmagico.net',
+    'ivi.esmagico.in',
+]
+
 
 CORS_ALLOW_ALL_ORIGINS = True
 # Application definition
@@ -84,7 +93,7 @@ DATABASES = {
         'NAME': 'advanceai',
         'USER': 'admin',
         'PASSWORD': 'secret',
-        'HOST': '0.0.0.0',  # Or your database host
+        'HOST': '127.0.0.1',  # Or your database host
         'PORT': '5432',       # Or your database port
     }
 }
@@ -124,7 +133,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

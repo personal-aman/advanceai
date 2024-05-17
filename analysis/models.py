@@ -1,7 +1,13 @@
 from django.contrib.postgres.fields import ArrayField
 from django.db import models
 
-
+STATEMENT_TYPES = [
+        ('OPENING', 'Opening'),
+        ('QUESTIONING', 'Questioning'),
+        ('PRESENTING', 'Presenting'),
+        ('CLOSING', 'Closing'),
+        ('OUTCOME', 'Outcome'),
+]
 CATEGORY_CHOICES = [
         ('OPENING', 'Opening'),
         ('QUESTIONING', 'Questioning'),
@@ -20,32 +26,27 @@ class Transcription(models.Model):
     def __str__(self):
         return str(self.id)
 
-class Classification(models.Model):
+class StatementClassification(models.Model):
     transcription = models.ForeignKey(Transcription, on_delete=models.CASCADE)
     segment_number = models.IntegerField(default=-1, blank=True, null=True)
     category = models.CharField(max_length=20, choices=CATEGORY_CHOICES)
-    level = models.IntegerField(blank=True, null=True)
-    confidence_score = models.TextField(blank=True, null=True)
-    reason_for_level = models.TextField(blank=True, null=True)
     statement = models.TextField()
-    model_llm = models.TextField()
-    # leveling: int = Field(description="this field is the assigned level (1-4)")
-    #     confidence_score: int = Field(description="this field is your confidence score, indicating how certain you are about your evaluation.")
-    #     reason: int = Field(description="reason for you evaluation in max 1 line")
+    levelDone = models.BooleanField(default=False)
+
     def transcription_id(self):
         return self.transcription.id
 
     transcription_id.short_description = 'transcription ID'
 
 
-class StatementType(models.Model):
+class StatementClassificationTypePrompt(models.Model):
     category = models.CharField(max_length=20, choices=CATEGORY_CHOICES, unique=True)
     definition = models.TextField()
     examples = models.TextField()
     active = models.BooleanField(default=True)
 
-class StatementLevel(models.Model):
-    category = models.CharField(max_length=20, choices=CATEGORY_CHOICES, unique=True)
+class StatementLevelPrompt(models.Model):
+    category = models.CharField(max_length=20, choices=STATEMENT_TYPES, unique=True)
     objective = models.TextField()
     evaluation_criteria = models.TextField()
     score_assignment_criteria = models.TextField()
@@ -58,3 +59,12 @@ class llmModel(models.Model):
     name = models.CharField(max_length=100)
     ibm_name = models.CharField(max_length=100)
     active = models.BooleanField(default=False)
+
+
+class FinalStatementWithLevel(models.Model):
+    transcription = models.ForeignKey(Transcription, on_delete=models.CASCADE)
+    category = models.CharField(max_length=20, choices=STATEMENT_TYPES)
+    level = models.IntegerField(blank=True, null=True)
+    confidence_score = models.TextField(blank=True, null=True)
+    reason_for_level = models.TextField(blank=True, null=True)
+    statement = models.TextField()

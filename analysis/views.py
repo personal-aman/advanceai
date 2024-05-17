@@ -10,7 +10,7 @@ from rest_framework.views import APIView
 from analysis.aiService.constants import ADDITIONAL_INFORMATION_FOR_CLASSIFICATION, get_important_note
 from analysis.aiService.weaviateDb import fetch_top_k_content, storeData
 from analysis.serializers import TranscriptionSerializer
-from analysis.models import Transcription, Classification, StatementType, llmModel, StatementLevel
+from analysis.models import Transcription, StatementClassification, StatementClassificationTypePrompt, llmModel, StatementLevelPrompt, FinalStatementWithLevel
 from analysis.utils import create_overlapping_segments
 
 from langchain_openai import AzureChatOpenAI
@@ -56,7 +56,7 @@ class EvaluationResult(BaseModel):
     statements: List[StatementLevelModel] = Field(..., description="A list of statement level Model")
 
 def get_statements_data(part, total_parts):
-    statement_types = StatementType.objects.filter(active=True)
+    statement_types = StatementClassificationTypePrompt.objects.filter(active=True)
     prompt_template = (" category: {category} , where "
               "the definition of the {category} category: ###{definition}### \n"
               )
@@ -193,7 +193,7 @@ class ClassificationView(APIView):
 
                 print("Creating objects for : ", category)
                 for statement in statements[key]:
-                    classifcation_obj = Classification(
+                    classifcation_obj = StatementClassification(
                         category=category,
                         transcription=transcript,
                         statement=str(statement),
@@ -246,13 +246,22 @@ class LevellingDataView(APIView):
         print(transcript_id)
         transcript = Transcription.objects.get(id=transcript_id)
         sentences = transcript.classification_set.all()
-
-        for category in ['OPENING', 'QUESTIONING', 'PRESENTING', 'CLOSING_OUTCOME']:
-            statements = sentences.filter(category=category).filter(level=0).values('id', 'statement')
+        category_map = {
+            "OPENING": "OPENING",
+            "QUESTIONING": "QUESTIONING",
+            "PRESENTING": "PRESENTING",
+            "CLOSING": "CLOSING_OUTCOME",
+            "OUTCOME": "CLOSING_OUTCOME",
+        }
+        for category in ['OPENING', 'QUESTIONING', 'PRESENTING', 'CLOSING', 'OUTCOME']:
+            statements = sentences.filter(category=category_map[category]).values('id', 'statement')
+            classification_statements = sentences.filter(category=category_map[category])
+            # statements = sentences.filter(category=category).filter(level=0).values('id', 'statement')
             # print(statements)
-            if len(statements) == 0:
+
+            statement_level_obj = StatementLevelPrompt.objects.filter(active=True).filter(category=category).first()
+            if len(statements) == 0 or not statement_level_obj:
                 continue
-            statement_level_obj = StatementLevel.objects.get(category=category)
             prompt_template = (
                 category + " statements: \n{statements}\n\n"
                 "Objective: {objective}\n\n"
@@ -302,12 +311,20 @@ class LevellingDataView(APIView):
             scored_statements = eval(response)
             for scored_statement in scored_statements["statements"]:
                 print(scored_statement)
-                statement_obj = Classification.objects.get(id=scored_statement['id'])
-                statement_obj.level=scored_statement['level']
-                statement_obj.confidence_score=scored_statement['confidence_score']
-                statement_obj.reason_for_level=scored_statement['reason']
-                statement_obj.save()
+                statement_obj = StatementClassification.objects.get(id=scored_statement['id'])
+                final_statement = FinalStatementWithLevel(
+                    transcription=statement_obj.transcription,
+                    category=category,
+                    statement=statement_obj.statement,
+                    level=scored_statement['level'],
+                    confidence_score=scored_statement['confidence_score'],
+                    reason_for_level=scored_statement['reason']
+                )
+                final_statement.save()
 
+                print(final_statement)
+            if category != "CLOSING":
+                classification_statements.update(levelDone=True)
         return Response(
             {"message": "done" },
             status=status.HTTP_200_OK
