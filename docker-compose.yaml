@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     build: .
-    command: gunicorn advanceAi.wsgi:application --bind 0.0.0.0:8000
+    command: gunicorn  --bind 0.0.0.0:8000 --timeout 600 advanceAi.wsgi:application
     volumes:
       - .:/app
     ports:

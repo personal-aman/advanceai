@@ -26,15 +26,12 @@ SECRET_KEY = 'django-insecure-%!j!1s357wggs7tu3_c5b^+8sc86@but)p)&atomk@eu*zv44k
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'ivi-isb.esmagico.net',
+    'llm.advanceanalytics.ai',
     'localhost',
     '0.0.0.0',
     '127.0.0.1',
-    '98.70.79.57',
-    'ivi-isb-backend.esmagico.net',
-    'ivi.esmagico.in',
+    '34.170.199.135',
 ]
-
 
 CORS_ALLOW_ALL_ORIGINS = True
 # Application definition

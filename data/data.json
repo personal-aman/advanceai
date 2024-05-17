@@ -404,235 +404,235 @@
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 55,
+  "pk": 90,
   "fields": {
     "transcription": 2,
     "category": "OPENING",
     "level": 1,
     "confidence_score": "90",
-    "reason_for_level": "The statement is a simple greeting without any clear purpose or action.",
+    "reason_for_level": "The statement is a simple greeting, without any clear purpose or action related to the product.",
     "statement": "Hi, Tracey. Nice to see you again."
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 56,
+  "pk": 91,
   "fields": {
     "transcription": 2,
     "category": "OPENING",
     "level": 1,
     "confidence_score": "90",
-    "reason_for_level": "The statement is a general inquiry about the HCP's well-being, without any clear purpose or action.",
+    "reason_for_level": "The statement is a general inquiry about the HCP's well-being, without any clear purpose or action related to the product.",
     "statement": "How are you?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 57,
+  "pk": 92,
   "fields": {
     "transcription": 2,
     "category": "OPENING",
     "level": 1,
     "confidence_score": "90",
-    "reason_for_level": "The statement is a polite response and acknowledgment, without any clear purpose or action.",
+    "reason_for_level": "The statement is a polite response and acknowledgment, without any clear purpose or action related to the product.",
     "statement": "I’m very well, thank you. Thank you for meeting with me today."
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 58,
+  "pk": 93,
   "fields": {
     "transcription": 2,
     "category": "OPENING",
     "level": 4,
     "confidence_score": "95",
-    "reason_for_level": "The statement outlines a specific action (discussion about repatriating CCPs) and seeks explicit permission to proceed with the conversation.",
+    "reason_for_level": "The statement clearly outlines the purpose of the discussion and directly seeks the HCP's permission to proceed.",
     "statement": "Remind me, Tracey, I understand from Partridge Health that you’re looking to repatriate your CCPs, so I was hoping today if we could just chat about that a little bit and just ask you a few questions about that, if that’d be okay?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 59,
-  "fields": {
-    "transcription": 2,
-    "category": "QUESTIONING",
-    "level": 2,
-    "confidence_score": "90",
-    "reason_for_level": "The question probes into the current state of affairs regarding the HCP's immunology instruments.",
-    "statement": "So with your instrument set-up at the moment, what instruments do you have in immunology at the moment?"
-  }
-},
-{
-  "model": "analysis.finalstatementwithlevel",
-  "pk": 60,
+  "pk": 94,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 2,
     "confidence_score": "85",
+    "reason_for_level": "The question probes into the current state of affairs regarding the HCP's instrument set-up in immunology.",
+    "statement": "So with your instrument set-up at the moment, what instruments do you have in immunology at the moment?"
+  }
+},
+{
+  "model": "analysis.finalstatementwithlevel",
+  "pk": 95,
+  "fields": {
+    "transcription": 2,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "90",
     "reason_for_level": "The question seeks to understand the HCP's current workload related to CCPs.",
     "statement": "So with the CCPs, Tracey, what’s your workload at the moment? How many are you doing a day, roughly?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 61,
+  "pk": 96,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 2,
     "confidence_score": "80",
-    "reason_for_level": "The question asks about the current process of CCP testing.",
+    "reason_for_level": "The question asks about the HCP's current practices regarding where they send their samples for analysis.",
     "statement": "And so you’re sending them away to Partridge at the moment, and what analyser do they run them on?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 62,
+  "pk": 97,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 4,
-    "confidence_score": "95",
-    "reason_for_level": "The question encourages the HCP to envision an ideal service setup for CCPs.",
+    "confidence_score": "90",
+    "reason_for_level": "The question encourages the HCP to envision an ideal service set-up for CCPs, opening dialogue about potential improvements.",
     "statement": "So in terms of bringing them back in house then, in a perfect world, how would you like to see the service set-up for your CCPs here? How would you like to run them, do you think?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 63,
+  "pk": 98,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 2,
     "confidence_score": "85",
-    "reason_for_level": "The question seeks to confirm the importance of turnaround times for the HCP.",
+    "reason_for_level": "The question probes into the HCP's priorities regarding turnaround times.",
     "statement": "I see, so turnaround times are key really for you?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 64,
+  "pk": 99,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 2,
     "confidence_score": "80",
-    "reason_for_level": "The question asks about the frequency of usage of a specific instrument.",
+    "reason_for_level": "The question seeks to understand the HCP's current usage of the Optimed 360.",
     "statement": "So with the Optimed 360 at the moment, are you running that every day?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 65,
+  "pk": 100,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 2,
-    "confidence_score": "80",
-    "reason_for_level": "The question probes into the frequency of a specific testing method.",
+    "confidence_score": "85",
+    "reason_for_level": "The question asks about the frequency of running a specific method, providing insight into current practices.",
     "statement": "And how often do you run the EliA IgG method?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 66,
-  "fields": {
-    "transcription": 2,
-    "category": "QUESTIONING",
-    "level": 3,
-    "confidence_score": "75",
-    "reason_for_level": "The question challenges the HCP to consider a different testing frequency for CCPs.",
-    "statement": "So what would you say, then, if we could look at, say, for example, running your CCPs three times a day? Because am I right in thinking that CCP testing, it’s not classed as urgent, per se?"
-  }
-},
-{
-  "model": "analysis.finalstatementwithlevel",
-  "pk": 67,
-  "fields": {
-    "transcription": 2,
-    "category": "QUESTIONING",
-    "level": 2,
-    "confidence_score": "80",
-    "reason_for_level": "The question seeks to understand the time to result for a specific test.",
-    "statement": "One thing though, what’s the first time to result for those?"
-  }
-},
-{
-  "model": "analysis.finalstatementwithlevel",
-  "pk": 68,
-  "fields": {
-    "transcription": 2,
-    "category": "QUESTIONING",
-    "level": 3,
-    "confidence_score": "75",
-    "reason_for_level": "The question challenges the HCP to consider if a proposed testing frequency would work.",
-    "statement": "So does that sounds like something that would work in terms of doing CCP three times a day, do you think that would fit?"
-  }
-},
-{
-  "model": "analysis.finalstatementwithlevel",
-  "pk": 69,
+  "pk": 101,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 4,
     "confidence_score": "90",
-    "reason_for_level": "The question encourages the HCP to consider the implications of changing their testing process.",
+    "reason_for_level": "The question proposes a potential change in practice and seeks the HCP's opinion, encouraging dialogue about improvements.",
+    "statement": "So what would you say, then, if we could look at, say, for example, running your CCPs three times a day? Because am I right in thinking that CCP testing, it’s not classed as urgent, per se?"
+  }
+},
+{
+  "model": "analysis.finalstatementwithlevel",
+  "pk": 102,
+  "fields": {
+    "transcription": 2,
+    "category": "QUESTIONING",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "The question seeks specific information about the time to result for a particular test.",
+    "statement": "One thing though, what’s the first time to result for those?"
+  }
+},
+{
+  "model": "analysis.finalstatementwithlevel",
+  "pk": 103,
+  "fields": {
+    "transcription": 2,
+    "category": "QUESTIONING",
+    "level": 4,
+    "confidence_score": "90",
+    "reason_for_level": "The question proposes a potential change in practice and seeks the HCP's opinion, encouraging dialogue about improvements.",
+    "statement": "So does that sounds like something that would work in terms of doing CCP three times a day, do you think that would fit?"
+  }
+},
+{
+  "model": "analysis.finalstatementwithlevel",
+  "pk": 104,
+  "fields": {
+    "transcription": 2,
+    "category": "QUESTIONING",
+    "level": 3,
+    "confidence_score": "85",
+    "reason_for_level": "The question could potentially make the HCP defensive as it suggests a change in practice, but it aims to uncover deeper needs or concerns.",
     "statement": "And then, what would be involved in that, Tracey, in terms of if you wanted to consider looking at them on the Optimed 360?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 70,
+  "pk": 105,
   "fields": {
     "transcription": 2,
     "category": "PRESENTING",
     "level": 1,
     "confidence_score": "90",
-    "reason_for_level": "The REP provides background information but does not present any specific scientific findings.",
+    "reason_for_level": "The REP is providing background information, but no specific scientific findings or information are presented.",
     "statement": "Great. So before I go into that, I just wanted to do a little bit more of a background to the lab."
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 71,
+  "pk": 106,
   "fields": {
     "transcription": 2,
     "category": "PRESENTING",
     "level": 2,
-    "confidence_score": "80",
-    "reason_for_level": "The REP mentions the use of an automated system and its benefits but does not provide detailed scientific information or findings.",
+    "confidence_score": "85",
+    "reason_for_level": "The REP mentions the Biovance automated system and its benefits, but does not provide detailed introduction or specific scientific findings.",
     "statement": "They’re using the Biovance automated system, so they just pop them on and they’re tracked and the turnaround times are really rapid, which is fantastic."
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 72,
+  "pk": 107,
   "fields": {
     "transcription": 2,
     "category": "PRESENTING",
     "level": 2,
-    "confidence_score": "70",
-    "reason_for_level": "The REP discusses the process time and turnaround times, but does not provide specific scientific findings or research.",
+    "confidence_score": "80",
+    "reason_for_level": "The REP discusses the process time and turnaround times, but does not introduce any scientific data or research.",
     "statement": "I want to say it’s about an hour and a half, but I’m not entirely sure. Funny you say that, actually, I’ve got a brochure that talks about the process time and shows a schematic, but I don’t actually have any with me, so sorry about that, but I could maybe get one to you. But that shows quite nicely the time to first result. So still comfortably within your working day, and working during the three days per week for CCPs, you would be within your turnaround time."
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 73,
+  "pk": 108,
   "fields": {
     "transcription": 2,
     "category": "PRESENTING",
     "level": 1,
-    "confidence_score": "100",
-    "reason_for_level": "The REP does not present any scientific findings or information in this statement.",
+    "confidence_score": "95",
+    "reason_for_level": "The REP is responding to a request, but no specific scientific findings or information are presented.",
     "statement": "Yes, I’m sure we could sort something out for you, that’s no problem. Leave that with me."
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 74,
+  "pk": 109,
   "fields": {
     "transcription": 2,
     "category": "CLOSING",
@@ -644,19 +644,19 @@
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 75,
+  "pk": 110,
   "fields": {
     "transcription": 2,
     "category": "CLOSING",
     "level": 1,
     "confidence_score": "80",
-    "reason_for_level": "The REP suggests the possibility of coming back but does not request a specific commitment.",
+    "reason_for_level": "The REP suggests the possibility of a future discussion but does not request a specific commitment.",
     "statement": "{'closing_statement': 'We can always come back.', 'outcome_statement': 'Yes.'}"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 76,
+  "pk": 111,
   "fields": {
     "transcription": 2,
     "category": "CLOSING",
@@ -668,109 +668,109 @@
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 77,
+  "pk": 112,
   "fields": {
     "transcription": 2,
     "category": "CLOSING",
     "level": 1,
-    "confidence_score": "70",
-    "reason_for_level": "The REP simply thanks the HCP without asking for any commitment.",
+    "confidence_score": "90",
+    "reason_for_level": "The REP only thanks the HCP without asking for any commitment or next step.",
     "statement": "{'closing_statement': 'So thank you.', 'outcome_statement': 'Yes, lovely to see you.'}"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 78,
+  "pk": 113,
   "fields": {
     "transcription": 2,
     "category": "CLOSING",
     "level": 1,
-    "confidence_score": "70",
+    "confidence_score": "90",
     "reason_for_level": "The REP does not request any specific commitment or follow-up.",
     "statement": "{'closing_statement': 'And you.', 'outcome_statement': 'Bye.'}"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 79,
+  "pk": 114,
   "fields": {
     "transcription": 2,
     "category": "CLOSING",
     "level": 1,
-    "confidence_score": "70",
-    "reason_for_level": "The REP says goodbye without asking for any commitment or follow-up.",
+    "confidence_score": "90",
+    "reason_for_level": "The REP does not request any specific commitment or follow-up.",
     "statement": "{'closing_statement': 'Bye-bye.', 'outcome_statement': 'Bye.'}"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 80,
+  "pk": 115,
   "fields": {
     "transcription": 2,
     "category": "OUTCOME",
     "level": 2,
-    "confidence_score": "85",
-    "reason_for_level": "The HCP agrees to a follow-up meeting.",
+    "confidence_score": "90",
+    "reason_for_level": "The HCP agrees to another meeting for further discussion.",
     "statement": "{'closing_statement': 'So that’s really great. I’ve got a good understanding of what you’re looking to achieve. So perhaps maybe the next step would be we could arrange another meeting and we can talk about it again in a little bit more detail. Does that sound okay?', 'outcome_statement': 'Yes, absolutely.'}"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 81,
-  "fields": {
-    "transcription": 2,
-    "category": "OUTCOME",
-    "level": 1,
-    "confidence_score": "90",
-    "reason_for_level": "The statement is non-committal and does not provide any tangible outcome.",
-    "statement": "{'closing_statement': 'We can always come back.', 'outcome_statement': 'Yes.'}"
-  }
-},
-{
-  "model": "analysis.finalstatementwithlevel",
-  "pk": 82,
+  "pk": 116,
   "fields": {
     "transcription": 2,
     "category": "OUTCOME",
     "level": 2,
     "confidence_score": "80",
-    "reason_for_level": "The HCP agrees to a follow-up meeting.",
+    "reason_for_level": "The HCP agrees to revisit the topic, implying a potential follow-up.",
+    "statement": "{'closing_statement': 'We can always come back.', 'outcome_statement': 'Yes.'}"
+  }
+},
+{
+  "model": "analysis.finalstatementwithlevel",
+  "pk": 117,
+  "fields": {
+    "transcription": 2,
+    "category": "OUTCOME",
+    "level": 2,
+    "confidence_score": "85",
+    "reason_for_level": "The HCP acknowledges the usefulness of the discussion and agrees to talk about it again.",
     "statement": "{'closing_statement': 'Yes, that’d be really helpful, but thank you for today, that’s really useful to know where you are and what you’re looking to achieve, and yes, we can come back and talk about it again.', 'outcome_statement': 'Okay, super.'}"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 83,
+  "pk": 118,
   "fields": {
     "transcription": 2,
     "category": "OUTCOME",
     "level": 1,
-    "confidence_score": "95",
-    "reason_for_level": "The statement is non-committal and does not provide any tangible outcome.",
+    "confidence_score": "70",
+    "reason_for_level": "The HCP provides a polite closing but no concrete commitment or action.",
     "statement": "{'closing_statement': 'So thank you.', 'outcome_statement': 'Yes, lovely to see you.'}"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 84,
+  "pk": 119,
   "fields": {
     "transcription": 2,
     "category": "OUTCOME",
     "level": 1,
-    "confidence_score": "90",
-    "reason_for_level": "The statement is non-committal and does not provide any tangible outcome.",
+    "confidence_score": "70",
+    "reason_for_level": "The HCP provides a polite closing but no concrete commitment or action.",
     "statement": "{'closing_statement': 'And you.', 'outcome_statement': 'Bye.'}"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 85,
+  "pk": 120,
   "fields": {
     "transcription": 2,
     "category": "OUTCOME",
     "level": 1,
-    "confidence_score": "95",
-    "reason_for_level": "The statement is non-committal and does not provide any tangible outcome.",
+    "confidence_score": "70",
+    "reason_for_level": "The HCP provides a polite closing but no concrete commitment or action.",
     "statement": "{'closing_statement': 'Bye-bye.', 'outcome_statement': 'Bye.'}"
   }
 }
