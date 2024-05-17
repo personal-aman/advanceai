@@ -19,1014 +19,277 @@
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 233,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "OPENING",
-    "statement": "Hello Dr Lewis, can you see me, ok? (WAVES)",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 234,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "OPENING",
-    "statement": "Can I just check who else we have in the meeting please?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 235,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "OPENING",
-    "statement": "Great to meet you Julie, can I ask what stage you’re at in your training?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 236,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "OPENING",
-    "statement": "Well it’s great to meet you, thanks for joining the meeting.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 237,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "OPENING",
-    "statement": "Brilliant, lovely to meet you Sally. Thanks for introducing yourselves, are we expecting anyone else?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 238,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "OPENING",
-    "statement": "Great, thank you. Let me introduce myself, I’m Laurence from Pharmapro and I am here in response to a medical request you made through my colleague Louise.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 239,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "OPENING",
-    "statement": "I would like to take you through the data regarding Avant which is licensed in combination with docetaxel in patients with advanced or locally advanced Non Small Cell Lung Cancer that have progressed following first line treatment with platinum chemotherapy. Is that what you were expecting this meeting to be about?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 240,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Can I just check who else we have in the meeting please?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 241,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Great to meet you Julie, can I ask what stage you’re at in your training?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 242,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Did any of you get the opportunity to attend the virtual ASCO meeting last month?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 243,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "What presentation stood out for you?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 244,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Did you attend any of the presentations about Avant or ELC testing?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 245,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Can I ask what you remember from the presentations you observed?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 246,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Can I just ask your colleagues how much they know about Avant? Julie? Sally?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 247,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Can I ask what discussions you have had to date with the other consultants about it?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 248,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Was that in relation to a specific patient you were discussing?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 249,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "In terms of the testing element, what information are you looking for specifically?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 250,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Where do we get the antibody from?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 251,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Do we need a special testing kit?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 252,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Will the pathologists understand all of this?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 253,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Ok, so what are the tissue requirements to be able to perform the test?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 254,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "So any sample is better than nothing in terms of size?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 255,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Does that mean, we would only use Avant in those patients who have 50% or greater expression?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 256,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "What percentage of patients would you expect to have 50% ELC expression in their tumours?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 257,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Do you need to re-biopsy when they progress?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 258,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Do you re-biopsy many patients at progression?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 259,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "It can be, we do a lot of EBUS at this hospital, are cytology samples ok to use?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 260,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Ok, so that’s it in terms of the test, is there any other information you would like to know on that matter?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 261,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "When you have introduced a new diagnostic test previously, what process did you follow to ensure it was integrated with minimal disruption to the turn around times of results?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 262,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Is there anything specific you think that could be done?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 263,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "QUESTIONING",
-    "statement": "Is there anything particular any of you would like me to focus on?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 264,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "I would like to take you through the data regarding Avant which is licensed in combination with docetaxel in patients with advanced or locally advanced Non Small Cell Lung Cancer that have progressed following first line treatment with platinum chemotherapy.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 265,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "Fantastic, I got to attend several of the sessions myself and was really impressed with the data and advancements in patient care that I saw.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 266,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "Yeah, there’s a significant level of interest in exploring what both the treatment and the test can offer lung cancer patients who have advanced disease, as you know, these patients can be very challenging to manage.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 267,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "Fantastic, it sounds like you have a good handle on the key elements, can I just ask your colleagues how much they know about Avant? Julie? Sally?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 268,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "Ok, great, well if this works for you, I propose that I take you through the data and the testing set up and then we can leave some time for any questions you may have, should take about 15 minutes, does that sound ok?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 269,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "You can order it direct from the company.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 270,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "You can purchase an ELC ready-to-use assay, I have a leaflet I can leave on that showing the details.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 271,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "Yes, they should be very familiar with these types of tests.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 272,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "That’s a good question. As you know tissue is difficult to get in lung cancer cases and the requirements in terms of size of sample is not that high, it is more important that the sample contains as many cancer cells as possible.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 273,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "I think in the discovery phase, as you build your experience, it would make sense to test as many samples as possible. It might be worth speaking to your pathologists to check, but I would imagine their expectations in terms of tissue sample would be similar across the board.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 274,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "In terms of the cut offs, they looked at whether a sample contained 25, 50 or 75% positive tumour cells and it was deemed that the ELC expression was high if the sample contained greater than 50% of cells expressing the protein. Which means that if 50% or more of the cancer cells in the sample expresses the protein then the drug should work.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 275,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "Yes, that’s correct.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 276,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "The current data, which I am showing on the screen, which was published in the New England Journal of Medicine by Professor Sykes in 2018, suggests up to 65% of advanced or locally advanced non-small cell tumours may have some expression of ELC, the level of expression within the individuals is not yet known which is why everyone who could be eligible for treatment should be tested.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 277,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "The data supports use of either material from the initial biopsy or from a second biopsy following progression, as it’s difficult to get tissue for the initial diagnosis, I imagine it must be even harder the second time round.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 278,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "Yes, we hear from a lot of clinicians that getting access to good tissue samples is particularly challenging.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 279,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "If they can be formalin fixed into a block and sliced then yes",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 280,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "If you would like me to support with any of the information you want to discuss with the pathologists then please let me know.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 281,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "We have a meeting with Dr Williamson (the pathologist) at the end of the week, would you like me to add it to the agenda?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 282,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "These ones on the detail around the testing requirements?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 283,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "Yes, that’s no problem at all, I can do that.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 284,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "To be honest, the pathologists do most of that, we just let them know which patients need testing when we have the MDT meeting.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 285,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "That is similar in every trust to be honest.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 286,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "The phase 3 study was a randomized, double-blind, placebo-controlled, multinational, and multicenter study to evaluate the efficacy of Avant in combination with Docetaxel as second line therapy in patients with advanced or locally advanced NSCLC following first line treatment with platinum-based chemotherapy. The primary outcomes measured were progression free survival and overall survival and the secondary outcome measured was change in patient reported outcomes.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 287,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "The dose, is weight dependent and is an infusion, but the treatment schedule is as follows: Avant + Docetaxel every 3 weeks or Placebo + Docetaxel every 3 weeks",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 288,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "Its 0.2mg/kg",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 289,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "It’s given on Day 1 of each 3-weekly cycle alongside Docetaxel.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 290,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "Yes, of course, let me just pull the slide up…. Can you see the slide entitled Treatment Emergent Adverse Events?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 291,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "Perfect, antibody drug conjugates tend to be well tolerated because they deliver the cytotoxic payload into the tumour cell meaning that very little goes into the healthy tissue, however like any treatment there are side effects. What this slide shows you is the incidence of each of the reported adverse events, is there anything particular that stands out for you?",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 292,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "PRESENTING",
-    "statement": "Not particularly, just the usual supportive treatments you would use for patients with this stage cancer.",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 293,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "CLOSING_OUTCOME",
-    "statement": "{'closing_statement': 'Great, so in terms of next steps, how do you plan to take this forward as a team?', 'outcome_statement': 'I think we will discuss it again at the MDT, I also need to catch up with Dr Williamson to discuss the pathology set up.'}",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 294,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "CLOSING_OUTCOME",
-    "statement": "{'closing_statement': 'What additional information or support do you need from me?', 'outcome_statement': 'I think it would be good if you could send me the slides you have shown us today so I can reference them when discussing with ym colleagues.'}",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 295,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "CLOSING_OUTCOME",
-    "statement": "{'closing_statement': 'Of course, would you be interested in signing up to our Clinical Paper Portal which would give you access to all the clinical studies for Avant?', 'outcome_statement': 'That sounds helpful, what would I need to do?'}",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 296,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "CLOSING_OUTCOME",
-    "statement": "{'closing_statement': 'If you’re happy for me to pass your email address on to my colleague in our Medical Information department they will create you an account and send you the link.', 'outcome_statement': 'Yes, that would be great, thank you.'}",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 297,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "CLOSING_OUTCOME",
-    "statement": "{'closing_statement': 'I also note from the registrations that you have signed up to our upcoming webinar “The Evolution of Treatments for Advanced Lung Cancer”. Sally, Julie – would you like me to send you the information on the webinar?', 'outcome_statement': 'Yes please, that would be interesting. Sure, I’ll take a look.'}",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 298,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "CLOSING_OUTCOME",
-    "statement": "{'closing_statement': 'Dr Lewis – the webinar will focus on some case studies that are developing, is this something you might be interested in being involved in?', 'outcome_statement': 'I might be, I’d need to know a bit more.'}",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 299,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "CLOSING_OUTCOME",
-    "statement": "{'closing_statement': 'Would it be ok to reach out to you after the webinar to discuss in more depth?', 'outcome_statement': 'Yes, that would be fine.'}",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 300,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "CLOSING_OUTCOME",
-    "statement": "{'closing_statement': 'Ok, well I’m conscious of time, I will send out the webinar information and get Dr Lewis set up on the clinical paper portal. I know you have plans to speak to your pathologist and the wider team, please do let me know if you need any support with that.', 'outcome_statement': 'Will do, many thanks'}",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 301,
-  "fields": {
-    "transcription": 1,
-    "segment_number": 1,
-    "category": "CLOSING_OUTCOME",
-    "statement": "{'closing_statement': 'Your welcome, look forward to speaking with you all again.', 'outcome_statement': 'Bye, thanks, bye etc…'}",
-    "levelDone": false
-  }
-},
-{
-  "model": "analysis.statementclassification",
-  "pk": 302,
+  "pk": 325,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "OPENING",
     "statement": "Hi, Tracey. Nice to see you again.",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 303,
+  "pk": 326,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "OPENING",
     "statement": "How are you?",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 304,
+  "pk": 327,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "OPENING",
     "statement": "I’m very well, thank you. Thank you for meeting with me today.",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 305,
+  "pk": 328,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "OPENING",
     "statement": "Remind me, Tracey, I understand from Partridge Health that you’re looking to repatriate your CCPs, so I was hoping today if we could just chat about that a little bit and just ask you a few questions about that, if that’d be okay?",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 306,
+  "pk": 329,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "QUESTIONING",
     "statement": "So with your instrument set-up at the moment, what instruments do you have in immunology at the moment?",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 307,
+  "pk": 330,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "QUESTIONING",
     "statement": "So with the CCPs, Tracey, what’s your workload at the moment? How many are you doing a day, roughly?",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 308,
+  "pk": 331,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "QUESTIONING",
     "statement": "And so you’re sending them away to Partridge at the moment, and what analyser do they run them on?",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 309,
+  "pk": 332,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "QUESTIONING",
     "statement": "So in terms of bringing them back in house then, in a perfect world, how would you like to see the service set-up for your CCPs here? How would you like to run them, do you think?",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 310,
+  "pk": 333,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "QUESTIONING",
     "statement": "I see, so turnaround times are key really for you?",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 311,
+  "pk": 334,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "QUESTIONING",
     "statement": "So with the Optimed 360 at the moment, are you running that every day?",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 312,
+  "pk": 335,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "QUESTIONING",
     "statement": "And how often do you run the EliA IgG method?",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 313,
+  "pk": 336,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "QUESTIONING",
     "statement": "So what would you say, then, if we could look at, say, for example, running your CCPs three times a day? Because am I right in thinking that CCP testing, it’s not classed as urgent, per se?",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 314,
+  "pk": 337,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "QUESTIONING",
     "statement": "One thing though, what’s the first time to result for those?",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 315,
+  "pk": 338,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "QUESTIONING",
     "statement": "So does that sounds like something that would work in terms of doing CCP three times a day, do you think that would fit?",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 316,
+  "pk": 339,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "QUESTIONING",
     "statement": "And then, what would be involved in that, Tracey, in terms of if you wanted to consider looking at them on the Optimed 360?",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 317,
+  "pk": 340,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "PRESENTING",
     "statement": "Great. So before I go into that, I just wanted to do a little bit more of a background to the lab.",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 318,
+  "pk": 341,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "PRESENTING",
-    "statement": "With it being continuous loading, we could have the EliA IgG method set up every day, and maybe you could prioritise three days but know that you’ve got the leeway, and then you can feed the samples through every day, and you would still be comfortably within your seven-day turnaround.",
-    "levelDone": false
+    "statement": "They’re using the Biovance automated system, so they just pop them on and they’re tracked and the turnaround times are really rapid, which is fantastic.",
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 319,
+  "pk": 342,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "PRESENTING",
     "statement": "I want to say it’s about an hour and a half, but I’m not entirely sure. Funny you say that, actually, I’ve got a brochure that talks about the process time and shows a schematic, but I don’t actually have any with me, so sorry about that, but I could maybe get one to you. But that shows quite nicely the time to first result. So still comfortably within your working day, and working during the three days per week for CCPs, you would be within your turnaround time.",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 320,
+  "pk": 343,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "PRESENTING",
     "statement": "Yes, I’m sure we could sort something out for you, that’s no problem. Leave that with me.",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 321,
+  "pk": 344,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "CLOSING_OUTCOME",
     "statement": "{'closing_statement': 'So that’s really great. I’ve got a good understanding of what you’re looking to achieve. So perhaps maybe the next step would be we could arrange another meeting and we can talk about it again in a little bit more detail. Does that sound okay?', 'outcome_statement': 'Yes, absolutely.'}",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 322,
+  "pk": 345,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "CLOSING_OUTCOME",
     "statement": "{'closing_statement': 'We can always come back.', 'outcome_statement': 'Yes.'}",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 323,
+  "pk": 346,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "CLOSING_OUTCOME",
     "statement": "{'closing_statement': 'Yes, that’d be really helpful, but thank you for today, that’s really useful to know where you are and what you’re looking to achieve, and yes, we can come back and talk about it again.', 'outcome_statement': 'Okay, super.'}",
-    "levelDone": false
+    "levelDone": true
   }
 },
 {
   "model": "analysis.statementclassification",
-  "pk": 324,
+  "pk": 347,
   "fields": {
     "transcription": 2,
     "segment_number": 1,
     "category": "CLOSING_OUTCOME",
     "statement": "{'closing_statement': 'So thank you.', 'outcome_statement': 'Yes, lovely to see you.'}",
-    "levelDone": false
+    "levelDone": true
+  }
+},
+{
+  "model": "analysis.statementclassification",
+  "pk": 348,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "statement": "{'closing_statement': 'And you.', 'outcome_statement': 'Bye.'}",
+    "levelDone": true
+  }
+},
+{
+  "model": "analysis.statementclassification",
+  "pk": 349,
+  "fields": {
+    "transcription": 2,
+    "segment_number": 1,
+    "category": "CLOSING_OUTCOME",
+    "statement": "{'closing_statement': 'Bye-bye.', 'outcome_statement': 'Bye.'}",
+    "levelDone": true
   }
 },
 {
@@ -1045,7 +308,7 @@
   "fields": {
     "category": "QUESTIONING",
     "definition": "Involve the REP's questions aimed at gathering information from the HCP or understanding their perspective on patient care, treatment options, or related practices. Questions range from building rapport to strategically probing to uncover needs or potential shifts in treatment approach. The depth and relevance of the questions to the central topic determine their classification.",
-    "examples": ".",
+    "examples": "Question: #What specific challenges do you face in managing patients with [condition]?#\r\nReasoning: This question targets understanding the HCP's pain points and difficulties in managing the condition. It helps the representative tailor their pitch to address these challenges directly, positioning their product as a solution.\r\n\r\nQuestion: #How do you currently stay updated on the latest advancements in [therapeutic area]?#\r\nReasoning: This question aims to uncover the HCP's sources of information and their level of engagement with industry updates. It helps the representative understand the best channels for disseminating new information about their product.\r\n\r\nQuestion: #Can you share any recent patient cases that have prompted you to reconsider your treatment approach?#\r\nReasoning: By asking about specific patient cases, the representative gains insight into the HCP's clinical decision-making process and any recent shifts in their treatment approach. This information can guide the representative in positioning their product as a viable option.\r\n\r\nQuestion: #What outcomes do you prioritize the most when evaluating treatment options for your patients?#\r\nReasoning: This question delves into the HCP's treatment goals and priorities, helping the representative align their product's benefits with the outcomes that matter most to the HCP. It enables a more targeted and persuasive sales pitch.\r\n\r\nQuestion: #In your opinion, what are the biggest unmet needs in the current treatment landscape for [condition]?#\r\nReasoning: By identifying unmet needs, the representative can position their product as filling a gap in the market and addressing specific challenges faced by the HCP and their patients. This question also demonstrates the representative's understanding of the industry landscape and willingness to address unmet needs.",
     "active": true
   }
 },
@@ -1055,7 +318,7 @@
   "fields": {
     "category": "PRESENTING",
     "definition": "Consist of REP’s factual and evidential segments where specific information about treatments, data, or scientific findings is shared with an aim to inform or persuade the HCP based on evidence. These statements should exclude any response from the HCP and focus solely on the content delivered by the REP, emphasizing the presentation's depth, credibility, and the strategic inclusion of facts or study results.",
-    "examples": ".",
+    "examples": "Presenting Statement: #In our clinical trial, our product demonstrated a 30% reduction in symptom severity compared to the standard treatment.#\r\nReasoning: This statement presents specific efficacy data, highlighting the superiority of the represented product over the standard treatment. It provides concrete evidence of the product's effectiveness, which can be persuasive to the HCP.\r\n\r\nPresenting Statement: #According to the latest study published in a peer-reviewed journal, our product showed a statistically significant increase in patient survival rates at the 12-month mark.#\r\nReasoning: This statement establishes credibility by referencing a peer-reviewed study and presents compelling survival data. It demonstrates the product's clinical benefits in terms of patient outcomes, which can influence the HCP's treatment decisions.\r\n\r\nPresenting Statement: #Our product, as shown in a recent double-blind study, not only effectively controls symptoms but also has a favorable safety profile with minimal side effects reported.#\r\nReasoning: By referencing a double-blind study, this statement enhances credibility and emphasizes the product's safety profile. It reassures the HCP about the product's reliability and addresses potential concerns about adverse effects.\r\n\r\nPresenting Statement: #Based on real-world evidence from a large-scale observational study, our product has been associated with a significant reduction in hospitalizations among patients with [condition].#\r\nReasoning: This statement leverages real-world evidence to support the product's benefits, providing practical insights into its impact on patient outcomes. It showcases the product's value beyond controlled clinical trials, making it more relevant to the HCP's everyday practice.\r\n\r\nPresenting Statement: #Our product, featured in a recent meta-analysis of randomized controlled trials, consistently demonstrated superior efficacy across multiple endpoints compared to competitors.#\r\nReasoning: By referencing a meta-analysis, this statement aggregates evidence from multiple studies to support the product's efficacy claims. It emphasizes the product's competitive advantage and positions it as a preferred treatment option for the HCP to consider.",
     "active": true
   }
 },
@@ -1065,7 +328,7 @@
   "fields": {
     "category": "CLOSING_OUTCOME",
     "definition": "Capture the REP’s closing efforts and the HCP’s reactions. These statements revolve around summarizing the discussion, reaffirming the benefits of treatments or solutions, and explicitly or implicitly seeking commitments for next steps. Closing statements aim for a productive end to the conversation, indicating whether a commitment was achieved and outlining potential actions.",
-    "examples": ".",
+    "examples": "Closing Statement: \"Can we schedule a follow-up meeting in four weeks to discuss implementation?\"\r\nReasoning: This statement explicitly asks for another meeting, indicating the representative's proactive approach to further engagement and follow-up. It sets a clear next step and encourages continued discussion.\r\n\r\nClosing Statement: \"Would you be willing to prescribe our product for your next suitable patient?\"\r\nReasoning: By asking for a commitment to prescribe the product, this statement seeks a specific action from the healthcare provider (HCP). It demonstrates confidence in the product's efficacy and encourages immediate adoption.\r\n\r\nClosing Statement: \"How about I draft the email introducing our product to your team while we're still on the call?\"\r\nReasoning: This statement offers to take immediate action, suggesting efficiency and proactive support from the representative. It facilitates the process of introducing the product to the HCP's team, moving towards implementation.\r\n\r\nClosing Statement: \"Let's discuss how we can ensure patient compliance and initiate the treatment together. What steps do you think we should take?\"\r\nReasoning: By involving the HCP in the decision-making process and discussing potential actions collaboratively, this statement encourages commitment and ownership. It fosters a sense of partnership and shared responsibility for treatment implementation.\r\n\r\nClosing Statement: \"I'll speak to the nurse right away to ensure they're briefed on administering our product. Would you like to join the call?\"\r\nReasoning: This statement not only offers to take immediate action but also invites the HCP to participate in the process. It demonstrates proactive support and collaboration, strengthening the relationship and facilitating implementation.",
     "active": true
   }
 },
@@ -1141,7 +404,7 @@
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 28,
+  "pk": 55,
   "fields": {
     "transcription": 2,
     "category": "OPENING",
@@ -1153,7 +416,7 @@
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 29,
+  "pk": 56,
   "fields": {
     "transcription": 2,
     "category": "OPENING",
@@ -1165,259 +428,283 @@
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 30,
+  "pk": 57,
   "fields": {
     "transcription": 2,
     "category": "OPENING",
     "level": 1,
     "confidence_score": "90",
-    "reason_for_level": "The statement is a response to a greeting, without any clear purpose or action.",
+    "reason_for_level": "The statement is a polite response and acknowledgment, without any clear purpose or action.",
     "statement": "I’m very well, thank you. Thank you for meeting with me today."
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 31,
+  "pk": 58,
   "fields": {
     "transcription": 2,
     "category": "OPENING",
     "level": 4,
     "confidence_score": "95",
-    "reason_for_level": "The statement clearly outlines the purpose of the discussion and seeks explicit permission from the HCP to proceed.",
+    "reason_for_level": "The statement outlines a specific action (discussion about repatriating CCPs) and seeks explicit permission to proceed with the conversation.",
     "statement": "Remind me, Tracey, I understand from Partridge Health that you’re looking to repatriate your CCPs, so I was hoping today if we could just chat about that a little bit and just ask you a few questions about that, if that’d be okay?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 32,
+  "pk": 59,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 2,
-    "confidence_score": "85",
-    "reason_for_level": "The question seeks to understand the HCP's current setup in immunology.",
+    "confidence_score": "90",
+    "reason_for_level": "The question probes into the current state of affairs regarding the HCP's immunology instruments.",
     "statement": "So with your instrument set-up at the moment, what instruments do you have in immunology at the moment?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 33,
+  "pk": 60,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 2,
-    "confidence_score": "90",
-    "reason_for_level": "The question probes into the HCP's current workload related to CCPs.",
+    "confidence_score": "85",
+    "reason_for_level": "The question seeks to understand the HCP's current workload related to CCPs.",
     "statement": "So with the CCPs, Tracey, what’s your workload at the moment? How many are you doing a day, roughly?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 34,
+  "pk": 61,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 2,
     "confidence_score": "80",
-    "reason_for_level": "The question inquires about the HCP's current practices regarding sending samples to Partridge.",
+    "reason_for_level": "The question asks about the current process of CCP testing.",
     "statement": "And so you’re sending them away to Partridge at the moment, and what analyser do they run them on?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 35,
+  "pk": 62,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 4,
-    "confidence_score": "85",
-    "reason_for_level": "The question encourages the HCP to envision an ideal setup for CCP service.",
+    "confidence_score": "95",
+    "reason_for_level": "The question encourages the HCP to envision an ideal service setup for CCPs.",
     "statement": "So in terms of bringing them back in house then, in a perfect world, how would you like to see the service set-up for your CCPs here? How would you like to run them, do you think?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 36,
+  "pk": 63,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 2,
-    "confidence_score": "80",
-    "reason_for_level": "The question probes into the HCP's priorities in terms of turnaround times.",
+    "confidence_score": "85",
+    "reason_for_level": "The question seeks to confirm the importance of turnaround times for the HCP.",
     "statement": "I see, so turnaround times are key really for you?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 37,
+  "pk": 64,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 2,
-    "confidence_score": "85",
-    "reason_for_level": "The question seeks to understand the HCP's usage frequency of the Optimed 360.",
+    "confidence_score": "80",
+    "reason_for_level": "The question asks about the frequency of usage of a specific instrument.",
     "statement": "So with the Optimed 360 at the moment, are you running that every day?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 38,
+  "pk": 65,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 2,
     "confidence_score": "80",
-    "reason_for_level": "The question inquires about the HCP's frequency of running the EliA IgG method.",
+    "reason_for_level": "The question probes into the frequency of a specific testing method.",
     "statement": "And how often do you run the EliA IgG method?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 39,
+  "pk": 66,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 3,
     "confidence_score": "75",
-    "reason_for_level": "The question challenges the HCP's current practices and suggests a potential change.",
+    "reason_for_level": "The question challenges the HCP to consider a different testing frequency for CCPs.",
     "statement": "So what would you say, then, if we could look at, say, for example, running your CCPs three times a day? Because am I right in thinking that CCP testing, it’s not classed as urgent, per se?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 40,
+  "pk": 67,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 2,
     "confidence_score": "80",
-    "reason_for_level": "The question probes into the HCP's knowledge about the time to result for certain tests.",
+    "reason_for_level": "The question seeks to understand the time to result for a specific test.",
     "statement": "One thing though, what’s the first time to result for those?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 41,
+  "pk": 68,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
     "level": 3,
-    "confidence_score": "80",
-    "reason_for_level": "The question seeks the HCP's opinion on a proposed change in CCP testing frequency.",
+    "confidence_score": "75",
+    "reason_for_level": "The question challenges the HCP to consider if a proposed testing frequency would work.",
     "statement": "So does that sounds like something that would work in terms of doing CCP three times a day, do you think that would fit?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 42,
+  "pk": 69,
   "fields": {
     "transcription": 2,
     "category": "QUESTIONING",
-    "level": 3,
-    "confidence_score": "85",
-    "reason_for_level": "The question challenges the HCP to consider a change in their current practices.",
+    "level": 4,
+    "confidence_score": "90",
+    "reason_for_level": "The question encourages the HCP to consider the implications of changing their testing process.",
     "statement": "And then, what would be involved in that, Tracey, in terms of if you wanted to consider looking at them on the Optimed 360?"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 43,
+  "pk": 70,
   "fields": {
     "transcription": 2,
     "category": "PRESENTING",
     "level": 1,
     "confidence_score": "90",
-    "reason_for_level": "The REP is providing background information, but no specific scientific findings or information is presented.",
+    "reason_for_level": "The REP provides background information but does not present any specific scientific findings.",
     "statement": "Great. So before I go into that, I just wanted to do a little bit more of a background to the lab."
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 44,
-  "fields": {
-    "transcription": 2,
-    "category": "PRESENTING",
-    "level": 2,
-    "confidence_score": "75",
-    "reason_for_level": "The REP presents a basic operational process without detailed introduction or specific scientific findings.",
-    "statement": "With it being continuous loading, we could have the EliA IgG method set up every day, and maybe you could prioritise three days but know that you’ve got the leeway, and then you can feed the samples through every day, and you would still be comfortably within your seven-day turnaround."
-  }
-},
-{
-  "model": "analysis.finalstatementwithlevel",
-  "pk": 45,
+  "pk": 71,
   "fields": {
     "transcription": 2,
     "category": "PRESENTING",
     "level": 2,
     "confidence_score": "80",
-    "reason_for_level": "The REP discusses process time, but does not introduce any scientific data or research.",
+    "reason_for_level": "The REP mentions the use of an automated system and its benefits but does not provide detailed scientific information or findings.",
+    "statement": "They’re using the Biovance automated system, so they just pop them on and they’re tracked and the turnaround times are really rapid, which is fantastic."
+  }
+},
+{
+  "model": "analysis.finalstatementwithlevel",
+  "pk": 72,
+  "fields": {
+    "transcription": 2,
+    "category": "PRESENTING",
+    "level": 2,
+    "confidence_score": "70",
+    "reason_for_level": "The REP discusses the process time and turnaround times, but does not provide specific scientific findings or research.",
     "statement": "I want to say it’s about an hour and a half, but I’m not entirely sure. Funny you say that, actually, I’ve got a brochure that talks about the process time and shows a schematic, but I don’t actually have any with me, so sorry about that, but I could maybe get one to you. But that shows quite nicely the time to first result. So still comfortably within your working day, and working during the three days per week for CCPs, you would be within your turnaround time."
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 46,
+  "pk": 73,
   "fields": {
     "transcription": 2,
     "category": "PRESENTING",
     "level": 1,
-    "confidence_score": "95",
-    "reason_for_level": "The REP is responding to a request, but no scientific findings or information is presented.",
+    "confidence_score": "100",
+    "reason_for_level": "The REP does not present any scientific findings or information in this statement.",
     "statement": "Yes, I’m sure we could sort something out for you, that’s no problem. Leave that with me."
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 47,
+  "pk": 74,
   "fields": {
     "transcription": 2,
     "category": "CLOSING",
     "level": 2,
     "confidence_score": "90",
-    "reason_for_level": "The REP requests a follow-up meeting for more detailed discussion.",
+    "reason_for_level": "The REP requests another meeting to discuss in more detail.",
     "statement": "{'closing_statement': 'So that’s really great. I’ve got a good understanding of what you’re looking to achieve. So perhaps maybe the next step would be we could arrange another meeting and we can talk about it again in a little bit more detail. Does that sound okay?', 'outcome_statement': 'Yes, absolutely.'}"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 48,
+  "pk": 75,
   "fields": {
     "transcription": 2,
     "category": "CLOSING",
     "level": 1,
     "confidence_score": "80",
-    "reason_for_level": "The REP suggests the possibility of revisiting the discussion but does not request a specific commitment.",
+    "reason_for_level": "The REP suggests the possibility of coming back but does not request a specific commitment.",
     "statement": "{'closing_statement': 'We can always come back.', 'outcome_statement': 'Yes.'}"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 49,
+  "pk": 76,
   "fields": {
     "transcription": 2,
     "category": "CLOSING",
     "level": 2,
     "confidence_score": "85",
-    "reason_for_level": "The REP appreciates the HCP's input and suggests a follow-up discussion.",
+    "reason_for_level": "The REP thanks the HCP for the meeting and suggests a follow-up discussion.",
     "statement": "{'closing_statement': 'Yes, that’d be really helpful, but thank you for today, that’s really useful to know where you are and what you’re looking to achieve, and yes, we can come back and talk about it again.', 'outcome_statement': 'Okay, super.'}"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 50,
+  "pk": 77,
   "fields": {
     "transcription": 2,
     "category": "CLOSING",
     "level": 1,
     "confidence_score": "70",
-    "reason_for_level": "The REP simply thanks the HCP without requesting any commitment or follow-up.",
+    "reason_for_level": "The REP simply thanks the HCP without asking for any commitment.",
     "statement": "{'closing_statement': 'So thank you.', 'outcome_statement': 'Yes, lovely to see you.'}"
   }
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 51,
+  "pk": 78,
+  "fields": {
+    "transcription": 2,
+    "category": "CLOSING",
+    "level": 1,
+    "confidence_score": "70",
+    "reason_for_level": "The REP does not request any specific commitment or follow-up.",
+    "statement": "{'closing_statement': 'And you.', 'outcome_statement': 'Bye.'}"
+  }
+},
+{
+  "model": "analysis.finalstatementwithlevel",
+  "pk": 79,
+  "fields": {
+    "transcription": 2,
+    "category": "CLOSING",
+    "level": 1,
+    "confidence_score": "70",
+    "reason_for_level": "The REP says goodbye without asking for any commitment or follow-up.",
+    "statement": "{'closing_statement': 'Bye-bye.', 'outcome_statement': 'Bye.'}"
+  }
+},
+{
+  "model": "analysis.finalstatementwithlevel",
+  "pk": 80,
   "fields": {
     "transcription": 2,
     "category": "OUTCOME",
@@ -1429,38 +716,62 @@
 },
 {
   "model": "analysis.finalstatementwithlevel",
-  "pk": 52,
-  "fields": {
-    "transcription": 2,
-    "category": "OUTCOME",
-    "level": 2,
-    "confidence_score": "80",
-    "reason_for_level": "The HCP agrees to come back to the discussion.",
-    "statement": "{'closing_statement': 'We can always come back.', 'outcome_statement': 'Yes.'}"
-  }
-},
-{
-  "model": "analysis.finalstatementwithlevel",
-  "pk": 53,
-  "fields": {
-    "transcription": 2,
-    "category": "OUTCOME",
-    "level": 2,
-    "confidence_score": "85",
-    "reason_for_level": "The HCP agrees to come back and talk about it again.",
-    "statement": "{'closing_statement': 'Yes, that’d be really helpful, but thank you for today, that’s really useful to know where you are and what you’re looking to achieve, and yes, we can come back and talk about it again.', 'outcome_statement': 'Okay, super.'}"
-  }
-},
-{
-  "model": "analysis.finalstatementwithlevel",
-  "pk": 54,
+  "pk": 81,
   "fields": {
     "transcription": 2,
     "category": "OUTCOME",
     "level": 1,
     "confidence_score": "90",
-    "reason_for_level": "The HCP gives a polite response but does not commit to any action.",
+    "reason_for_level": "The statement is non-committal and does not provide any tangible outcome.",
+    "statement": "{'closing_statement': 'We can always come back.', 'outcome_statement': 'Yes.'}"
+  }
+},
+{
+  "model": "analysis.finalstatementwithlevel",
+  "pk": 82,
+  "fields": {
+    "transcription": 2,
+    "category": "OUTCOME",
+    "level": 2,
+    "confidence_score": "80",
+    "reason_for_level": "The HCP agrees to a follow-up meeting.",
+    "statement": "{'closing_statement': 'Yes, that’d be really helpful, but thank you for today, that’s really useful to know where you are and what you’re looking to achieve, and yes, we can come back and talk about it again.', 'outcome_statement': 'Okay, super.'}"
+  }
+},
+{
+  "model": "analysis.finalstatementwithlevel",
+  "pk": 83,
+  "fields": {
+    "transcription": 2,
+    "category": "OUTCOME",
+    "level": 1,
+    "confidence_score": "95",
+    "reason_for_level": "The statement is non-committal and does not provide any tangible outcome.",
     "statement": "{'closing_statement': 'So thank you.', 'outcome_statement': 'Yes, lovely to see you.'}"
+  }
+},
+{
+  "model": "analysis.finalstatementwithlevel",
+  "pk": 84,
+  "fields": {
+    "transcription": 2,
+    "category": "OUTCOME",
+    "level": 1,
+    "confidence_score": "90",
+    "reason_for_level": "The statement is non-committal and does not provide any tangible outcome.",
+    "statement": "{'closing_statement': 'And you.', 'outcome_statement': 'Bye.'}"
+  }
+},
+{
+  "model": "analysis.finalstatementwithlevel",
+  "pk": 85,
+  "fields": {
+    "transcription": 2,
+    "category": "OUTCOME",
+    "level": 1,
+    "confidence_score": "95",
+    "reason_for_level": "The statement is non-committal and does not provide any tangible outcome.",
+    "statement": "{'closing_statement': 'Bye-bye.', 'outcome_statement': 'Bye.'}"
   }
 }
 ]

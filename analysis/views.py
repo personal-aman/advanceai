@@ -59,6 +59,7 @@ def get_statements_data(part, total_parts):
     statement_types = StatementClassificationTypePrompt.objects.filter(active=True)
     prompt_template = (" category: {category} , where "
               "the definition of the {category} category: ###{definition}### \n"
+              "the examples of the {category} category: ###{examples}### \n"
               )
     prompt = PromptTemplate(
         input_variables=[
@@ -197,8 +198,6 @@ class ClassificationView(APIView):
                         category=category,
                         transcription=transcript,
                         statement=str(statement),
-                        level=0,
-                        model_llm=model_name,
                         segment_number=index+1
                     )
                     classifcation_obj.save()
@@ -245,7 +244,7 @@ class LevellingDataView(APIView):
         transcript_id = request.data['transcript_id']
         print(transcript_id)
         transcript = Transcription.objects.get(id=transcript_id)
-        sentences = transcript.classification_set.all()
+        sentences = transcript.statementclassification_set.all()
         category_map = {
             "OPENING": "OPENING",
             "QUESTIONING": "QUESTIONING",

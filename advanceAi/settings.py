@@ -93,7 +93,7 @@ DATABASES = {
         'NAME': 'advanceai',
         'USER': 'admin',
         'PASSWORD': 'secret',
-        'HOST': '127.0.0.1',  # Or your database host
+        'HOST': '172.17.0.1',  # Or your database host
         'PORT': '5432',       # Or your database port
     }
 }
