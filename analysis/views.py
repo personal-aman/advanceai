@@ -56,16 +56,18 @@ class EvaluationResult(BaseModel):
     statements: List[StatementLevelModel] = Field(..., description="A list of statement level Model")
 
 def get_statements_data(part, total_parts):
-    statement_types = StatementClassificationTypePrompt.objects.filter(active=True)
+    statement_types = StatementClassificationTypePrompt.objects.filter(active=True).order_by("id")
     prompt_template = (" category: {category} , where "
-              "the definition of the {category} category: ###{definition}### \n"
-              "the examples of the {category} category: ###{examples}### \n"
+              "the definition of the {category} category: ###{definition}### \n\n"
+              "the examples of the {category} category: ###{examples}### \n\n"
+              "the examples that doesn't belong to {category} category: ###{invalid_examples}### \n"
               )
     prompt = PromptTemplate(
         input_variables=[
             'category',
             'definition',
-            'examples'
+            'examples',
+            'invalid_examples'
         ],
         template=prompt_template,
     )
@@ -88,7 +90,8 @@ def get_statements_data(part, total_parts):
         prompt_value = prompt.format_prompt(
             category=statement_type.category,
             definition=statement_type.definition,
-            examples=statement_type.examples
+            examples=statement_type.examples,
+            invalid_examples=statement_type.invalid_examples
         )
         final_prompt += "'''" + str(prompt_value) + "'''"
 
@@ -131,23 +134,23 @@ class ClassificationView(APIView):
             prompt_template = (
                 "READ THE " + str(index+1) + " PART OF THE TRANSCRIPT (WHOLE TRANSCRIPT HAS TOTAL " + str(total_segments)
                 +" PARTS, with overlaps of 200 words in each parts). \n"
-                "The conversation is between a representative (REP) and a healthcare professional (HCP). "
+                "The conversation is between a representative (REP) and one or more healthcare professionals (HCPs). "
                 "\nRead the transcript's part line  by line: \n###\n{transcript}\n### \n\n"
-                "Objective: Review and classify dialogue snippets from interactions between pharmaceutical sales representatives (REPs) and healthcare professionals (HCPs)."
-                 " Each dialogue snippet may align with more than one of the following categories based on its content and intention:\n"
+                "Objective: Review and classify dialogues from interactions between pharmaceutical sales representatives (REPs) and healthcare professionals (HCPs)."
+                 " Each dialogue may belong to MORE THAN ONE OR NONE of the following categories( based on its content, intention and definition of the category):\n"
                  + ", ".join(statement_type_considered) + "\n"
                  " This requires discerning the REP's strategic approach towards initiating the conversation,"
                  " engaging in inquiry, presenting information, and steering towards a productive conclusion."
-                 "\n\nDetailed Criteria for Classification::\n"
+                 "\n\nDetailed Definition for Classification::\n"
                  "\n{different_statement_definition}\n\n"
                  "Important Notes:\n"
-                 "{important_note}\n\n"
+                 "###{important_note}\n\n"
                  "Maintain the original transcript form for authenticity, "
-                 "focusing on the accuracy and relevance of each classification.\n\n"
-                 "Assignment Execution: Thoroughly proceed through the dialogue transcripts,"
-                 " identifying and classifying each REP statement according to the refined categories "
-                 "and guidelines provided. Utilize a nuanced approach to determine the strategic intent "
-                 "and outcome of the dialogue segments within the structured interaction framework."
+                 "focusing on the accuracy and relevance of each classification.###\n\n"
+                 "Assignment Execution: ### Thoroughly proceed through the transcripts,"
+                 " identifying and classifying each of REP dialogues according to the category's definition, category's examples and category's invalid examples."
+                 "Also take care of the guidelines and notes provided. Utilize a nuanced approach to determine the strategic intent "
+                 "and outcome of the dialogue within the structured interaction framework.###"
                  "Instruction for your output format:\n"
                  "\n{format_instructions}\n\n"
                  "Output: "
@@ -166,7 +169,7 @@ class ClassificationView(APIView):
             # llm = AzureOpenAI(azure_deployment='test', temperature=0, max_tokens=4000)
             # model_name = 'test'
 
-            llm = AzureChatOpenAI(azure_deployment='test3', temperature=0.2, max_tokens=4000)
+            llm = AzureChatOpenAI(azure_deployment='test3', temperature=0.4, max_tokens=4000)
             model_name = 'test3'
 
             classification_chain = LLMChain(llm=llm, prompt=prompt, verbose=True)
@@ -253,8 +256,8 @@ class LevellingDataView(APIView):
             "OUTCOME": "CLOSING_OUTCOME",
         }
         for category in ['OPENING', 'QUESTIONING', 'PRESENTING', 'CLOSING', 'OUTCOME']:
-            statements = sentences.filter(category=category_map[category]).values('id', 'statement')
-            classification_statements = sentences.filter(category=category_map[category])
+            statements = list(sentences.filter(category=category_map[category]).filter(levelDone=False).values('id', 'statement'))
+            classification_statements = sentences.filter(category=category_map[category]).filter(levelDone=False)
             # statements = sentences.filter(category=category).filter(level=0).values('id', 'statement')
             # print(statements)
 
@@ -291,7 +294,7 @@ class LevellingDataView(APIView):
             # llm = AzureOpenAI(azure_deployment='test', temperature=0, max_tokens=4000)
             # model_name = 'test'
 
-            llm = AzureChatOpenAI(azure_deployment='test3', temperature=0.2, max_tokens=4000)
+            llm = AzureChatOpenAI(azure_deployment='test3', temperature=0.4, max_tokens=4000)
             model_name = 'test3'
             rating_chain = LLMChain(llm=llm, prompt=prompt, verbose=True)
             response = rating_chain.run(

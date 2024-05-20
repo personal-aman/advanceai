@@ -120,7 +120,7 @@ OUTCOME_STATEMENT_LEVEL = {
   }
 
 ADDITIONAL_INFORMATION_FOR_CLASSIFICATION = (
-    "Each statement should be evaluated within its category for strategic "
+    "Each dialogues should be evaluated within its category for strategic "
     "implication, effectiveness, and alignment with interaction objectives.\n"
     "REP's statements are the primary focus for OPENING, QUESTIONING, and PRESENTING categories."
     " HCP responses should be considered in the CLOSING_OUTCOME category to assess the interaction's conclusiveness and commitment level.\n "
@@ -133,10 +133,14 @@ ADDITIONAL_INFORMATION_FOR_CLASSIFICATION = (
 )
 
 ADDITIONAL_INFORMATION_FOR_CLASSIFICATION_WITHOUT_OPENING_CLOSING = (
+    "Each dialogues should be evaluated within its category for strategic "
+    "implication, effectiveness, and alignment with interaction objectives.\n"
     "Focus strictly on REP's statements for the 'QUESTIONING' and 'PRESENTING' categories. Ignore HCP responses.\n"
 )
 
 ADDITIONAL_INFORMATION_FOR_CLASSIFICATION_WITHOUT_OPENING = (
+    "Each dialogues should be evaluated within its category for strategic "
+    "implication, effectiveness, and alignment with interaction objectives.\n"
     "Focus strictly on REP's statements for the 'QUESTIONING', and 'PRESENTING' categories. Ignore HCP responses.\n"
     "Evaluate REP statements for the 'CLOSING & OUTCOME' category based on content that aims for a productive conversation conclusion. "
     "Due to the nature of the transcripts being segmented into multiple parts with potential overlaps.\n"
@@ -144,6 +148,8 @@ ADDITIONAL_INFORMATION_FOR_CLASSIFICATION_WITHOUT_OPENING = (
 )
 
 ADDITIONAL_INFORMATION_FOR_CLASSIFICATION_WITHOUT_CLOSING = (
+    "Each dialogues should be evaluated within its category for strategic "
+    "implication, effectiveness, and alignment with interaction objectives.\n"
      "Focus strictly on REP's statements for the 'OPENING', 'QUESTIONING', and 'PRESENTING' categories. Ignore HCP responses.\n"
      "The 'OPENING' statements primarily appear towards the start of the initial segments.\n"
 )

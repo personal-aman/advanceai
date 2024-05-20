@@ -37,7 +37,7 @@ class TranscriptionAdmin(admin.ModelAdmin):
 
 @admin.register(StatementClassification)
 class ClassificationAdmin(admin.ModelAdmin):
-    list_display = ('id', 'transcription_id', 'segment_number', 'category', 'statement')
+    list_display = ('id', 'transcription_id', 'segment_number', 'category', 'statement', 'levelDone')
     list_filter = ('category', 'segment_number')
     search_fields = ('category', 'transcription__id')
     actions = [push_to_right_classification, push_to_wrong_classification]
@@ -50,14 +50,14 @@ class StatementTypeAdmin(admin.ModelAdmin):
 
 
 @admin.register(FinalStatementWithLevel)
-class StatementTypeAdmin(admin.ModelAdmin):
+class FinalStatementWithLevel(admin.ModelAdmin):
     list_display = ('id', 'category', 'transcription_id', 'statement', 'level', 'reason_for_level', 'confidence_score')
-    search_fields = ('transcription_id', 'category')
+    search_fields = ('transcription__id', 'category')
     list_filter = ('category',)
 
 
 @admin.register(StatementLevelPrompt)
-class StatementTypeAdmin(admin.ModelAdmin):
+class StatementLevelPromptAdmin(admin.ModelAdmin):
     list_display = ('id', 'category', 'objective', 'evaluation_criteria', 'instruction', 'active')
     search_fields = ('id', 'category')
 

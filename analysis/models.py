@@ -43,6 +43,7 @@ class StatementClassificationTypePrompt(models.Model):
     category = models.CharField(max_length=20, choices=CATEGORY_CHOICES, unique=True)
     definition = models.TextField()
     examples = models.TextField()
+    invalid_examples = models.TextField()
     active = models.BooleanField(default=True)
 
 class StatementLevelPrompt(models.Model):
