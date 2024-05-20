@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [
     '0.0.0.0',
     '127.0.0.1',
     '34.170.199.135',
+    'llmfrontend.advanceanalytics.ai',
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True

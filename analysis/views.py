@@ -3,6 +3,8 @@ import re
 from typing import List, Dict
 from dotenv import load_dotenv
 
+from django.http import JsonResponse
+from django.db.models import Max
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -332,3 +334,26 @@ class LevellingDataView(APIView):
             status=status.HTTP_200_OK
         )
 
+
+
+
+
+def highest_level_statements(request, transcript_id):
+    categories = ['OPENING', 'QUESTIONING', 'PRESENTING', 'CLOSING', 'OUTCOME']
+    results = []
+
+    for category in categories:
+        # Find the highest level statement in each category
+        highest_level = FinalStatementWithLevel.objects.filter(transcription__id=transcript_id, category=category).aggregate(Max('level'))['level__max']
+
+        if highest_level is not None:
+            statement = FinalStatementWithLevel.objects.filter(transcription__id=transcript_id, category=category, level=highest_level).first()
+            results.append({
+                'statement': statement.statement,
+                'level': statement.level,
+                'category': statement.category,
+                'reason_for_level': statement.reason_for_level,
+                'confidence_score': statement.confidence_score
+            })
+
+    return JsonResponse(results, safe=False)
