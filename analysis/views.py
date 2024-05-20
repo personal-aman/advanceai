@@ -268,12 +268,12 @@ class LevellingDataView(APIView):
                 continue
             prompt_template = (
                 category + " statements: \n{statements}\n\n"
-                "Objective: {objective}\n\n"
-                "Evaluation Criteria:\n {evaluation_criteria}\n\n"
-                "Score assignment criteria:\n {score_assignment_criteria}\n\n"
-                "Instruction:\n {instruction}\n\n"
-                "Examples:\n {examples}\n\n"
-                "notes:\n {notes}\n\n"
+                "Objective: !!!{objective}!!!\n\n"
+                "Evaluation Criteria:\n ###{evaluation_criteria}###\n\n"
+                "Score assignment criteria:\n ###{score_assignment_criteria}###\n\n"
+                "Instruction:\n ###{instruction}###\n\n"
+                "Examples:\n ###{examples}###\n\n"
+                "notes:\n ###{notes}###\n\n"
                 "Instruction for your output format:\n"
                  "\n{format_instructions}\n\n"
                  "Output: "
