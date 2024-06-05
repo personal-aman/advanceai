@@ -1,6 +1,5 @@
 import re
 
-from typing import List, Dict
 from dotenv import load_dotenv
 
 from django.http import JsonResponse
@@ -9,114 +8,23 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from analysis.aiService.constants import ADDITIONAL_INFORMATION_FOR_CLASSIFICATION, get_important_note
-from analysis.aiService.weaviateDb import fetch_top_k_content, storeData
+from analysis.aiService.weaviateDb import storeData
 from analysis.serializers import TranscriptionSerializer
-from analysis.models import Transcription, StatementClassification, StatementClassificationTypePrompt, llmModel, StatementLevelPrompt, FinalStatementWithLevel
-from analysis.utils import create_overlapping_segments
+from analysis.models import Transcription, StatementClassification, StatementLevelPrompt, FinalStatementWithLevel
+from analysis.utils import create_overlapping_segments, get_statements_data, get_important_note_and_parser
 
 from langchain_openai import AzureChatOpenAI
 from langchain.chains.llm import LLMChain
 from langchain.output_parsers import PydanticOutputParser
 from langchain.prompts import PromptTemplate
-from langchain_core.pydantic_v1 import BaseModel, Field
-from langchain.globals import set_debug
-from langchain_community.llms.openai import AzureOpenAI
+
+from .outputParser import EvaluationResult
+from .tasks import save_transcription
+
 
 load_dotenv()
 
 # set_debug(True)
-class StatementParser(BaseModel):
-    opening_statements: List[str] = Field(description="list of different Opening statements")
-    questioning_statements: List[str] = Field(description="list of different Questioning statements")
-    presenting_statements: List[str] = Field(description="list of different Presenting statements")
-    closing_outcome_sentences: List[Dict[str, str]] = Field(
-        description="list of dictionaries containing closing statement of REP ('closing_statement') and outcome statements OF HCP ('outcome_statement')")
-
-class StatementParserWithoutOpening(BaseModel):
-    questioning_statements: List[str] = Field(description="list of different Questioning statements")
-    presenting_statements: List[str] = Field(description="list of different Presenting statements")
-    closing_outcome_sentences: List[Dict[str, str]] = Field(
-        description="list of dictionaries containing closing and outcome statements. Example: {'closing_statement': closing_dailouge (REP), 'outcome_statement': outcome_dailouge(HCP)}")
-
-class StatementParserWithoutClosing(BaseModel):
-    opening_statements: List[str] = Field(description="list of different Opening statements")
-    questioning_statements: List[str] = Field(description="list of different Questioning statements")
-    presenting_statements: List[str] = Field(description="list of different Presenting statements")
-
-class StatementParserWithoutOpeningAndClosing(BaseModel):
-    questioning_statements: List[str] = Field(description="list of different Questioning statements")
-    presenting_statements: List[str] = Field(description="list of different Presenting statements")
-
-class StatementLevelModel(BaseModel):
-    id: int = Field(description="this field is the ID of the statement")
-    level: int = Field(description="this field is the assigned level (1-4)")
-    confidence_score: int = Field(description="this field is your confidence score, indicating how certain you are about your evaluation.")
-    reason: int = Field(description="reason for you evaluation in max 1 line")
-
-class EvaluationResult(BaseModel):
-    statements: List[StatementLevelModel] = Field(..., description="A list of statement level Model")
-
-def get_statements_data(part, total_parts):
-    statement_types = StatementClassificationTypePrompt.objects.filter(active=True).order_by("id")
-    prompt_template = (" category: {category} , where "
-              "the definition of the {category} category: ###{definition}### \n\n"
-              "the examples of the {category} category: ###{examples}### \n\n"
-              "the examples that doesn't belong to {category} category: ###{invalid_examples}### \n"
-              )
-    prompt = PromptTemplate(
-        input_variables=[
-            'category',
-            'definition',
-            'examples',
-            'invalid_examples'
-        ],
-        template=prompt_template,
-    )
-    total_types = []
-    final_prompt = ""
-    for statement_type in statement_types:
-        if (total_parts == 2):
-            if(part == 2) and (statement_type.category == "OPENING"):
-                continue
-            if (part == 1) and (statement_type.category == "CLOSING_OUTCOME"):
-                continue
-        if(total_parts >= 3 and (((part) * 1.0) / total_parts > .3)) and (statement_type.category == "OPENING"):
-            continue
-        if(total_parts >= 3 and (((part) * 1.0) / total_parts < .7)) and (statement_type.category == "CLOSING_OUTCOME"):
-            continue
-
-        print(statement_type.category)
-        total_types.append(statement_type.category)
-        final_prompt += "\n-----------for "+statement_type.category+" statements -----------\n"
-        prompt_value = prompt.format_prompt(
-            category=statement_type.category,
-            definition=statement_type.definition,
-            examples=statement_type.examples,
-            invalid_examples=statement_type.invalid_examples
-        )
-        final_prompt += "'''" + str(prompt_value) + "'''"
-
-    return total_types, final_prompt
-
-def get_important_note_and_parser(total_type_considered, segment, total_segments):
-
-    important_note = get_important_note(not_included_statements="")
-    parser = PydanticOutputParser(pydantic_object=StatementParser)
-
-    if "OPENING" not in total_type_considered:
-        parser = PydanticOutputParser(pydantic_object=StatementParserWithoutOpening)
-        important_note = get_important_note(not_included_statements="OPENING")
-
-    if "CLOSING_OUTCOME" not in total_type_considered:
-        parser = PydanticOutputParser(pydantic_object=StatementParserWithoutClosing)
-        important_note = get_important_note(not_included_statements="CLOSING")
-
-    if "OPENING" not in total_type_considered and "CLOSING_OUTCOME" not in total_type_considered:
-        parser = PydanticOutputParser(pydantic_object=StatementParserWithoutOpeningAndClosing)
-        important_note = get_important_note(not_included_statements="EXTREME_END")
-
-    return important_note, parser
 
 class ClassificationView(APIView):
     def post(self, request):
@@ -130,7 +38,7 @@ class ClassificationView(APIView):
 
             # INITIAL_PROCESSING
             # Get all the statement category types
-            statement_type_considered, different_statement_definition = get_statements_data(index+1, total_segments)
+            statement_type_considered, different_statement_definition = get_statements_data(index + 1, total_segments)
             important_note, parser = get_important_note_and_parser(statement_type_considered, index + 1, total_segments)
 
             prompt_template = (
@@ -167,9 +75,6 @@ class ClassificationView(APIView):
                 template=prompt_template,
                 partial_variables={"format_instructions": parser.get_format_instructions()},
             )
-
-            # llm = AzureOpenAI(azure_deployment='test', temperature=0, max_tokens=4000)
-            # model_name = 'test'
 
             llm = AzureChatOpenAI(azure_deployment='test3', temperature=0.4, max_tokens=4000)
             model_name = 'test3'
@@ -357,3 +262,9 @@ def highest_level_statements(request, transcript_id):
             })
 
     return JsonResponse(results, safe=False)
+
+class FullProcessView(APIView):
+    def post(self, request):
+        task = save_transcription.delay(request.data)
+        # task.id will have the Celery task ID
+        return Response({"task_id": task.id}, status=status.HTTP_202_ACCEPTED)
