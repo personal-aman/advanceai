@@ -21,10 +21,12 @@ from .outputParser import EvaluationResult
 def save_transcription(transcription_data):
     segment_length = 6000  # Adjust as needed
     overlap = 100  # Adjust as needed
-    transcription_data['segments'] = create_overlapping_segments(transcription_data['text'], segment_length, overlap)
+    print(type(transcription_data))
     serializer = TranscriptionSerializer(data=transcription_data)
     if serializer.is_valid():
         instance = serializer.save()
+        instance.segments = create_overlapping_segments(transcription_data['text'], segment_length, overlap)
+        instance.save()
         classify_segments.delay(instance.id)
         return instance.id
     else:

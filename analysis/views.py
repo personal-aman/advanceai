@@ -19,8 +19,7 @@ from langchain.output_parsers import PydanticOutputParser
 from langchain.prompts import PromptTemplate
 
 from .outputParser import EvaluationResult
-from .tasks import save_transcription
-
+from .tasks import save_transcription, classify_segments
 
 load_dotenv()
 
@@ -265,6 +264,15 @@ def highest_level_statements(request, transcript_id):
 
 class FullProcessView(APIView):
     def post(self, request):
-        task = save_transcription.delay(request.data)
-        # task.id will have the Celery task ID
-        return Response({"task_id": task.id}, status=status.HTTP_202_ACCEPTED)
+        segment_length = 6000  # Adjust as needed
+        overlap = 100  # Adjust as needed
+        print(type(request.data))
+        serializer = TranscriptionSerializer(data=request.data)
+        if serializer.is_valid():
+            instance = serializer.save()
+            instance.segments = create_overlapping_segments(request.data['text'], segment_length, overlap)
+            instance.save()
+            classify_segments.delay(instance.id)
+            return Response({"transcript_id": instance.id, "number_of_segments": len(instance.segments)}, status=status.HTTP_202_ACCEPTED)
+        else:
+            return JsonResponse(serializer.errors, safe=False, status=status.HTTP_400_BAD_REQUEST)
