@@ -19,6 +19,7 @@ from langchain.output_parsers import PydanticOutputParser
 from langchain.prompts import PromptTemplate
 
 from .outputParser import EvaluationResult
+from .synctask import sync_classify_segments
 from .tasks import save_transcription, classify_segments
 
 load_dotenv()
@@ -262,6 +263,10 @@ def highest_level_statements(request, transcript_id):
 
     return JsonResponse(results, safe=False)
 
+def highest_level_statements_docker_results(request, transcript_id):
+    return JsonResponse(getDockerOutput(transcript_id), safe=False)
+
+
 class FullProcessView(APIView):
     def post(self, request):
         segment_length = 6000  # Adjust as needed
@@ -274,5 +279,146 @@ class FullProcessView(APIView):
             instance.save()
             classify_segments.delay(instance.id)
             return Response({"transcript_id": instance.id, "number_of_segments": len(instance.segments)}, status=status.HTTP_202_ACCEPTED)
+        else:
+            return JsonResponse(serializer.errors, safe=False, status=status.HTTP_400_BAD_REQUEST)
+
+def getDockerOutput(transcript_id):
+    categories = ['OPENING', 'QUESTIONING', 'PRESENTING', 'CLOSING', 'OUTCOME']
+    category_map = {
+        "OPENING": "Opening",
+        "QUESTIONING": "Questioning",
+        "PRESENTING": "Presenting",
+        "CLOSING": "Closing",
+        "OUTCOME": "Outcome",
+    }
+    results = []
+    consolidated_score = []
+
+    for category in categories:
+        # Find the highest level statement in each category
+        highest_level = \
+        FinalStatementWithLevel.objects.filter(transcription__id=transcript_id, category=category).aggregate(
+            Max('level'))['level__max']
+        if highest_level is not None:
+            statement = FinalStatementWithLevel.objects.filter(transcription__id=transcript_id, category=category,
+                                                               level=highest_level).first()
+            consolidated_score.append({
+                "category": category_map[statement.category],
+                "score": statement.level
+            })
+
+            if category == 'OUTCOME':
+                closing_results = results[-1]
+                closing_results['consolidated_outcome_score'] = statement.level
+                # results[-1] = closing_results
+                print(closing_results)
+                continue
+            else:
+                all_statements = FinalStatementWithLevel.objects.filter(transcription__id=transcript_id, category=category).all()
+                if category == 'CLOSING':
+                    sentences = [
+                        {
+                            # FIXME: change the values
+                            "call_to_action": ["No CTA"],
+                            "call_to_action_confidence": "0.53",
+                            "criteria": str(sentence.level),
+                            "criteria_confidence_score": sentence.confidence_score,
+                            "sentence": sentence.statement,
+                            "speaker": "REP"
+                        }
+                        for sentence in all_statements
+                    ]
+                else:
+                    sentences = [
+                        {
+                            "criteria": str(sentence.level),
+                            "criteria_confidence_score": sentence.confidence_score,
+                            "sentence": sentence.statement,
+                            "speaker": "REP"
+                        }
+                        for sentence in all_statements
+                    ]
+                transcript_chunk = " ".join([sentence['sentence'] for sentence in sentences])
+                if category == 'CLOSING':
+                    results.append({
+                        "category": "Closing & Outcome",
+                        "category_confidence_score": 1,
+                        "consolidated_close_score": statement.level,
+                        "sentences": sentences,
+                        "transcript_chunks": transcript_chunk
+                    })
+                else:
+                    results.append({
+                        "category": category_map[statement.category],
+                        "category_confidence_score": 1,
+                        "sentences": sentences,
+                        "transcript_chunks": transcript_chunk
+                    })
+
+    responseDict = {
+        "consolidate_scores": consolidated_score,
+        "transcript": results,
+        "status": "Success",
+        "code": "200",
+        "error_msg": "None",
+        "merged_speakers": [
+            {"extra_speakers": {}},
+            {"original_speaker": "2"},
+            {"deleted": False},
+            {"merged": False}
+        ],
+        "speaker_total_time": {
+            "HCP_total_time": 50.32,
+            "REP_total_time": 261.49
+        },
+        "consolidated_call_to_action_scores": [
+            {
+                "category": "Prescribe",
+                "score": "0"
+            },
+            {
+                "category": "Patient Id",
+                "score": "0"
+            },
+            {
+                "category": "MSL",
+                "score": "0"
+            },
+            {
+                "category": "Advocacy",
+                "score": "0"
+            },
+            {
+                "category": "Guidelines",
+                "score": "0"
+            },
+            {
+                "category": "Next Meeting",
+                "score": "0"
+            },
+            {
+                "category": "Send Info",
+                "score": "0"
+            },
+            {
+                "category": "No CTA",
+                "score": "0"
+            }
+        ],
+    }
+    return responseDict
+
+class FullSyncProcessView(APIView):
+    def post(self, request):
+        segment_length = 6000  # Adjust as needed
+        overlap = 100  # Adjust as needed
+        print(type(request.data))
+        serializer = TranscriptionSerializer(data=request.data)
+        if serializer.is_valid():
+            instance = serializer.save()
+            instance.segments = create_overlapping_segments(request.data['text'], segment_length, overlap)
+            instance.save()
+            sync_classify_segments(instance.id)
+            return Response(getDockerOutput(instance.id), status=status.HTTP_200_OK)
         else:
             return JsonResponse(serializer.errors, safe=False, status=status.HTTP_400_BAD_REQUEST)
