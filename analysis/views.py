@@ -116,6 +116,10 @@ class ClassificationView(APIView):
 
 class TranscriptionView(APIView):
 
+    def get(self, request):
+        transcripts = Transcription.objects.filter(docker_feteched=False)
+        return Response({"pending_transcript": [transcript.id for transcript in transcripts]}, status=status.HTTP_200_OK)
+
     def post(self, request):
         # Desired segment length and overlap
         segment_length = 4000  # Adjusted due to example length; use 1200 for your full text
@@ -133,6 +137,12 @@ class TranscriptionView(APIView):
             instance.save()
             return Response({"transcript_id": instance.id, "number_of_segments": len(instance.segments)}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+def transcription_status_update(request, transcript_id):
+    obj = Transcription.objects.filter(id=transcript_id).first()
+    obj.docker_feteched = True
+    obj.save()
+    return JsonResponse({"message": "done"}, safe=False)
 
 class VectorDataView(APIView):
 

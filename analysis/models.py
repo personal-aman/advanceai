@@ -21,6 +21,7 @@ class Transcription(models.Model):
         size=None,  # If you do not want to limit the number of segments, keep size=None
         default=list  # Default to an empty list if no segments are provided
     )
+    docker_feteched = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
