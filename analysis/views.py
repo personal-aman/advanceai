@@ -317,53 +317,54 @@ def getDockerOutput(transcript_id):
                 "score": statement.level
             })
 
-            if category == 'OUTCOME':
+            all_statements = FinalStatementWithLevel.objects.filter(transcription__id=transcript_id, category=category).all()
+            if category == 'CLOSING' or category == 'OUTCOME':
+                sentences = [
+                    {
+                        # FIXME: change the values
+                        "call_to_action": ["No CTA"],
+                        "call_to_action_confidence": "0",
+                        "criteria": str(sentence.level),
+                        "category": category_map[sentence.category],
+                        "criteria_confidence_score": sentence.confidence_score,
+                        "sentence": sentence.statement,
+                        "speaker": "REP"
+                    }
+                    for sentence in all_statements
+                ]
+            else:
+                sentences = [
+                    {
+                        "criteria": str(sentence.level),
+                        "criteria_confidence_score": sentence.confidence_score,
+                        "sentence": sentence.statement,
+                        "speaker": "REP"
+                    }
+                    for sentence in all_statements
+                ]
+            transcript_chunk = " ".join([sentence['sentence'] for sentence in sentences])
+            if category == 'CLOSING':
+                results.append({
+                    "category": "Closing & Outcome",
+                    "category_confidence_score": 1,
+                    "consolidated_close_score": statement.level,
+                    "sentences": sentences,
+                    "transcript_chunks": transcript_chunk
+                })
+            elif category == 'OUTCOME':
                 closing_results = results[-1]
                 closing_results['consolidated_outcome_score'] = statement.level
+                closing_results.sentences += sentences
                 # results[-1] = closing_results
                 print(closing_results)
                 continue
             else:
-                all_statements = FinalStatementWithLevel.objects.filter(transcription__id=transcript_id, category=category).all()
-                if category == 'CLOSING':
-                    sentences = [
-                        {
-                            # FIXME: change the values
-                            "call_to_action": ["No CTA"],
-                            "call_to_action_confidence": "0.53",
-                            "criteria": str(sentence.level),
-                            "criteria_confidence_score": sentence.confidence_score,
-                            "sentence": sentence.statement,
-                            "speaker": "REP"
-                        }
-                        for sentence in all_statements
-                    ]
-                else:
-                    sentences = [
-                        {
-                            "criteria": str(sentence.level),
-                            "criteria_confidence_score": sentence.confidence_score,
-                            "sentence": sentence.statement,
-                            "speaker": "REP"
-                        }
-                        for sentence in all_statements
-                    ]
-                transcript_chunk = " ".join([sentence['sentence'] for sentence in sentences])
-                if category == 'CLOSING':
-                    results.append({
-                        "category": "Closing & Outcome",
-                        "category_confidence_score": 1,
-                        "consolidated_close_score": statement.level,
-                        "sentences": sentences,
-                        "transcript_chunks": transcript_chunk
-                    })
-                else:
-                    results.append({
-                        "category": category_map[statement.category],
-                        "category_confidence_score": 1,
-                        "sentences": sentences,
-                        "transcript_chunks": transcript_chunk
-                    })
+                results.append({
+                    "category": category_map[statement.category],
+                    "category_confidence_score": 1,
+                    "sentences": sentences,
+                    "transcript_chunks": transcript_chunk
+                })
 
     responseDict = {
         "consolidate_scores": consolidated_score,
