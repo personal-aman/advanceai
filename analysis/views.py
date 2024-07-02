@@ -354,7 +354,7 @@ def getDockerOutput(transcript_id):
             elif category == 'OUTCOME':
                 closing_results = results[-1]
                 closing_results['consolidated_outcome_score'] = statement.level
-                closing_results.sentences += sentences
+                closing_results['sentences'] += sentences
                 # results[-1] = closing_results
                 print(closing_results)
                 continue
