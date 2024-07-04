@@ -77,7 +77,6 @@ class ClassificationView(APIView):
             )
 
             llm = AzureChatOpenAI(azure_deployment='test3', temperature=0.4, max_tokens=4000)
-            model_name = 'test3'
 
             classification_chain = LLMChain(llm=llm, prompt=prompt, verbose=True)
 
@@ -86,9 +85,9 @@ class ClassificationView(APIView):
                 different_statement_definition=different_statement_definition,
                 important_note=important_note
             )
-            print("response before")
-            print(response)
-            print("response next")
+            # print("response before")
+            # print(response)
+            # print("response next")
             if "```" in response:
                response = re.findall(r'```(.*?)```', response, re.DOTALL)
             statements = eval(response)
@@ -321,7 +320,7 @@ def getDockerOutput(transcript_id):
             if category == 'CLOSING' or category == 'OUTCOME':
                 sentences = [
                     {
-                        # FIXME: change the values
+                        # FIXME: change the values to actual after CTA
                         "call_to_action": ["No CTA"],
                         "call_to_action_confidence": "0",
                         "criteria": str(sentence.level),
@@ -362,9 +361,8 @@ def getDockerOutput(transcript_id):
                     sentences = sentences[1:]
 
                 closing_results['sentences'] = closing_outcome_statements
-                # results[-1] = closing_results
-                print(closing_results)
-                continue
+                # print(closing_results)
+                # continue
             else:
                 results.append({
                     "category": category_map[statement.category],

@@ -4,9 +4,6 @@ from .aiService.weaviateDb import storeData
 from .models import Transcription, StatementClassification, StatementClassificationTypePrompt, llmModel, StatementLevelPrompt, FinalStatementWithLevel
 
 
-# Register your models here.
-
-
 @admin.action(description="correct statement push to db")
 def push_to_right_classification(modeladmin, request, queryset):
     classified_objects = {}
@@ -60,7 +57,3 @@ class FinalStatementWithLevel(admin.ModelAdmin):
 class StatementLevelPromptAdmin(admin.ModelAdmin):
     list_display = ('id', 'category', 'objective', 'evaluation_criteria', 'instruction', 'active')
     search_fields = ('id', 'category')
-
-# @admin.register(llmModel)
-# class llmModelAdmin(admin.ModelAdmin):
-#     list_display = ('id', 'name', 'ibm_name', 'active')
