@@ -1,19 +1,6 @@
 version: '3.8'
 
 services:
-  web:
-    build: .
-    command: gunicorn  --bind 0.0.0.0:8000 --timeout 600 advanceAi.wsgi:application
-    volumes:
-      - .:/app
-    ports:
-      - "8000:8000"
-    env_file:
-      - .env
-    depends_on:
-      - db
-      - weaviate1
-
   db:
     image: postgres:latest
     ports:
@@ -27,20 +14,21 @@ services:
 
 
   weaviate1:
-    image: cr.weaviate.io/semitechnologies/weaviate:1.24.4
+    image: cr.weaviate.io/semitechnologies/weaviate:1.25.7
     container_name: weaviate1
     restart: always
     depends_on:
       - t2v-transformers
-    ports:
-      - '8999:8080'
-      - '50051:50051'
+    network_mode: "host"
+        # ports:
+        # - '8999:8080'
+        #- '50051:50051'
     volumes:
       - ./weaviate_data:/var/lib/weaviate
     environment:
       DEFAULT_VECTORIZER_MODULE: text2vec-transformers
       ENABLE_MODULES: text2vec-transformers
-      TRANSFORMERS_INFERENCE_API: http://172.17.0.1:8998
+      TRANSFORMERS_INFERENCE_API: http://localhost:8998
 
   t2v-transformers:
     image: cr.weaviate.io/semitechnologies/transformers-inference:sentence-transformers-multi-qa-MiniLM-L6-cos-v1
