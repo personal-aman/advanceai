@@ -120,16 +120,13 @@ OUTCOME_STATEMENT_LEVEL = {
   }
 
 ADDITIONAL_INFORMATION_FOR_CLASSIFICATION = (
-    "Each dialogues should be evaluated within its category for strategic "
-    "implication, effectiveness, and alignment with interaction objectives.\n"
-    "REP's statements are the primary focus for OPENING, QUESTIONING, and PRESENTING categories."
-    " HCP responses should be considered in the CLOSING_OUTCOME category to assess the interaction's conclusiveness and commitment level.\n "
-    "Note the placement of statements: "
-    "OPENING statements occur at the beginning, and CLOSING_OUTCOME at the end, "
-    "with QUESTIONING and PRESENTING potentially throughout the dialogue. "
-    "Some dialogues may fit into multiple categories; "
-    "apply the criteria thoughtfully, considering the segmented nature of transcripts and "
-    "the intended impact of each statement."
+    "Each transcript should be evaluated for each category for definition and examples alignment. "
+    "REP's statements are the primary focus for OPENING, QUESTIONING, PRESENTING and CLOSING categories."
+    " The HCP response should be considered in the OUTCOME category."
+    "Note the placement of statements: OPENING statements occur at the beginning of the transcript, "
+    "and CLOSING & OUTCOME statements at the end. QUESTIONING and PRESENTING exist throughout the transcript. "
+    "Some passages of text may fit into multiple categories; apply the criteria thoughtfully, "
+    "considering the segmented nature of transcripts and the intended impact of each statement. "
 )
 
 ADDITIONAL_INFORMATION_FOR_CLASSIFICATION_WITHOUT_OPENING_CLOSING = (
